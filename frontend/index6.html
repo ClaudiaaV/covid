@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>COVID PLUS</title>   
+    
+<style>
+::placeholder {
+  color: white;
+  opacity: 0;
+   text-align:center;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://oricum.eu/wp-content/uploads/2016/12/67928641-health-wallpapers.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+  
+}
+.p p { 
+  display: block;
+  height: 20px;
+  width: 50%;
+  text-align:center;
+}
+label {
+    width:300px;
+    clear:left;
+    text-align:right;
+    padding-right:20px;
+    font-size: 21px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0; 
+  text-align:center;
+}
+h1 {
+  letter-spacing: 20px;
+    font-weight: 700;
+}
+input {
+  height: 30px;
+  flex: 0 20 150px;
+  margin-left: 20px;
+  background-color: #4d004d;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+
+
+.centered img {
+  width: 200px;
+  border-radius: 50%;
+ }
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(85, 150, 236);
+  height: 5;
+}
+
+.topnav a {
+  float: left;
+  color: rgba(13, 36, 66, 0.815);
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.topnav a:hover {
+  background-color: rgb(140, 197, 243);
+  color: #8bb9f5;
+}
+
+.topnav a.active {
+  background-color: #8bb9f5;
+  color: rgba(13, 36, 66, 0.815);
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  height: 99%;
+  background-color: rgba(85, 151, 236, 0.836);
+}
+.hyphens {
+   hyphens: auto;
+}
+
+
+.card-header{
+    background-color: transparent;
+}
+
+.centered{
+  position: relative;
+  height: 100px;
+  width: auto;
+  background-color: #B0E0E6;
+}
+
+.flex-container {
+  
+  display: flex;
+  background-color: rgba(85, 151, 236, 0.836);
+  
+}
+.flex-container > div {
+  border: 7px outset rgba(85, 151, 236, 0.836);
+  background-color: lightblue;
+  text-align: center;
+  padding:5px;
+  font-size: 13px;
+  margin: 10px;
+  
+}
+button {
+	width: max-content;
+    height: max-content;
+    background-color: rgba(85, 151, 236, 0.836);
+}
+.card{
+    width: 600px;
+    height: min-content;
+    padding-left: 0%;
+ padding-right: 0px;
+ margin-left: 70px;
+ background-color: rgba(85, 150, 236, 0.596)!important;
+}
+.nav-item{
+    
+    color:white;
+}
+.nav-link{
+    
+    color: white;
+    
+} 
+.card-text{
+    background-color: transparent;
+    color: white;
+}
+.card-body{
+    background-color: rgba(85, 150, 236, 0.459);
+    color: white;
+   
+    
+}
+.card-header{
+    background-color: rgba(85, 151, 236, 0.836);
+    color: white;
+   
+}
+
+ul.demo {
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+}
+img {
+  border-radius: 50%;
+  opacity: 0.65;
+  margin-left: 60px;
+}
+</style>
+
+        <title>COVID PLUS</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>    
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <body style="background-color:#87CEFA;">
+            <div class="topnav">
+              <a href='index.html'>ACASĂ</a>
+            <a  href='index3.html'>STATISTICI</a>
+            <a class="active" href='index4.html'>SĂNĂTATEA TA</a>
+            <a  href='index10.html'>IGIENĂ</a>
+            <a  href='index12.html'>DISTANȚARE SOCIALĂ</a>
+            <a  href='index11.html'>VACCINARE</a>
+            <a  href='index3.html'>DESPRE NOI</a>
+            </div>
+      
+      <br>
+      <div class="card " style="max-width: 600px;">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="index5.html">Simptome</a>
+                </li>
+                <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index9.html">Transmitere</a>
+                      </li>
+                  <a class="nav-link active" href="index6.html">Testare</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="index8.html">Tratament</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index7.html">Complicații</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+                
+              <p class="card-text"><h4 align="center"><b>În cazul în care prezentați una sau mai multe dintre simptomele Covid-19, este posibil să vă fi îmbolnăvit de coronavirus!</b></h4></p>
+              <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/3.png" style="height: 300px;width: 400px;">  
+              <p class="card-text">
+                    <br>
+                    Exista mai multe categorii de teste, in functie de modul lor de actiune:
+                    <ul>
+                        <li>Teste RT-PCR care pun in evidenta materialul genetic al virusului SARS-CoV-2</li>
+                        <li>Teste rapide bazate pe detectia de antigen, care pun in evidenta prezenta unor proteine din componenta virusului SARS-CoV-2– antigene virale</li>
+                        <li>Teste rapide bazate pe detectia de anticorpi care pun in evidenta anticorpii produsi de corpul nostru ca raspuns la infectia COVID-19</li>
+                        <li>Teste serologice de laborator care masoara in laborator anticorpii produsi de corp ca raspuns la infectia COVID-19</li>
+                    </ul>
+                    <br>
+
+                    <h3 align="center"><b>Teste RT-PCR - standardul de diagnostic al COVID-19</h3></b><br><br>
+                    <p>Din secretiile nazale si/sau faringiene recoltate de un cadru medical cu ajutorul unui betisor cu tampon de vata din nas si/sau faringe se poate pune in evidenta,
+                         prin prelucrarea in laborator, ARN-ul viral (acid ribonucleic), materialul genetic unic al noului coronavirus. Secretile recoltate de la pacient trec prin mai multe 
+                         etape prin care secventele de ARN se separa, se amplifica, se transcriu in secvente de ADN, care se multiplica pentru a putea fi detectate ulterior. Toate etapele trebuie 
+                         realizate de personal specializat, pregatit, intr-un laborator de biologie moleculara care indeplineste conditii inalte de siguranta.
+
+                        Un test RT-PCR cu rezultat pozitiv arata ca persoana are o infectie activa, pe care ar putea sa o raspandeasca. Odata ce o persoana se recupereaza dupa infectie, 
+                        rezultatele RT-PCR devin negative.
+                    </p>
+                    <br>
+                     <b>Puncte tari:</b> <br><br> 
+                    <ul>
+                        <li>Diagnosticheaza prezenta infectiei (daca ai infectia activa, acum)</li>
+                        <li>Evidentiaza virusul, chiar daca se gaseste in concentratii scazute</li>
+                        <li>Evidentiaza virusul chiar si la persoane fara simptome, daca sunt infectate</li>
+                        <li>Au validitate buna: indica in mod corect cine are boala activa si cine nu</li>
+                        <li>Sunt precise: sunt sanse foarte mari ca cei care au rezultat pozitiv sa aiba intr-adevar infectia, iar cei cu rezultat negativ sa nu fie intr-adevar infectati 
+                            la momentul respectiv</li>
+                    </ul>
+                    <br>
+                     <b>Puncte slabe:</b> <br><br> 
+                    <ul>
+                        <li>Trebuie recoltate cu grija secretiile, astfel incat sa nu se deterioreze materialul genetic viral</li>
+                        <li>Necesita un timp mai indelungat pentru prelucrare</li>
+                        <li>La timpul necesar prelucrarii se adauga timpul de transport al probei de la locul recoltarii catre laboratorul dotat corespunzator</li>
+                        <li>Necesita expertiza pentru realizare</li>
+                        <li>Necesita kituri de laborator costisitoare</li>
+                        <li>Exista pericol de contaminare la prelucrarea secretiilor contaminate</li>
+                        <li>Testul nu arata daca ai avut infectie in trecut</li>
+                    </ul>
+                    <br>
+
+                    <h3 align="center"><b>Teste rapide bazate pe detectia de antigen</h3></b><br><br>
+                    <p>Testele rapide bazate pe detectia de antigen identifica prezenta proteinelor coronavirusului (antigene virale) in probe de secretie nasofaringiana recoltate de la pacienti.
+                         Antigenele virale sunt proteine din structura virusului care determina raspunsul imun specific al organismului la acest virus. Secretiile naso-faringiene de la pacient se
+                          pun pe o banda de hartie pe care sunt fixati anticorpi specifici coronavirusului SARS- CoV-2. Daca secretiile contin antigen viral se va produce o reactie vizibila intre 
+                          anticorpii fixati pe banda de hartie si antigenele virale din secretii.</p>
+                          <br>
+                          <b>Puncte tari:</b> <br><br> 
+                         <ul>
+                            <li>Pot indica infectia in faza acuta a bolii</li>
+                            <li>Pot indica infectia si la persoane fara simptome, daca infectia este activa</li>
+                            <li>Dau rezultate rapide</li>
+                            <li>Sunt usor de aplicat</li>
+                            </ul>
+                            <br>
+                     <b>Puncte slabe:</b> <br><br> 
+                    <ul>
+                        <li>Depind de calitatea probei recoltate</li>
+                        <li>Concentratia virala influenteaza calitatea testului</li>
+                        <li>Dau in multe cazuri rezultate negative gresite la persoane care au infectia (rezultate fals negative)</li>
+                        <li>Dau in multe cazuri rezultate pozitive gresite la persoane care sunt infectate cu alte tipuri de coronavirus (rezultate fals pozitive)</li>
+                        <li>Probele cu rezultat pozitiv trebuie confirmate cu teste RT-PCR</li>
+                        </ul>
+                        <br>
+
+                        <h3 align="center"><b>Teste rapide bazate pe detectia de anticorpi</b></h3><br><br>
+                    <p>Testele rapide bazate pe detectia de anticorpi identifica prezenta anticorpilor (imunoglobuline M si G) in sangele persoanelor care au avut infectia COVID-19. 
+                        Anticorpii sunt produsi la distanta de zile sau saptamani de la momentul infectarii si fiecare organism are modul propriu de a raspunde la o infectie, de aceea testele
+                         calitative nu sunt sigure in a detecta in mod corect trecerea prin infectie.</p>
+                         <br>
+                         <b>Puncte tari:</b> <br><br> 
+                        <ul>
+                           <li>Pot sa indice o infectie trecuta</li>
+                           <li>Dau rezultate rapide</li>
+                           <li>Sunt usor de aplicat</li>
+                           </ul>
+                           <br>
+                    <b>Puncte slabe:</b> <br><br> 
+                   <ul>
+                       <li>Nu detecteaza infectia acuta</li>
+                       <li>Pot da rezultate negative la persoane cu raspuns imun scazut sau tardiv</li>
+                       <li>Pot da in multe cazuri rezultate pozitive gresite la persoane care sunt infectate cu alte tipuri de coronavirus (rezultate fals pozitive)</li>
+                     </ul>
+                       <br>
+
+                       <h3 align="center"><b>Teste serologice de laborator</b></h3><br><br>
+                    <p>In momentul in care organismul este expus coronavirusului, sistemul imun va reactiona prin producerea de anticorpi. 
+                        Testele serologice bazate pe tehnici de laborator robuste (precum ELISA - metoda imunoenzimatica, chemoluminiscenta, etc), aplicabile doar in laboratoarele clinice, 
+                        au posibilitatea de a masura nivelul anticorpilor IgM si IgG produsi de organism atunci cand este expus la infectia COVID-19. Testele serologice de laborator se fac 
+                        utilizand probe de sange venos recoltat de la pacient.
+                        Este utila realizarea de teste serologice in perechi, pentru a evidentia seroconversia (raspunsul imun): recoltarea si analiza de sange la debutul bolii si dupa trecerea
+                         prin boala.</p>
+                         <br>
+                         <b>Puncte tari:</b> <br><br> 
+                        <ul>
+                           <li>Indica trecerea prin infectie (daca cineva a fost infectat)</li>
+                           <li>Indica dezvoltarea raspunsului imun la infectie</li>
+                           <li>Pot monitoriza raspunsul imun</li>
+                           </ul>
+                           <br>
+                    <b>Puncte slabe:</b> <br><br> 
+                   <ul>
+                       <li>Nu detecteaza infectia acuta</li>
+                       <li>Dau rezultate echivoce in cazul infectiilor cu alte tipuri de coronavirus</li>
+                       <li>Nu indica daca anticorpii produsi au si capacitatea de a proteja de o noua infectie</li>
+                     </ul>
+                       <br>
+                       <h3 align="center"><b>Cand sunt utile testele</b></h3><br><br>
+                    <p>Pentru diagnosticul infectiei se recomanda testele RT-PCR. Persoana cu rezultat pozitiv la testul RT-PCR are infectie activa, indiferent daca are sau nu 
+                        simptome si trebuie sa se izoleze pentru a nu raspandi infectia mai departe. Pentru determinarea raspunsului imun la infectie (cine a fost expus si a dezvoltat anticorpi)
+                         se recomanda testarea serologica a imunoglobulinelor IgM si IgG in laborator utilizand tehnici robuste de detectie.
+                        Testele serologice realizate in laborator, pot fi utile in a indica persoanele care au dezvoltat un raspuns imun la infectia COVID-19 si in a evidentia gradul in care
+                         populatia a fost expusa si a trecut prin infectie.</p>
+                    <b> <h4>Lista unităților de specialitate care realizează testarea RT-PCR poate fi gasita pe platforma Ministerului Sanatatii sau apasand 
+                        <a href='http://www.ms.ro/centre-testare/'><button class="btn btn-primary">AICI</button></a></h4>  </b>  
+                </p>
+                <a href="index4.html" class="btn btn-primary" >ÎNAPOI</a>
+            </div>
+          </div>
+        
+
+    </div>
+
+
+    
+
+
+</body>
+</html>

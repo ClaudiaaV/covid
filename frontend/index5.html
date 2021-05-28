@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>COVID PLUS</title>   
+    
+<style>
+::placeholder {
+  color: white;
+  opacity: 0;
+   text-align:center;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://oricum.eu/wp-content/uploads/2016/12/67928641-health-wallpapers.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+  
+}
+.p p { 
+  display: block;
+  height: 20px;
+  width: 50%;
+  text-align:center;
+}
+label {
+    width:300px;
+    clear:left;
+    text-align:right;
+    padding-right:20px;
+    font-size: 21px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0; 
+  text-align:center;
+}
+h1 {
+  letter-spacing: 20px;
+    font-weight: 700;
+}
+input {
+  height: 30px;
+  flex: 0 20 150px;
+  margin-left: 20px;
+  background-color: #4d004d;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+
+
+.centered img {
+  width: 200px;
+  border-radius: 50%;
+ }
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(85, 150, 236);
+  height: 5;
+}
+
+.topnav a {
+  float: left;
+  color: rgba(13, 36, 66, 0.815);
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.topnav a:hover {
+  background-color: rgb(140, 197, 243);
+  color: #8bb9f5;
+}
+
+.topnav a.active {
+  background-color: #8bb9f5;
+  color: rgba(13, 36, 66, 0.815);
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  height: 99%;
+  background-color: rgba(85, 151, 236, 0.836);
+}
+.hyphens {
+   hyphens: auto;
+}
+
+
+.card-header{
+    background-color: transparent;
+}
+
+.centered{
+  position: relative;
+  height: 100px;
+  width: auto;
+  background-color: #B0E0E6;
+}
+
+.flex-container {
+  
+  display: flex;
+  background-color: rgba(85, 151, 236, 0.836);
+  
+}
+.flex-container > div {
+  border: 7px outset rgba(85, 151, 236, 0.836);
+  background-color: lightblue;
+  text-align: center;
+  padding:5px;
+  font-size: 13px;
+  margin: 10px;
+  
+}
+.card{
+    width: 600px;
+    height: min-content;
+    padding-left: 0%;
+ padding-right: 0px;
+ margin-left: 70px;
+ background-color: rgba(85, 150, 236, 0.596)!important;
+}
+.nav-item{
+    
+    color:white;
+}
+.nav-link{
+    
+    color: white;
+    
+} 
+.card-text{
+    background-color: transparent;
+    color: white;
+}
+.card-body{
+    background-color: rgba(85, 150, 236, 0.459);
+    color: white;
+   
+    
+}
+.card-header{
+    background-color: rgba(85, 151, 236, 0.836);
+    color: white;
+   
+}
+.img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+</style>
+
+        <title>COVID PLUS</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>    
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+      
+        <body style="background-color:#87CEFA;">
+            <div class="topnav">
+              <a href='index.html'>ACASĂ</a>
+            <a  href='index3.html'>STATISTICI</a>
+            <a class="active" href='index4.html'>SĂNĂTATEA TA</a>
+            <a  href='index10.html'>IGIENĂ</a>
+            <a  href='index12.html'>DISTANȚARE SOCIALĂ</a>
+            <a  href='index11.html'>VACCINARE</a>
+            <a  href='index3.html'>DESPRE NOI</a>
+            </div>
+      
+      <br>
+      <div class="card" style="max-width: 600px;">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index5.html">Simptome</a>
+                </li>
+                <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index9.html">Transmitere</a>
+                      </li>
+                  <a class="nav-link" href="index6.html">Testare</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="index8.html">Tratament</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index7.html">Complicații</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+             
+              <p class="card-text"><h3 align="center">Prezinți unul dintre simptomele specifice COVID19?</h4></p><br><br>
+                <p class="card-text">
+                   <b>Cele mai frecvente simptome:</b> 
+                    <ul>
+                        <li><b>Febra</b> – frecventa cea mai mare, insa nu este universal prezenta; in unele studii 
+                            a avut ponderea cea mai mare dintre simptome inca de la inceput, dar unii pacienti 
+                            au avut febra joasa (38 grade, sau 37.5 grade), iar in alte studii a aparut la mai putin
+                             de jumatate din pacienti insa in timpul spitalizarii a aparut la majoritatea pacientilor.</li>
+                        <li><b>Fatigabilitate/astenie fizica</b> – al doilea simptom ca frecventa, dupa febra</li>
+                        <li><b>Tuse seaca</b></li>
+                        <li>Anorexie</li>
+                        <li>Mialgii</li>
+                        <li><b>Dispnee/oboseala la efort</b></li>
+                        <li>Expectoratie/tuse productiva</li>
+                        <li>Alte simptome mai rare – Cefalee, Odinofagie/jena laringiana, rinoree</li>
+                      </ul>
+                      <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/5.png" style="height: 130px; width: 100px;" >
+                      <b>În cazurile grave pot apărea și simptome precum:</b><br><br>
+<b>infecție severă a plămânilor,sepsis și șoc septic – infecție și răspuns inflamator generalizate,
+    toate acestea necesitând îngrijire și asistență medicală specializată.
+    Starea pacientului se poate deteriora rapid, adesea în a doua săptămână de boală.</b> 
+<br><br>
+                      Clasificarea COVID-19 in functie de severitate:
+                    <br>  <ul>
+                        <li>Infectie usoara  (fara sau cu pneumonie usoara) – aprox 81%</li>
+                        <li>Boala severa (dispnee, hipoxie, afectare >50% din plamani la imagistica pulmonara in primele 24-48h) – 14%</li>
+                        <li>Boala critica (insuficienta respiratorie, soc, insuficienta multipla de organ) – 5%</li>
+                        <li>Mortalitate aprox 2.3%, fara a fi cazuri fatale la cei cu boala non-critica</li>
+                      </ul>
+                      
+
+                </p>
+                <a href="index4.html" class="btn btn-primary" >ÎNAPOI</a>
+            </div>
+          </div>
+        
+
+    </div>
+
+
+    
+
+
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>COVID PLUS</title>   
+    
+<style>
+::placeholder {
+  color: white;
+  opacity: 0;
+   text-align:center;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://oricum.eu/wp-content/uploads/2016/12/67928641-health-wallpapers.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+  
+}
+.p p { 
+  display: block;
+  height: 20px;
+  width: 50%;
+  text-align:center;
+}
+label {
+    width:300px;
+    clear:left;
+    text-align:right;
+    padding-right:20px;
+    font-size: 21px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0; 
+  text-align:center;
+}
+h1 {
+  letter-spacing: 20px;
+    font-weight: 700;
+}
+input {
+  height: 30px;
+  flex: 0 20 150px;
+  margin-left: 20px;
+  background-color: #4d004d;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+
+
+.centered img {
+  width: 200px;
+  border-radius: 50%;
+ }
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(85, 150, 236);
+  height: 5;
+}
+
+.topnav a {
+  float: left;
+  color: rgba(13, 36, 66, 0.815);
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.topnav a:hover {
+  background-color: rgb(140, 197, 243);
+  color: #8bb9f5;
+}
+
+.topnav a.active {
+  background-color: #8bb9f5;
+  color: rgba(13, 36, 66, 0.815);
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  height: 99%;
+  background-color: rgba(85, 151, 236, 0.836);
+}
+.hyphens {
+   hyphens: auto;
+}
+
+
+.card-header{
+    background-color: transparent;
+}
+
+.centered{
+  position: relative;
+  height: 100px;
+  width: auto;
+  background-color: #B0E0E6;
+}
+
+.flex-container {
+  
+  display: flex;
+  background-color: rgba(85, 151, 236, 0.836);
+  
+}
+.flex-container > div {
+  border: 7px outset rgba(85, 151, 236, 0.836);
+  background-color: lightblue;
+  text-align: center;
+  padding:5px;
+  font-size: 13px;
+  margin: 10px;
+  
+}
+button {
+	width: max-content;
+    height: max-content;
+    background-color: rgba(85, 151, 236, 0.836);
+}
+.card{
+    width: 600px;
+    height: min-content;
+    padding-left: 0%;
+ padding-right: 0px;
+ margin-left: 70px;
+ background-color: rgba(85, 150, 236, 0.596)!important;
+}
+.nav-item{
+    
+    color:white;
+}
+.nav-link{
+    
+    color: white;
+    
+} 
+.card-text{
+    background-color: transparent;
+    color: white;
+}
+.card-body{
+    background-color: rgba(85, 150, 236, 0.459);
+    color: white;
+   
+    
+}
+.card-header{
+    background-color: rgba(85, 151, 236, 0.836);
+    color: white;
+   
+}
+
+ul.demo {
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+}
+
+
+</style>
+
+        <title>COVID PLUS</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>    
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <body style="background-color:#87CEFA;">
+            <div class="topnav">
+              <a href='index.html'>ACASĂ</a>
+            <a  href='index3.html'>STATISTICI</a>
+            <a  href='index4.html'>SĂNĂTATEA TA</a>
+            <a href='index10.html'>IGIENĂ</a>
+            <a  class="active"  href='index12.html'>DISTANȚARE SOCIALĂ</a>
+            <a  href='index11.html'>VACCINARE</a>
+            <a  href='index3.html'>DESPRE NOI</a>
+            </div>
+      
+      <br>
+      <div class="card" style="max-width: 600px;">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                  <a class="nav-link " href="index11.html">Igienă</a>
+                </li>
+                <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link active " href="index12.html">Distanțare</a>
+                      </li>
+                  
+              </ul>
+            </div>
+            <div class="card-body">
+                
+              <p class="card-text"><h4 align="center"><b>Protejați-vă, păstrați distanța!</b></h4></p>
+              <img src="https://thumbs.dreamstime.com/b/cartoon-character-social-distancing-keep-distance-public-society-people-to-protect-covid-coronavirus-outbreak-188649274.jpg" 
+              style="height: 300px;width: 400px; border-radius: 50%;margin-left: 70px;opacity: 0.7;">  
+              <p class="card-text">
+                    <br>
+                    
+
+                    <h3 align="center"><b>RECOMANDARI privind conduita sociala responsabila in prevenirea raspandirii Coronavirus - COVID-19</b></h3><br>
+                         <br>
+                         <b>Evitati zonele aglomerate unde sunteti expusi la contact direct si/sau interactiune cu un numar mare de persoane, de tipul adunarilor publice, 
+                             cozi, zone de trafic intens, zone de recreere.</b> <br><br> 
+                        <ul>
+                           <li>Feriti copiii de acele locuri de joaca care presupun atingerea unor suprafete/obiecte comune de catre un numar mare de copii</li>
+                           </ul>
+                           <br>
+
+                           <b>Limitati la maximum orice contact direct cu alte persoane, in afara celor care fac parte din familia restransa, prin gesturi cum ar fi: strangerea mainilor,
+                                imbratisarile, sarutul obrajilor sau al mainilor, atingerea fetelor cu mainile.</b> <br><br> 
+                       <ul>
+                          <li>Se recomanda, inclusiv in privinta persoanelor impreuna cu care locuiti, sa NU intrati in contact direct decat dupa igienizarea mainilor atunci 
+                              cand reveniti la domiciliu.</li>
+                          </ul>
+                          <br>
+
+                          <b>Evitati atingerea suprafetelor care sunt atinse in mod frecvent si de alte persoane, precum: balustrade, clante, manere, butoane de lift sau de acces</b> <br><br> 
+                   <ul>
+                      <li>in cazul in care sunteti totusi nevoiti sa atingeti aceste suprafete, protejati-va folosind
+                        servetele de unica folosinta</li>
+                      </ul>
+                      <br>
+                      <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/11.png" style="height: 170px;width: 560px;margin-left: 0.1px; border-radius: 5%;opacity: 0.8; "><br><br>
+                      <b>Pastrati o distanta semnificativa, de 1,5 metri, fata de celelalte persoane pe care le
+                        intalniti</b> <br><br> 
+               <ul>
+                  <li>in cazul in care va aflati in transportul in comun incercati sa NU stati fata in fata cu alte
+                    persoane</li>
+                    <li>Asigurati-va, dupa folosirea transportului in comun, ca v-ati igienizat mainile inainte de a va atinge fata, nasul sau gura</li>
+                  </ul>
+                  <br>
+
+                  <b> Folositi, pe cat posibil, rute sau modalitati alternative de transport pentru a evita zonele aglomerate de trafic de persoane. In cazul in care
+                       programul va permite, folositi intervalele orare cu nivel scazut de trafic de persoane</b> <br><br> 
+                  <ul>
+                     <li>in zonele urbane, pentru distante mici, se recomanda folosirea modalitatilor alternative de
+                        deplasare, fie cu bicicleta/trotineta electrica, fie mersul pe jos</li>
+                     </ul>
+                     <br>
+
+                     <b>Evitati deplasarile in tarile care se confrunta cu numar mare de cazuri de infectari cu noul coronavirus (COVID-19) si descurajati intoarcerea in tara a persoanelor din zonele de risc,
+                          respectiv din tarile cu numar mare de cazuri</b> <br><br> 
+                   <ul>
+                      <li>in cazul in care calatoriti intr-o tara expusa infectiei cu noul coronavirus exista riscul ca la
+                        momentul revenirii in tara, in functie de actualizarea zonelor rosii/galbene, sa fie necesar sa
+                        ramaneti in carantina/izolare la domiciliu timp de 14 zile, impreuna cu familia</li>
+                        <li>in mod obligatoriu, romanii care se intorc in tara din zone de risc vor trebui sa intre in
+                            autoizolare la domiciliu, ceea ce presupune ca intreaga familie sa faca acelasi lucru</li>
+                      </ul>
+                      <br>
+
+                      <b> Limitati folosirea bancnotelor si a monedelor, optand pentru plati cu cardul/telefonul sau plati on-line</b> <br><br> 
+                   <ul>
+                      <li>Transmiterea virusilor se realizeaza intr-o pondere semnificativa prin intermediul banilor, cu care ia contact, statistic, un numar foarte mare de persoane</li>
+                      </ul>
+                      <br>
+                      <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/10.jpg" style="height: 400px;width: 500px;margin-left: 30px; border-radius: 20%;opacity: 0.8;"><br><br>
+                      <b>Pastrati o distanta semnificativa, de 1,5 metri, fata de celelalte persoane pe care le
+                      <b> Optati pentru munca de acasa, in masura in care aveti aceasta posibilitate oferita de angajator</b> <br><br> 
+                   <ul>
+                      <li>Exista recomandari din partea Ministerului Muncii, in atentia angajatorilor, pentru flexibilizarea programului de lucru pentru angajati 
+                          si prezentarea eventualelor optiuni legale pe care le au la dispozitie</li>
+                      </ul>
+                      <br>
+
+                      <b> Respectati cu strictete regulile de igiena personala recomandate de autoritati, pentru a va proteja atat pe dumneavoastra cat si pe cei apropiati.
+                           Folositi masca de protectie doar in cazul in care aveti simptome de gripa sau raceala, pentru a-i proteja pe ceilalti</b> <br><br> 
+                   <ul>
+                      <li>Spalati-va pe maini cu apa si sapun, minimum 20 de secunde, dupa orice contact cu o suprafata potential contaminata</li>
+                      <li>Folositi prosoape de hartie, de preferat, pentru a va sterge mainile</li>
+                      <li>Nu va atingeti ochii, nasul sau gura cu mainile neigienizate</li>
+                      <li>Daca stranutati sau tusiti acoperiti-va gura si nasul cu un servetel de unica folosinta, pe care aveti grija sa-l aruncati imediat la cosul de gunoi</li>
+                      <li>Dezinfectati frecvent, cu solutie pe baza de alcool sau clor, suprafetele cu care intrati in
+                        contact, atat acasa cat si la locul de munca</li>
+                      <li>Aerisiti de mai multe ori pe zi incaperile in care desfasurati activitati</li>
+                      <li>Luati medicamente antivirale sau antibiotice numai la prescriptia medicului</li>
+                      <li>NU beti lichide din aceeasi sticla/pahar cu alte persoane si nu folositi aceleasi tacamuri</li>
+                      <li>NU intrati in contact direct cu persoanele aflate in autoizolare la domiciliu, indiferent daca
+                        prezinta sau nu simptome specifice coronavirus</li>
+                      <li>Masca de protectie/masca chirurgicala ii protejeaza pe cei din jurul dumneavoastra, in cazul in care aveti simptome de gripa sau raceala, 
+                          intrucat previne raspandirea virusului pe cale respiratorie</li>
+                          <li>Masca de protectie trebuie sa acopere complet nasul si gura persoanei care o poarta</li>
+                      </ul>
+                      <br>
+                      <img src="https://dailydose.ttuhsc.edu/2020/march/images/socialdistancing-01.jpg" style="height: 270px;width: 500px;margin-left: 30px; border-radius: 60%;opacity: 0.85;"><br><br>
+                      <b>Evitati, cu prioritate, expunerea persoanelor in varsta (peste 65 de ani) si a celor cu imunitate scazuta/boli asociate catre alte persoane
+                           cu simptome de gripa sau raceala, in zone aglomerate sau zone cu trafic intens de persoane</b> <br><br> 
+                   <ul>
+                      <li>Potrivit statisticilor, persoanele cele mai vulnerabile in cazul infectarii cu noul coronavirus
+                        sunt varstinicii cu multiple afectiuni asociate (ex: diabet zaharat, boli pulmonare cronice, boli cardiovasculare, cancer)</li>
+                      </ul>
+                      <br>
+
+                      <b>Semnalati autoritatilor orice caz despre care aveti cuno?tinta ca ar fi putut intra in contact cu o persoana confirmata cu noul coronavirus 
+                          sau ar fi venit dintr-o tara afectata (zona rosie sau zona galbena) si care nu se afla in izolare</b> <br><br> 
+                <ul>
+                   <li>Manifestati o atitudine preventiva fata de orice caz, intrucat raspandirea virusului este posibila si din partea persoanelor care nu manifesta simptome specifice</li>
+                   </ul>
+                   <br>
+
+                      <b> Tineti cont de faptul ca nu in toate cazurile infectarea cu noul coronavirus(COVID-19) este vizibila prin simptome specifice 
+                        (tuse, febra, dificultati in respiratie)</b> <br><br> 
+                 <ul>
+                    <li>Virusul poate fi raspandit inclusiv de persoane aparent sanatoase, care nu au cunostinta de faptul ca sunt purtatori ai noului coronavirus</li>
+                    <li>Informati-va despre noul coronavirus numai din surse oficiale!</li>
+                    <li>Protejati-va apropiatii, nu-i expuneti!</li>
+                    <li>Doar in cazul urgentelor sunati la 112!</li>
+                    </ul>
+                    <br>
+
+
+
+                    <b>Semnalati imediat medicului de familie daca ati calatorit in zonele afectate de coronavirus (COVID-19), chiar daca la momentul 
+                        respectiv NU se aflau pe lista zonelor aflate sub alerta</b> <br><br> 
+              <ul>
+                 <li>in cazul in care nu puteti contacta medicul de familie, apelati la Directia de Sanatate Publica din judetul dumneavoastra si in ultima instanta la 112</li>
+                 </ul>
+                 <br>
+
+                 <b>Ramaneti acasa daca aveti simptome de gripa sau raceala (tuse, febra, dificultati in respiratie) si sunati medicul de familie pentru a solicita sfaturi,
+                      NU mergeti din primul moment la unitatile de urgenta</b> <br><br> 
+          <ul>
+             <li>Exista riscul, in cazul in care sunteti purtator al virusului, sa transmiteti si altor persoane
+                noul coronavirus</li>
+                <li>Este de preferat sa ramaneti la domiciliu, iar transferul catre spital sa se realizeze in mod
+                    organizat, respectand toate masurile de izolare</li>
+             </ul>
+             <br>
+
+             <b>Daca va aflati in autoizolare la domiciliu respectati cu strictete recomandarile autoritatilor, NU parasiti sub nicio forma domiciliul pe perioada celor 14 zile,
+                  NU primiti vizitatori si NU intrati in contact apropiat cu eventualele persoane care va furnizeaza alimente sau produse</b> <br><br> 
+      <ul>
+         <li>in cazul in care incalcati regimul autoizolarii la domiciliu riscati amenda de pana la 20.000 de lei, precum si dosar penal in cazul in care contribuiti la raspandirea virusului</li>
+         </ul>
+         <br>
+                        
+                             
+                           <br>
+ 
+                </p>
+                <a href="index10.html" class="btn btn-primary" >ÎNAPOI</a>
+            </div>
+          </div>
+        
+
+    </div>
+
+
+    
+
+
+</body>
+</html>

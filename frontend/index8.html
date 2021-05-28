@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>COVID PLUS</title>   
+    
+<style>
+::placeholder {
+  color: white;
+  opacity: 0;
+   text-align:center;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://oricum.eu/wp-content/uploads/2016/12/67928641-health-wallpapers.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+  
+}
+.p p { 
+  display: block;
+  height: 20px;
+  width: 50%;
+  text-align:center;
+}
+label {
+    width:300px;
+    clear:left;
+    text-align:right;
+    padding-right:20px;
+    font-size: 21px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0; 
+  text-align:center;
+}
+h1 {
+  letter-spacing: 20px;
+    font-weight: 700;
+}
+input {
+  height: 30px;
+  flex: 0 20 150px;
+  margin-left: 20px;
+  background-color: #4d004d;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+
+
+.centered img {
+  width: 200px;
+  border-radius: 50%;
+ }
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(85, 150, 236);
+  height: 5;
+}
+
+.topnav a {
+  float: left;
+  color: rgba(13, 36, 66, 0.815);
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.topnav a:hover {
+  background-color: rgb(140, 197, 243);
+  color: #8bb9f5;
+}
+
+.topnav a.active {
+  background-color: #8bb9f5;
+  color: rgba(13, 36, 66, 0.815);
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  height: 99%;
+  background-color: rgba(85, 151, 236, 0.836);
+}
+.hyphens {
+   hyphens: auto;
+}
+
+
+.card-header{
+    background-color: transparent;
+}
+
+.centered{
+  position: relative;
+  height: 100px;
+  width: auto;
+  background-color: #B0E0E6;
+}
+
+.flex-container {
+  
+  display: flex;
+  background-color: rgba(85, 151, 236, 0.836);
+  
+}
+.flex-container > div {
+  border: 7px outset rgba(85, 151, 236, 0.836);
+  background-color: lightblue;
+  text-align: center;
+  padding:5px;
+  font-size: 13px;
+  margin: 10px;
+  
+}
+.card{
+    width: 600px;
+    height: min-content;
+    padding-left: 0%;
+ padding-right: 0px;
+ margin-left: 70px;
+ background-color: rgba(85, 150, 236, 0.596)!important;
+}
+.nav-item{
+    
+    color:white;
+}
+.nav-link{
+    
+    color: white;
+    
+} 
+.card-text{
+    background-color: transparent;
+    color: white;
+}
+.card-body{
+    background-color: rgba(85, 150, 236, 0.459);
+    color: white;
+   
+    
+}
+.card-header{
+    background-color: rgba(85, 151, 236, 0.836);
+    color: white;
+   
+}
+
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  border-radius: 50%;
+  opacity: 0.65;
+  margin-left: 30px;
+}
+</style>
+
+        <title>COVID PLUS</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>    
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+      
+        <body style="background-color:#87CEFA;">
+            <div class="topnav">
+              <a href='index.html'>ACASĂ</a>
+            <a  href='index3.html'>STATISTICI</a>
+            <a class="active" href='index4.html'>SĂNĂTATEA TA</a>
+            <a  href='index10.html'>IGIENĂ</a>
+            <a  href='index12.html'>DISTANȚARE SOCIALĂ</a>
+            <a  href='index11.html'>VACCINARE</a>
+            <a  href='index3.html'>DESPRE NOI</a>
+            </div>
+      
+      <br>
+      <div class="card text-center" style="max-width: 600px;">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link " href="index5.html">Simptome</a>
+                </li>
+                <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index9.html">Transmitere</a>
+                      </li>
+                  <a class="nav-link" href="index6.html">Testare</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active " href="index8.html">Tratament</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index7.html">Complicații</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+                <p class="card-text"><h4 align="center"><b>Dacă testul dumneavoastră este pozitiv, primul pas este acela de carantinare!</b></h4></p>
+                <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/2.png" style="height: 300px;width: 400px;">
+                <p class="card-text">
+                    <h3 align="center"><b>Izolarea și Carantinarea</h3></b><br>
+                    <p>
+                        Izolarea și carantina previn răspândirea noului coronavirus. O persoană care s-a
+                        îmbolnăvit de noul coronavirus sau la care se presupune existența unei infecții
+                        trebuie să rămână acasă și nu trebuie să intre în contact cu alte persoane. Astfel pot
+                        fi evitate noi infectări.<br><br> 
+                        <h3 align="center"><b>Regulile sunt:</h3></b><br>
+                        
+                        <b>Izolare:</b> Persoanele, care au fost testate și au primit un rezultat pozitiv la noul coronavirus
+                        trebuie să intre în izolare. Izolarea poate să fie încheiată, dacă au trecut 10 zile de la primele
+                        simptome ale bolii și dacă persoana nu mai prezintă simptome ale bolii de mai mult de 48 de
+                        ore.<br><br>
+                        <b>Carantina:</b> Persoanele care sunt infectate trebuie să intre timp de 14 zile în carantină. 
+                    </p><br><br>                    
+                    <h3 align="center"><b>Cum se tratează COVID-19?</h3></b><br>
+                    <p>
+                        În loc să țintească virusul propriu-zis, cei care asigură îngrijirea medicală tratează mai ales simptomele de COVID-19, 
+                        oferind persoanelor infectate tratament de susținere (de exemplu, terapie cu oxigen, gestionarea fluidelor), care poate fi foarte eficace.<br>
+                        Astfel, in functie de severitate se utilizeaza diferite forme de tratament:
+                    </p><br> 
+                    -Initial se utilizeaza tratament simptomatic – antipiretice pentru controlul febrei<br><br>
+                    -In caz de hipoxie – oxigenoterapie pentru a mentine saturatia >94% - la pacientii care au semne de agravare (apnee sau dispnee severa, cianoza centrala, soc, coma, convulsii)
+                     – managementul cailor aeriene, oxigenoterapie minim 5L/min pana la 10-15L/min pe masca; dupa stabilizare se mentine SpO2 la >90%; in anumite cazuri se recomanda ventilatie
+                      non-invaziva<br><br>
+                    -Tratamentul coinfectiilor – chiar in caz de suspiciune de COVID-19 se administreaza antibioterapie empirica mai ales in caz de <b>sepsis*</b> (la 1h de la identificarea sepsisului),
+                     bazata pe diagnosticul clinic<br><br>
+                    -In caz de <b>ARDS**</b> – ventilatie mecanica; cu grija extrema la manevra de intubare care are un risc mare de contaminare; in ARDS sever se recomanda utilizarea pozitiei de sezut;
+                     reechilibrare hidroelectrolitica<br><br>
+                     -<b>Socul septic***</b> – reechilibrare hidroelectrolitica antibioterapie in prima ora, montarea de cateter venos/arterial central<br><br>
+                     -Preventia complicatiilor este esentiala – manevre specifice fiecarui tip de complicatie, mai ales in cazul celor determinate de imobilizarea prelungita si nutritia
+                      parenterala<br><br>
+
+                      <br>
+                      <p align="left"><b>SEPSIS*</b></p>
+                      <ul>
+                          <li>disfunctie de organ amenintatoare de viata cauzata de un raspuns anormal al gazdei la o infectie suspectata/confirmata - > alterare status mental,
+                               modificare respiratie, hipoxie, oliguria, tahicardie, puls slab, hipotensiune, uscaciunea pielii, modificari biologice (trombocitopenie, acidoza, lactat crescut,
+                                hiperbilirubinemie)</li>
+                      </ul>
+                      <br>
+                      <p align="left"><b>ARDS** (sindrom de detresă respiratorie acută)</b></p>
+                      <ul>
+                          <li>debut la o saptamana de la o injurie pulmonara sau aparitia de noi simptome respiratorii/agravarea celor vechi; Modificari imagistice (Radiografie, CT sau ecografia
+                               pleurala) cu opacitati bilaterale; Criterii de insuficienta respiratorie;</li>
+                      </ul>
+                      <br>
+                     <p align="left"> <b>ȘOC SEPTIC***</b></p>
+                      <ul>
+                          <li>persistenta hipotensiunii in ciuda resuscitatii volemice, cu necesarul adaugarii de vasopresoare;</li>
+                      </ul><br><br>s
+                      <h3 align="center"><b>Se pot trata si la domiciliu formele usoare? Care sunt optiunile de tratament la domiciliu?</h3></b><br>
+                      <p>Forma usoara se poate trata la domiciliu in cazul in care infectia nu este foarte simptomatica si persoana se poate izola corespunzator.
+                           Managementul in aceste cazuri se concentreaza pe preventia transmisiei la altii si monitorizarea starii clinice pentru a nu risca o deteriorare ce ar
+                            putea duce la internare.</p>
+                
+                </p>
+                <a href="index4.html" class="btn btn-primary" >ÎNAPOI</a>
+            </div>
+          </div>
+        
+
+    </div>
+
+
+    
+
+
+</body>
+</html>

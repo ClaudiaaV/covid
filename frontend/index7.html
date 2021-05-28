@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>COVID PLUS</title>   
+    
+<style>
+::placeholder {
+  color: white;
+  opacity: 0;
+   text-align:center;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://oricum.eu/wp-content/uploads/2016/12/67928641-health-wallpapers.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+  
+}
+.p p { 
+  display: block;
+  height: 20px;
+  width: 50%;
+  text-align:center;
+}
+label {
+    width:300px;
+    clear:left;
+    text-align:right;
+    padding-right:20px;
+    font-size: 21px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0; 
+  text-align:center;
+}
+h1 {
+  letter-spacing: 20px;
+    font-weight: 700;
+}
+input {
+  height: 30px;
+  flex: 0 20 150px;
+  margin-left: 20px;
+  background-color: #4d004d;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+
+
+.centered img {
+  width: 200px;
+  border-radius: 50%;
+ }
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(85, 150, 236);
+  height: 5;
+}
+
+.topnav a {
+  float: left;
+  color: rgba(13, 36, 66, 0.815);
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.topnav a:hover {
+  background-color: rgb(140, 197, 243);
+  color: #8bb9f5;
+}
+
+.topnav a.active {
+  background-color: #8bb9f5;
+  color: rgba(13, 36, 66, 0.815);
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  height: 99%;
+  background-color: rgba(85, 151, 236, 0.836);
+}
+.hyphens {
+   hyphens: auto;
+}
+
+
+.card-header{
+    background-color: transparent;
+}
+
+.centered{
+  position: relative;
+  height: 100px;
+  width: auto;
+  background-color: #B0E0E6;
+}
+
+.flex-container {
+  
+  display: flex;
+  background-color: rgba(85, 151, 236, 0.836);
+  
+}
+.flex-container > div {
+  border: 7px outset rgba(85, 151, 236, 0.836);
+  background-color: lightblue;
+  text-align: center;
+  padding:5px;
+  font-size: 13px;
+  margin: 10px;
+  
+}
+.card{
+    width: 600px;
+    height: min-content;
+    padding-left: 0%;
+ padding-right: 0px;
+ margin-left: 70px;
+ background-color: rgba(85, 150, 236, 0.596)!important;
+}
+.nav-item{
+    
+    color:white;
+}
+.nav-link{
+    
+    color: white;
+    
+} 
+.card-text{
+    background-color: transparent;
+    color: white;
+}
+.card-body{
+    background-color: rgba(85, 150, 236, 0.459);
+    color: white;
+   
+    
+}
+.card-header{
+    background-color: rgba(85, 151, 236, 0.836);
+    color: white;
+   
+}
+
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  border-radius: 50%;
+  opacity: 0.65;
+ 
+}
+</style>
+
+        <title>COVID PLUS</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>    
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+      
+        <body style="background-color:#87CEFA;">
+            <div class="topnav">
+              <a href='index.html'>ACASĂ</a>
+            <a  href='index3.html'>STATISTICI</a>
+            <a class="active" href='index4.html'>SĂNĂTATEA TA</a>
+            <a  href='index10.html'>IGIENĂ</a>
+            <a  href='index12.html'>DISTANȚARE SOCIALĂ</a>
+            <a  href='index11.html'>VACCINARE</a>
+            <a  href='index3.html'>DESPRE NOI</a>
+            </div>
+      
+      <br>
+      <div class="card text-center" style="max-width: 600px;">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link " href="index5.html">Simptome</a>
+                </li>
+                <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index9.html">Transmitere</a>
+                      </li>
+                  <a class="nav-link" href="index6.html">Testare</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="index8.html">Tratament</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="index7.html">Complicații</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+             
+                <p class="card-text"><h4 align="center"><b>Complicațiile infecției cu noul Coronavirus</b></h3></p><br>
+                    <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/8.jpg" style="height: 300px;width: 400px;">
+                      <p class="card-text">
+                          <br><br>
+                           
+                        <p>Infectia cu noul coronavirus este de tip multisistemic si poate afecta mai multe organe si sisteme, evolutia nefavorabila a pacientilor fiind influentata
+                             de comorbiditatile asociate (alte boli cronice in evolutie) dar si de managementul terapeutic institui (tratamentele aplicate in evolutia infectiei).</p> 
+                             <p>Printre categoriile de pacienti cu risc de complicatii se numara pacientii cu boli cronice cardiovasculare, bolnavii care sufera de boli pulmonare cronice,
+                                  cei cu afectiuni oncologice hematologice, pacientii cu diabet zaharat, supraponderalii sau bonlavii cu sindrom metabolic, hipertensivii, cei cu boli cronice 
+                                  renale si suferinte hepatice.</p>   
+                         <br>
+                         <h3 align="center">  <b>Care sunt complicatiile infectiei cu noul coronavirus?</h3></b><br><br>
+                         <p>Evolutia nefavorabila a infectiei cu noul coronavirus este in prezent intens dezbatuta in cadrul mai multor studii internationale insa cele mai frecvente complicatii 
+                            ale bolii sunt reprezentate de:</p>
+      
+                          <br> 
+                              <ul>
+                                 <li>Aparitia sindromului de detresa respiratorie acuta (incapacitatea plamanului de a si indeplini functia ventilatorie);</li>
+                                 <li>Complicatii datorate fenomenului de hipercoagulabilitate (accidente ischemice in diferite teritorii);</li>
+                                 <li>Complicatii de tip autoimun datorate exacerbarii inflamatiei celulare (arterite autoimune intalnite la copii afectati de coronavirus);</li>
+                                 <li>Pneumoniile secundare infiltratului alveolar (lichid in plaman);</li>
+                                 <li>Afectare cardiaca cu hipertrofie si insuficienta functionala;</li>
+                                 <li>Complicatii digestive datorate afectarii hepatice.</li></ul>
+                                 <br><br>
+
+                                 <h3 align="center">  <b>Care sunt categoriile de pacienti cu risc de complicatii COVID-19?</h3></b><br><br>
+                                 <p>Pacientii cu <b>boli cronice cardiovasculare</b>  prezinta risc crescut de dezvoltare a unei afectiuni cardiace chiar si in situatiile unei forme de boala usoare
+                                      sau medii. Aceasta categorie de pacienti necesita evaluare cardiologica de specialitate atat in timpul cat si dupa infectia virala cauzata de COVID-19: 
+                                      bolnavii cardiaci cronici (insuficienta cardiaca cronica, cord pulmonar cronic, proteze cardiace valvulare, malformatii congenitale cardiace), pacientii 
+                                      cu infarct miocardic recent dar si in antecedent.</p>
+                                      <p>Manifestarile generale ale unei eventuale afectari cardiovasculare datorate infectiei cu COVID-19 sunt reprezentate de angina pectorala (dureri in piept),
+                                           tulburari de ritm cardiac (palpitatii), oboseala, stari de ameteala brusca.</p>
+                                           <br>
+                                           <p>Bolnavii care sufera de boli pulmonare cronice prezinta frecvent complicatii de tipul pneumoniilor datorate coronavirusului sau o exacerbare a
+                                                simptomelor bolii de baza. La astmatici se pot inrautati crizele de bronhospasm, in cazul bolnavilor cu obstructie pulmonara cronica -BPOC se
+                                                 inregistreaza o scadere a aportului de oxigen alveolar (diminuata oricum in cazul afectiunii), pacientii cu fibroza pulmonara chistica afectati 
+                                                 de coronavirus pot dezvolta pneumonii cu infiltrat alveolar datorat inflamatiei chiar si in absenta suprainnfectiei bacteriene.</p>
+
+                                            <p><b>Afectiunile oncologice hematologice</b> sunt reprezentate de o scadere a capacitatii de functionare a sistemului imun, astfel ca pacientii cu afectiuni
+                                                maligne ale sangelui si tesutului hematopoietic (leucemii, mielom multiplu)  prezinta risc de complicatii crescut fata de restul populatiei afectate
+                                                 de coronavirus. Suplimentar, tratamentele chimioterapice sau radioterapice (cu sau fara transplant de maduva osoasa) agraveaza si mai mult statusul 
+                                                 imun deficitar al bolnavului, lasand pacientul vulnerabil in fata noului coronavirus.</p>
+                                            
+                                           <p> Pacientii cu <b>diabet zaharat</b> in special cei a caror afectiune nu este tinuta sub control prezinta un risc mai mare de dezvoltare a infectiilor 
+                                            (virale si bacteriene), in cazul coronavirusului complicatiile fiind datorate preexistentei unor afectiuni cronice in cadrul bolii: microvasculare 
+                                            (retinopatie, nefropatie, neuropatie diabetica) si macrovasculare (boala coronariana, arteriala periferica si cerebrovasculara secundare diabetului).</p>
+                                            
+                                            <p>Supraponderalii sau bolnavii cu sindrom metabolic reprezinta si ei o categorie de risc importanta implicata in evolutia nefavorabila a coronavirusului 
+                                                cu aparaitia in mod frecvent a complicatiilor sistemice. Este cunoscut faptul ca persoanele cu indice de masa corporala crescut detin un rezervor viral
+                                                 important datorita sintezei de ACE-2 care are loc in tesutul adipos, o enzima specifica (de la nivelul plamanilor, intestinului, rinichilor, si 
+                                                 vaselor sangvine) de care se leaga coronavirusul. Obezitatea reprezinta un risc major de complicatii in infectiile datorate COVID-19 si prin continutul
+                                                  crescut de miofibroblaste al organismului (celule implicate in procesul de fibrozare pulmonara), fapt ce favorizeaza aparitia fibrozei pulmonare
+                                                   (vindecarea leziunilor pulmonare prin inlocuirea cu tesut cicatriceal nefunctional) in urma penumoniei datorate coronavirusului.</p>
+
+                                                <p>Hipertensivii prezinta niveluri ridicate ale enzimei ACE-2 in organism, aceasta patologie fiind cea mai susceptibila in a dezvolta complicatii in 
+                                                    cadrul infectiei virale (reprezinta una dintre cele mai frecvente afectiuni preexistente la persoanele cu forme grave datorate COVID-19).</p>
+                                                
+                                               <p>Coagulopatiile cronice de sine statatoare de tipul trombofiliei dar si cele asociate altor boli (diabet, exces ponderal datorate statusului
+                                                proinflamator) sunt agravate de infectia cu noul coronavirus in cursul careia s a observat o crestere a tendintei de formare a trombilor intravasculari 
+                                                care pot declansa accidente vasculare in diverse teritorii (accident vascular cerebral, infarct miocardic, tromboze venoase profunde).</p> 
+                                                
+                                                <p>In cazul pacientilor cu boli cronice renale aparitia complicatiilor insotite de proteinurie, hematurie, cresterea nivelului de creatinina serica
+                                                    cu scaderea ratei de filtrare glomerurala se datoreaza sindromului de insuficienta renala acuta  declansat de infectia cu noul coronavirus.
+                                                     In cele mai severe cazuri devine necesara hemodializa bolnavilor pentru a substitui activitatea renala.</p>
+                                                
+                                                <p>Pacientii cu suferinte hepatice preexistente pot prezenta complicatii datorate coronavirusului prin actiunea sistemului imun asupra canaliculelor
+                                                    biliare (sistemul imun stimulat de coronavirus nu recunoaste celule proprii hepatice si  cauzeaza inflamatie si lezare a canaliculelor biliare).
+                                                     Hepatita autoimuna in cadrul infectiei datorate coronavirusului a fost raportata ca fiind o complicatie destul de frecvent intalnita in randul 
+                                                     bolnavilor.</p>
+                                                
+                                               <p>Astfel, pe langa afectarea primara, prezenta virusului in organism poate declansa complicatii cu manifestare multiorganica care agreaveaza 
+                                                prognosticul evolutiei prelungind perioada de tratament si de recuperare post infectioasa.</p> 
+                                            
+                             
+                      </p>
+                <a href="index4.html" class="btn btn-primary" >ÎNAPOI</a>
+            </div>
+          </div>
+        
+
+    </div>
+
+
+    
+
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>COVID PLUS</title>   
+    
+<style>
+::placeholder {
+  color: white;
+  opacity: 0;
+   text-align:center;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://oricum.eu/wp-content/uploads/2016/12/67928641-health-wallpapers.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+  
+}
+.p p { 
+  display: block;
+  height: 20px;
+  width: 50%;
+  text-align:center;
+}
+label {
+    width:300px;
+    clear:left;
+    text-align:right;
+    padding-right:20px;
+    font-size: 21px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0; 
+  text-align:center;
+}
+h1 {
+  letter-spacing: 20px;
+    font-weight: 700;
+}
+input {
+  height: 30px;
+  flex: 0 20 150px;
+  margin-left: 20px;
+  background-color: #4d004d;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+
+
+.centered img {
+  width: 200px;
+  border-radius: 50%;
+ }
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(85, 150, 236);
+  height: 5;
+}
+
+.topnav a {
+  float: left;
+  color: rgba(13, 36, 66, 0.815);
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.topnav a:hover {
+  background-color: rgb(140, 197, 243);
+  color: #8bb9f5;
+}
+
+.topnav a.active {
+  background-color: #8bb9f5;
+  color: rgba(13, 36, 66, 0.815);
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  height: 99%;
+  background-color: rgba(85, 151, 236, 0.836);
+}
+.hyphens {
+   hyphens: auto;
+}
+
+
+.card-header{
+    background-color: transparent;
+}
+
+.centered{
+  position: relative;
+  height: 100px;
+  width: auto;
+  background-color: #B0E0E6;
+}
+
+.flex-container {
+  
+  display: flex;
+  background-color: rgba(85, 151, 236, 0.836);
+  
+}
+.flex-container > div {
+  border: 7px outset rgba(85, 151, 236, 0.836);
+  background-color: lightblue;
+  text-align: center;
+  padding:5px;
+  font-size: 13px;
+  margin: 10px;
+  
+}
+button {
+	width: max-content;
+    height: max-content;
+    background-color: rgba(85, 151, 236, 0.836);
+}
+.card{
+    width: 600px;
+    height: min-content;
+    padding-left: 0%;
+ padding-right: 0px;
+ margin-left: 70px;
+ background-color: rgba(85, 150, 236, 0.596)!important;
+}
+.nav-item{
+    
+    color:white;
+}
+.nav-link{
+    
+    color: white;
+    
+} 
+.card-text{
+    background-color: transparent;
+    color: white;
+}
+.card-body{
+    background-color: rgba(85, 150, 236, 0.459);
+    color: white;
+   
+    
+}
+.card-header{
+    background-color: rgba(85, 151, 236, 0.836);
+    color: white;
+   
+}
+
+ul.demo {
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+}
+
+
+</style>
+
+        <title>COVID PLUS</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>    
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <body style="background-color:#87CEFA;">
+            <div class="topnav">
+              <a href='index.html'>ACASĂ</a>
+            <a  href='index3.html'>STATISTICI</a>
+            <a  href='index4.html'>SĂNĂTATEA TA</a>
+            <a class="active" href='index10.html'>IGIENĂ</a>
+            <a  href='index12.html'>DISTANȚARE SOCIALĂ</a>
+            <a  href='index11.html'>VACCINARE</a>
+            <a  href='index3.html'>DESPRE NOI</a>
+            </div>
+      
+      <br>
+      <div class="card" style="max-width: 600px;">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index11.html">Igienă</a>
+                </li>
+                <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index12.html">Distanțare</a>
+                      </li>
+                  
+              </ul>
+            </div>
+            <div class="card-body">
+                
+              <p class="card-text"><h4 align="center"><b>Protejați-vă, evitați contactul direct!</b></h4></p>
+              <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/6.jpg" style="height: 300px;width: 400px; border-radius: 50%;margin-left: 70px;opacity: 0.7;">  
+              <p class="card-text">
+                    <br>
+                    <p>Pentru a putea preveni raspandirea virusului Covid19, trebuie respectate o serie de reguli de igiena. Acestea au drept scop, in primul rand,
+                        asigurarea protectiei personale, si, in al doilea rand, respectarea dreptului la sanatate a celor din jurul nostru. 
+                    </p><br>
+
+                    <h3 align="center"><b>Zece reguli simple de respectat</b></h3><br>
+                    <p>Regulile de igienă fundamentale pentru a te proteja pe tine însuți și pe ceilalți de contaminare sunt: păstrează cel puțin un metru distanță de alte persoane, 
+                        spală- te de multe ori pe mâini cu apă și săpun sau cu soluție hidroalcoolică, folosește masca. </p>
+                         <br>
+                         <b>10 Reguli:</b> <br><br> 
+                        <ul>
+                           <li>Spălaţi-vă des pe mâini cu apă și săpun. Dacă nu
+                            aveţi la dispoziţie apă și săpun, folosiți o soluție pe
+                            bază de alcool</li>
+                           <li>Evitați contactul apropiat cu persoane care
+                            suferă de infecții respiratorii acute</li>
+                           <li>Menţineţi, în cazul relaţiilor sociale, o distanţă
+                            de cel puţin un metru de fiecare persoană
+                            </li>
+                            <li>Evitați îmbrățișări şi strângeri de mână</li>
+                            <li>Strănutați sau tușiți într-un șervețel sau în plica
+                                cotului, evitând contactul mâinilor cu secrețiile
+                                căilor respiratorii</li>
+                            <li>Evitați utilizarea în comun a sticlelor și a paharelor,
+                                inclusiv în timpul activității sportive
+                                </li>
+                            <li>Nu atingeți ochii, nasul și gura cu mâinile</li>
+                            <li>Curățați suprafețele cu substanţe
+                                dezinfectanțe pe bază de clor sau alcool</li>
+                            <li>Nu luați medicamente antivirale și antibiotice,
+                                doar dacă sunt prescrise de medic
+                                </li>
+                            <li>Este foarte recomandat, în cadrul tuturor relaţiilor
+                                sociale, de a se folosi masca</li>
+
+                           </ul> 
+                           <br><br>
+                           <h3 align="center"><b>Spalarea corectă a mainilor</b></h3><br>
+                           <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/9.png" style="height: 400px;width: 500px;margin-left: 30px;border-radius: 14%;">  
+                           <br><br><br>
+                           <h3 align="center"><b>Dezinfectarea corectă a mainilor</b></h3><br>
+                           <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/10.png" style="height: 400px;width: 500px;margin-left: 30px;border-radius: 14%;">
+                           <br><br><br>
+                           <h3 align="center"><b>CUM SĂ PUNEM, SĂ PURTĂM,
+                            SĂ DĂM JOS ȘI SĂ ARUNCĂM
+                            O MASCĂ MEDICALĂ</b></h3><br>
+                           <img src="https://kidscreen.com/wp/wp-content/uploads/2020/08/cp-mask-minifeature.jpg" style="height: 300px;width: 400px;margin-left: 70px;margin-left: 70px;
+                           border-radius: 50%;opacity: 0.7;"><br>
+
+                           <ul>
+                            <li>Purtați mască doar dacă îngrijiți o persoană posibil infectată cu COVID-19</li>
+                            <li>Purtați mască dacă tușiți sau strănutați</li>
+                            <li>Menţineţi, în cazul relaţiilor sociale, o distanţă
+                             de cel puţin un metru de fiecare persoană
+                             </li>
+                             <li>Măștile sunt eficiente doar când sunt folosite în combinație cu curățarea
+                                frecventă a mâinilor cu soluție pe bază de alcool sau cu apă și săpun</li>
+                             <li>Dacă trebuie să purtați mască, este necesar să știți cum să o folosiți și
+                                cum să o aruncați în mod adecvat</li>
+                             </ul>
+                             <br><br>
+                           <b>Nu este obligatorie masca pentru:</b> <br><br>
+                           <ul>
+                            <li>copiii sub șase ani</li>
+                            <li>persoanele cu patologii sau dizabilităţi incompatibile cu utilizarea măștii</li>
+                            <li>persoanele care desfășoară activităţi sportive
+                             </li>
+                            </ul> <br>
+                            <br>
+                            <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/7.jpg" style="height: 300px;width: 400px;margin-left: 70px;margin-left: 70px;
+                            border-radius: 50%;opacity: 0.7;"><br><br> 
+                           <b><p>Înainte a pune masca,
+                                curățați mâinile cu
+                                soluție pe bază de
+                                alcool sau cu
+                                apă și săpun.</p></b>
+                                <b><p>Acoperiți gura și nasul
+                                    cu masca și asigurați-vă
+                                    că nu sunt spații
+                                    goale între față
+                                    și mască.</p></b>
+                                    <b> <p>Nu atingeți masca în timpul
+                                        purtării. Dacă puneți mâna
+                                        pe ea, curățați-vă mâinile
+                                        cu soluție pe bază
+                                        de alcool sau cu
+                                        apă și săpun.</p></b>
+                                        <b>  <p>Înlocuiți masca cu una
+                                            nouă imediat ce se
+                                            umezește. Nu refolosiți
+                                            măștile de unică
+                                            folosință.
+                                            </p></b>
+                                            <b><p>Scoateți masca astfel: apucați-o pe benzile elastice
+                                                (nu atingeți partea din față a măștii); aruncați-o
+                                                imediat la un coș cu capac, apoi curățați-vă mâinile cu
+                                                soluție pe bază de alcool sau cu apă și săpun.</p></b>
+                                                <b><p>Masca poate fi de unică folosință sau lavabilă, de asemenea, creată în casă și trebuie să acopere fața de la 
+                                                    bărbie până în partea de sus a nasului</p></b>
+                                                                                                                     
+
+ 
+                </p>
+                <a href="index10.html" class="btn btn-primary" >ÎNAPOI</a>
+            </div>
+          </div>
+        
+
+    </div>
+
+
+    
+
+
+</body>
+</html>

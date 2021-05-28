@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>COVID PLUS</title>   
+    
+<style>
+::placeholder {
+  color: white;
+  opacity: 0;
+   text-align:center;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://oricum.eu/wp-content/uploads/2016/12/67928641-health-wallpapers.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+  
+}
+.p p { 
+  display: block;
+  height: 20px;
+  width: 50%;
+  text-align:center;
+}
+label {
+    width:300px;
+    clear:left;
+    text-align:right;
+    padding-right:20px;
+    font-size: 21px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0; 
+  text-align:center;
+}
+h1 {
+  letter-spacing: 20px;
+    font-weight: 700;
+}
+input {
+  height: 30px;
+  flex: 0 20 150px;
+  margin-left: 20px;
+  background-color: #4d004d;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+
+
+.centered img {
+  width: 200px;
+  border-radius: 50%;
+ }
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(85, 150, 236);
+  height: 5;
+}
+
+.topnav a {
+  float: left;
+  color: rgba(13, 36, 66, 0.815);
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.topnav a:hover {
+  background-color: rgb(140, 197, 243);
+  color: #8bb9f5;
+}
+
+.topnav a.active {
+  background-color: #8bb9f5;
+  color: rgba(13, 36, 66, 0.815);
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  height: 99%;
+  background-color: rgba(85, 151, 236, 0.836);
+}
+.hyphens {
+   hyphens: auto;
+}
+
+
+.card-header{
+    background-color: transparent;
+}
+
+.centered{
+  position: relative;
+  height: 100px;
+  width: auto;
+  background-color: #B0E0E6;
+}
+
+.flex-container {
+  
+  display: flex;
+  background-color: rgba(85, 151, 236, 0.836);
+  
+}
+.flex-container > div {
+  border: 7px outset rgba(85, 151, 236, 0.836);
+  background-color: lightblue;
+  text-align: center;
+  padding:5px;
+  font-size: 13px;
+  margin: 10px;
+  
+}
+.card{
+    width: 600px;
+    height: min-content;
+    padding-left: 0%;
+ padding-right: 0px;
+ margin-left: 70px;
+ background-color: rgba(85, 150, 236, 0.596)!important;
+}
+.nav-item{
+    
+    color:white;
+    width: min-content;
+}
+.nav-link{
+    
+    color: white;
+    
+} 
+.card-text{
+    background-color: transparent;
+    color: white;
+}
+.card-body{
+    background-color: rgba(85, 150, 236, 0.459);
+    color: white;
+   
+    
+}
+.card-header{
+    background-color: rgba(85, 151, 236, 0.836);
+    color: white;
+   
+}
+img {
+  border-radius: 50%;
+  opacity: 0.65;
+  margin-left: 60px;
+}
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+</style>
+
+        <title>COVID PLUS</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>    
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+      
+        <body style="background-color:#87CEFA;">
+            <div class="topnav">
+              <a href='index.html'>ACASĂ</a>
+            <a  href='index3.html'>STATISTICI</a>
+            <a class="active" href='index4.html'>SĂNĂTATEA TA</a>
+            <a  href='index10.html'>IGIENĂ</a>
+            <a  href='index12.html'>DISTANȚARE SOCIALĂ</a>
+            <a  href='index11.html'>VACCINARE</a>
+            <a  href='index3.html'>DESPRE NOI</a>
+            </div>
+      
+      <br>
+      <div class="card" style="max-width: 600px;">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link " href="index5.html">Simptome</a>
+                </li>
+                <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index9.html">Transmitere</a>
+                      </li>
+                  <a class="nav-link" href="index6.html">Testare</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="index8.html">Tratament</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index7.html">Complicații</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+                
+                
+              <p class="card-text"><h4 align="center"><b> SARS-CoV-2 se transmite la fel ca si celelalte virusuri care produc infectii respiratorii</b></h3></p><br>
+              <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/1.png" style="height: 300px;width: 400px;">
+                <p class="card-text">
+                    <br><br>
+                     <ul>
+                        <li>Pe cale respiratorie, prin picaturile de secretie produse cand persoana infectata stranuta sau tuseste</li>
+                        <li>Prin contactul apropiat cu persoana infectata (atingere, strangere de maini)</li>
+                        <li>Prin atingerea suprafetelor contaminate, dupa care mainile neigienizate sunt duse la gura, nas sau ochi.</li>
+                    </ul>
+                  <br>
+                  <p>Odata patruns in corp, virusul ajunge in partea din spate a pasajelor nazale si se ataseaza de celulele mucoaselor, 
+                      se multiplica si ajung la nivelul plamanilor. De aici, se raspandeste si la alte tesuturi din organism.</p>    
+                   <br>
+                   <h3 align="center">  <b>Cat timp este contagioasa o persoana cu COVID-19?</h3></b><br><br>
+                   Oamenii de stiinta inca afla lucruri noi despre SARS-CoV-2. Ceea ce se stie in prezent este ca persoana cu COVID-19 poate transmite virusul inainte de a avea simptome (sunt asimptomatice).
+                    De aceea se recomanda distantarea sociala, purtarea mastii, spalatul des pe maini si izolarea la domiciliu in cazul celor care au simptome sugestive pentru COVID-19.
+                    Virusul poate supraviețui câteva ore pe diferite suprafețe (pe cupru sau pe carton) sau până la câteva zile (pe plastic sau pe oțel inoxidabil).
+
+                    <br><br> <b>Perioada medie de incubație pentru COVID-19 (adică perioada dintre expunerea la virus și debutul simptomelor) este estimată în prezent a fi între 5 și 6 zile, 
+                    fiind aproape întotdeauna între 1 și 14 zile. </b><br><br><br>
+                    <h3 align="center"><b>Persoanele deosebit de periclitate</b></h3><br><br>
+                    <p>Pentru anumite persoane, riscul de infectare cu coronavirus este deosebit de mare. Ele se
+                        pot îmbolnăvi foarte grav sau pot deceda. Deosebit de periclitate sunt:</p>
+                         <br>
+                        <ul>
+                           <li>Persoanele în vârstă: Riscul unor îmbolnăviri grave după infectarea cu noul
+                            coronavirus crește odată cu vârsta. Persoanele, care au vârsta de peste 50 de ani
+                            trebuie să se interneze mai degrabă. Existența unor boli anterioare crește riscul.</li>
+                           <li>Femeile însărcinate</li>
+                           <li>Adulții care suferă de trisomie 2</li>
+                           <li>Adulții care suferă de orice formă ale următoarelor boli cronice:</li>
+                           <ul>
+                           <li>Hipertensiune sanguină</li>
+                           <li>Boli cardiovasculare</li>
+                           <li>Diabet</li>
+                           <li>Bolile de la nivelul plămânilor și al căilor respiratorii</li>
+                           <li>Boli și terapii, care slăbesc sistemul imunitar</li>
+                           <li>Cancer</li>
+                           <li>Obezitate pronunțată (obezitate, BMI de 35 sau mai mult)</li>
+                           <li>Insuficiență renală Ciroză hepatică
+                        </li>
+                           
+                        </ul>
+                           </ul>
+                           <br>
+                </p>
+                <a href="index4.html" class="btn btn-primary" >ÎNAPOI</a>
+            </div>
+          </div>
+        
+
+    </div>
+
+
+    
+
+
+</body>
+</html>
