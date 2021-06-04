@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(85, 151, 236, 0.836);
+  height:25px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.active {
+  background-color: rgba(72, 124, 192, 0.836);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px 5px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(85, 151, 236, 0.836);
+  
+  min-width: 100px;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 2px 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: rgba(74, 129, 202, 0.356);
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(72, 124, 192, 0.384);
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+::placeholder {
+      color: white;
+      opacity: 1;
+      text-align: center;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #B0E0E6;
+    }
+
+    .p p {
+      display: block;
+      height: 20px;
+      width: 50%;
+      text-align: center;
+    }
+
+    label {
+      width: 300px;
+      clear: left;
+      text-align: right;
+      padding-right: 20px;
+      font-size: 21px;
+    }
+
+    ::placeholder {
+      color: white;
+      opacity: 1;
+      text-align: center;
+    }
+
+    h1 {
+      letter-spacing: 20px;
+      font-weight: 700;
+    }
+
+    input {
+      height: 30px;
+      flex: 0 20 150px;
+      margin-left: 20px;
+      background-color: #4d004d;
+      color: white;
+      border: none;
+      outline: none;
+      padding: 12px;
+    }
+    .myGrid {
+     
+     color:#87CEFA;
+     padding-left: 10px;
+   }
+
+   .container {
+     position: relative;
+     width: 90%;
+     height: 99%;
+     background-color: rgba(85, 151, 236, 0.836);
+   }
+
+   .hyphens {
+     hyphens: auto;
+   }
+
+   #canvas {
+     width: 100%;
+
+   }
+   .myDiv2 {
+
+border: 3px outset rgba(85, 151, 236, 0.836);
+background-color: rgba(173, 216, 230, 0.849);
+text-align: center;
+width: max-content;
+height: min-content;
+padding-left: 7px;
+padding-right: 7px;
+padding-top: 3px;
+padding-bottom: 3px;
+margin-left: 550px;
+border-radius: 50%;
+}
+
+.centered {
+position: relative;
+height: 100px;
+width: auto;
+background-color: #B0E0E6;
+}
+
+.myDiv:hover {
+background-color: #7aa6f7;
+}
+
+.flex-container {
+
+display: flex;
+background-color: rgba(85, 151, 236, 0.836);
+
+}
+
+.flex-container>div {
+border: 7px outset rgba(85, 151, 236, 0.836);
+background-color: lightblue;
+text-align: center;
+padding-top: 12px;
+border-radius: 50%;
+font-size: 15px;
+margin: 6px;
+
+}
+.ag-theme-alpine{
+--ag-foreground-color: white;;
+--ag-background-color: #8bb9f5;
+padding-left: 20px;
+--ag-header-background-color:rgba(85, 151, 236, 0.836);
+--ag-odd-row-background-color: #8bb9f5;
+--ag-control-panel-background-color: #8bb9f5;
+--ag-borders: true;
+}
+</style>
+<title>COVID PLUS</title>
+<script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+</head>
+<body style="background-color:#87CEFA;">
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">ACASĂ</a>
+  <a href="index15.html">DATE LA ZI</a>
+  <a href="index3.html">STATISTICI</a>
+  <div class="dropdown">
+    <button class="dropbtn">SĂNĂTATE 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="index4.html">Informații relevante</a>
+      <a href="index5.html">Simptome</a>
+      <a href="index9.html">Transmitere</a>
+      <a href="index6.html">Testare</a>
+      <a href="index8.html">Tratament</a>
+      <a href="index7.html">Complicații</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">PROTECȚIE 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="index11.html">Igienă</a>
+      <a href="index12.html">Distanțare</a>
+    </div>
+  </div>  
+    <a   href='index13.html'>VACCINARE</a>
+    <a  href='index14.html'>DESPRE NOI</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="content>"
+  <h4 align="center">Toate informațiile de care ai nevoie</h4><br>
+ </div>
+  <div id="demo7" class="myDiv2"></div><br>
+  <div class="flex-container">
+
+    <div id="demo" class="myDiv"></div>
+    <div id="demo8" class="myDiv"></div>
+    <div id="demo6" class="myDiv"></div>
+    <div id="demo4" class="myDiv"></div>
+    <div id="demo9" class="myDiv"></div>
+    <div id="demo12" class="myDiv"></div>
+    <div id="demo13" class="myDiv"></div>
+    <div id="demo10" class="myDiv"></div>
+    <div id="demo11" class="myDiv"></div>
+
+  </div>
+ 
+  <br><br>
+  <div class="p" align="left">
+    <div id="myGrid" class="ag-theme-alpine" style="height: 500px; width:650px;">
+    </div>
+  </div>
+
+<script>
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+
+<script src="../app.js"></script>
+</body>
+</html>

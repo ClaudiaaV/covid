@@ -45,6 +45,10 @@ function getTable() {
 }
 
 
+
+getTable()
+
+
 function getCases() {
 
     const api = `https://covid19.geo-spatial.org/api/dashboard/getDailyCases`;
@@ -64,20 +68,37 @@ function getCases() {
             document.getElementById("demo8").innerHTML = "Cazuri active:  " + vectorCazuri[ultimaZi]["Cazuri active"];
 
             document.getElementById("demo6").innerHTML = "Număr total cazuri: " + vectorCazuri[ultimaZi].Total;
-            document.getElementById("demo4").innerHTML = "Pacienți la terapie intensivă: " + vectorCazuri[ultimaZi]["Terapie intensiva"];
-            document.getElementById("demo9").innerHTML = "Număr persoane decedate: " + vectorCazuri[ultimaZi].Morti;
-            document.getElementById("demo10").innerHTML = "Număr teste efectuate: " + vectorCazuri[ultimaZi]["Nr de teste pe zi"];
+            
+            document.getElementById("demo9").innerHTML = "Persoane decedate: " + vectorCazuri[ultimaZi].Morti;
+            document.getElementById("demo10").innerHTML = "Teste efectuate: " + vectorCazuri[ultimaZi]["Nr de teste pe zi"];
             document.getElementById("demo11").innerHTML = "Procent teste pozitive: " + vectorCazuri[ultimaZi]["Procentaj de teste pozitive"] + "%";
             document.getElementById("demo12").innerHTML = "Persoane vindecate: " + vectorCazuri[ultimaZi]["Vindecati pe zi"];
             document.getElementById("demo13").innerHTML = "Total persoane vindecate: " + vectorCazuri[ultimaZi].Vindecati;
+            document.getElementById("demo14").innerHTML = "Persoane carantinate: " + vectorCazuri[ultimaZi].Carantina;
+            document.getElementById("demo15").innerHTML = "Persoane izolate: " + vectorCazuri[ultimaZi].Izolare;
+            document.getElementById("demo16").innerHTML = "Persoane aflate in stare grava: " + vectorCazuri[ultimaZi]["Stare grava"];
+            document.getElementById("demo17").innerHTML = "Persoane la terapie intensivă: " + vectorCazuri[ultimaZi]["Terapie intensiva"];
+            document.getElementById("demo18").innerHTML = "Total teste efectuate: " + vectorCazuri[ultimaZi]["Nr de teste"];
+            
+    
+            document.getElementById("demo21").innerHTML = "Rata de crestere a cazurilor: " + vectorCazuri[ultimaZi]["Rata de crestere (caz activ)"] + "%";
+        
 
+            
         })
 
 }
 
 getCases()
 
-
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 
 
 

@@ -3,6 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <title>COVID PLUS</title>
 
   <style>
@@ -18,12 +19,7 @@
       background-color: #B0E0E6;
     }
 
-    .p p {
-      display: block;
-      height: 20px;
-      width: 50%;
-      text-align: center;
-    }
+    
 
     label {
       width: 300px;
@@ -40,8 +36,8 @@
     }
 
     h1 {
-      letter-spacing: 20px;
-      font-weight: 700;
+      letter-spacing: 10px;
+      font-weight: 500;
     }
 
     input {
@@ -69,50 +65,34 @@
       border-radius: 50%;
     }
 
-    .topnav {
-      overflow: hidden;
-      background-color: rgba(85, 151, 236, 0.836);
-      height: 5;
-    }
-
-    .topnav a {
-      float: left;
-      color: rgba(13, 36, 66, 0.815);
-      text-align: center;
-      padding: 5px 20px;
-      text-decoration: none;
+    .navbar {
+     
+      padding-top:1px;
+      padding-bottom: 1px;
+      padding-left: 10px;
       font-size: 10px;
     }
 
-    .topnav a:hover {
+   
+
+  .navbar a:hover {
       background-color: rgb(140, 197, 243);
       color: #8bb9f5;
     }
 
-    .topnav a.active {
-      background-color: #8bb9f5;
-      color: rgba(13, 36, 66, 0.815);
-    }
+ .nav-item{
+   padding-left: 20px;
+   padding-right: 20px;
+   color:white;
+ }
+.navbar-brand{
+  padding-left: 10px;
+}
 
     .myGrid {
-      width: 500px;
-      height: 1050px;
-    }
-
-    .container {
-      position: relative;
-      width: 90%;
-      height: 99%;
-      background-color: rgba(85, 151, 236, 0.836);
-    }
-
-    .hyphens {
-      hyphens: auto;
-    }
-
-    #canvas {
-      width: 100%;
-
+     
+      color:#87CEFA;
+      padding-left: 10px;
     }
 
     /* .myDiv{
@@ -126,17 +106,55 @@
   padding-right: 5px;
  
 } */
+#harta{
+  
+  height:500px;
+  width:100px;
+}
     .myDiv2 {
 
-      border: 5px outset rgba(13, 36, 66, 0.815);
+      border: 3px outset rgba(85, 151, 236, 0.836);
       background-color: rgba(173, 216, 230, 0.849);
       text-align: center;
       width: max-content;
       height: min-content;
-      padding-left: 0%;
-      padding-right: 5px;
+      padding-left: 7px;
+      padding-right: 7px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      margin-right: 450px;
       margin-left: 550px;
+      border-radius: 50%;
     }
+
+    .myDiv3 {
+
+border: 5px outset rgba(85, 151, 236, 0.836);
+background-color: rgba(173, 216, 230, 0.849);
+text-align:wrap;
+width: 280px;
+height:100px;
+margin-left:15px;
+margin-right: 20px;
+margin-top: 10px;
+padding-top: 130px;
+margin-bottom: 8px;
+}
+.myDiv4 {
+
+border: 20px outset rgba(85, 151, 236, 0.836);
+background-color: rgba(173, 216, 230, 0.849);
+text-align: wrap;
+width: 150px;
+height:110px;
+margin-left:40px;
+margin-right: 50px;
+margin-top: 10px;
+padding-top: 8px;
+margin-bottom: 6px;
+
+
+}
 
     .centered {
       position: relative;
@@ -145,7 +163,10 @@
       background-color: #B0E0E6;
     }
 
-    .myDiv:hover {
+    .myDiv3:hover {
+      background-color: #7aa6f7;
+    }
+    .myDiv4:hover {
       background-color: #7aa6f7;
     }
 
@@ -155,16 +176,60 @@
       background-color: rgba(85, 151, 236, 0.836);
 
     }
+    .flex-container1 {
+
+display: flex;
+background-color: rgba(85, 151, 236, 0.836);
+
+} 
+.flex-container2>div {
+      border: 9px outset rgba(85, 151, 236, 0.836);
+      background-color: transparent;
+      text-align: center;
+      padding-top:5px;
+      border-radius: 50%;
+      font-size: 16px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color:whitesmoke;
+      
+    }
 
     .flex-container>div {
-      border: 7px outset rgba(85, 151, 236, 0.836);
-      background-color: lightblue;
+      border: 12px outset rgba(85, 151, 236, 0.836);
+      background-color: #87CEFA;;
       text-align: center;
-      padding: 5px;
-      font-size: 13px;
-      margin: 10px;
-
+      padding-top:20px;
+      border-radius: 20%;
+      font-size: 18px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color:whitesmoke;
+      
     }
+     .flex-container1>div {
+      border: 12px outset rgba(85, 151, 236, 0.836);
+      background-color: #87CEFA;;
+      text-align: center;
+      padding-top: 8px;
+      border-radius: 30%;
+      font-size: 16px;
+      margin-left: 10px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color:whitesmoke;
+     
+    
+
+    } 
+    .ag-theme-alpine{
+      --ag-foreground-color: white;;
+      --ag-background-color: #8bb9f5;
+     padding-left: 0px;
+      --ag-header-background-color:rgba(85, 151, 236, 0.836);
+      --ag-odd-row-background-color: #8bb9f5;
+      --ag-control-panel-background-color: #8bb9f5;
+     --ag-borders: true;
+    }
+   
+
   </style>
 
   <title>COVID PLUS</title>
@@ -172,49 +237,123 @@
 
   <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+  
   <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 
-<body>
+
 
   <body style="background-color:#87CEFA;">
-    <div class="topnav">
-      <a href='index.html'>ACASĂ</a>
-      <a class="active" href='index2.html'>DATE LA ZI</a>
-      <a href='index3.html'>STATISTICI</a>
-      <a href='index3.html'>DESPRE NOI</a>
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(85, 150, 236); height: 27px;">
+    <a class="navbar-brand" href="index.html" style="font-size: 16px;color:white;">ACASĂ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" style="color: white;" href="index2.html">DATE LA ZI <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: white;" href="index3.html">STATISTICI</a>
+        </li>
+        <li class="nav-item dropdown" style="color: white;">
+          <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            SĂNĂTATE
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgba(85, 151, 236, 0.836)">
+            <a class="dropdown-item" style="color: white;" href="index4.html">Informații relevante</a>
+            <a class="dropdown-item" style="color: white;"  href="index5.html">Simptome</a>
+            <a class="dropdown-item" style="color: white;"  href="index9.html">Transmitere</a>
+            <a class="dropdown-item" style="color: white;"href="index6.html">Testare</a>
+            <a class="dropdown-item" style="color: white;"href="index8.html">Tratament</a>
+            <a class="dropdown-item" style="color: white;"href="index7.html">Complicații</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            PROTECȚIE
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color: rgba(85, 151, 236, 0.836)">
+            <a class="dropdown-item" style="color: white;" href="index11.html">Igienă</a>
+            <a class="dropdown-item" style="color: white;" href="index12.html">Distanțare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: white;" href="index13.html">VACCINARE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: white;" href="index3.html">DESPRE NOI</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <!--CONTENT-->
+   <div class="content">
+    <h1 align="center" style="padding-top: 15px; color:whitesmoke;">DATE LA ZI</h1><br>
+   </div>
+   <div class="flex-container2">
+    <div id="demo7" class="myDiv2"></div></div><br>
+
+    <div class="flex-container" >
+
+      <div id="demo"  class="myDiv3"></div>
+      <div id="demo8"  class="myDiv3"></div>
+      <div id="demo6"  class="myDiv3"></div>
+      <div id="demo21" class="myDiv3"></div>
+      
+      
+
     </div>
 
-    <h1 align="center">COVID PLUS RO</h1>
-    <h4 align="center">Toate informațiile de care ai nevoie</h4><br>
+    <div class="flex-container1">
+      <div id="demo10"  class="myDiv4"></div>
+      <div id="demo18" class="myDiv4"></div>
+      <div id="demo11" class="myDiv4"></div>
+      <div id="demo12" class="myDiv4"></div>
+      <div id="demo13" class="myDiv4"></div>
+     <div id="demo9" class="myDiv4"></div>
+      
+    </div>
 
-    <div id="demo7" class="myDiv2"></div><br>
     <div class="flex-container">
 
-      <div id="demo" class="myDiv"></div>
-      <div id="demo8" class="myDiv"></div>
-      <div id="demo6" class="myDiv"></div>
-      <div id="demo4" class="myDiv"></div>
-      <div id="demo9" class="myDiv"></div>
-      <div id="demo12" class="myDiv"></div>
-      <div id="demo13" class="myDiv"></div>
-      <div id="demo10" class="myDiv"></div>
-      <div id="demo11" class="myDiv"></div>
+      <div id="demo14" class="myDiv3"></div>
+      <div id="demo15" class="myDiv3"></div>
+      <div id="demo16" class="myDiv3"></div>
+      <div id="demo17" class="myDiv3"></div>
+      
+      
+  
+      
 
-    </div>
-    <div class="d-flex justify-content-center">
-      <button onclick="getTable()" class="btn btn-dark" align="center">Try a random Cocktail!</button>
-    </div>
-    </div>
-    </div>
+    </div> 
+    
+   
+      <!-- <div class="col-6"><h5 style="padding-left: 50px; color: white; width: max-content;">Număr de cazuri în funcție de județ</h5></div> -->
+      <div class="col-4"><div id="myGrid" class="ag-theme-alpine" style="height: 500px; width:690px;"></div></div>
+      <!-- <div class="col-6" style="padding-left: 50px;"><iframe scrolling="no" id="harta" style="border:none;" src="https://datelazi.ro/embed/counties-map"></iframe></div> -->
+    
 
-    <div class="p" align="center">
-      <div id="myGrid" class="ag-theme-alpine" style="height: 500px; width:590px;">
-      </div>
-    </div>
+
+    
+    <br><br>
+    
+    
+  
+
+
+
     <!-- <div class="centered">
           <div class="d-flex justify-content-center">
             <div id="cases" class="ag-theme-alpine" style="height: 500px; width:590px;">
@@ -252,10 +391,21 @@
         
   }  -->
 
+  
 
+    
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="../app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   </body>
 

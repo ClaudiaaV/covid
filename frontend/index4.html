@@ -65,31 +65,29 @@ button {
   border-radius: 50%;
  }
 
-.topnav {
-  overflow: hidden;
-  background-color: rgb(85, 150, 236);
-  height: 5;
-}
+ .navbar {
+     
+     padding-top:1px;
+     padding-bottom: 1px;
+     padding-left: 10px;
+     font-size: 10px;
+   }
 
-.topnav a {
-  float: left;
-  color: rgba(13, 36, 66, 0.815);
-  text-align: center;
-  padding: 5px 20px;
-  text-decoration: none;
-  font-size: 10px;
-}
+  
 
-.topnav a:hover {
-  background-color: rgb(140, 197, 243);
-  color: #8bb9f5;
-}
+ .navbar a:hover {
+     background-color: rgb(140, 197, 243);
+     color: #8bb9f5;
+   }
 
-.topnav a.active {
-  background-color: #8bb9f5;
-  color: rgba(13, 36, 66, 0.815);
+.nav-item{
+  padding-left: 20px;
+  padding-right: 20px;
+  color:white;
 }
-
+.navbar-brand{
+ padding-left: 10px;
+}
 .container {
   position: relative;
   width: 90%;
@@ -154,6 +152,7 @@ button {
    
     
 }
+
 .card-header{
     background-color: rgba(85, 151, 236, 0.836);
     color: white;
@@ -240,22 +239,59 @@ img {
     <body>
       
       <body style="background-color:#87CEFA;">
-        <div class="topnav">
-            <a href='index.html'>ACASĂ</a>
-          <a  href='index3.html'>STATISTICI</a>
-          <a class="active"   href='index4.html'>SĂNĂTATEA TA</a>
-          <a href='index10.html'>IGIENĂ</a>
-          <a   href='index12.html'>DISTANȚARE SOCIALĂ</a>
-          <a  href='index13.html'>VACCINARE</a>
-          <a  href='index14.html'>DESPRE NOI</a>
-          </div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(85, 150, 236); height: 27px;">
+    <a class="navbar-brand" href="index.html" style="font-size: 16px;color:white;">ACASĂ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" style="color: white;" href="index2.html">DATE LA ZI <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: white;" href="index3.html">STATISTICI</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            SĂNĂTATE
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgba(85, 151, 236, 0.836)">
+            <a class="dropdown-item" style="color: white;" href="index4.html">Informații relevante</a>
+            <a class="dropdown-item" style="color: white;"  href="index5.html">Simptome</a>
+            <a class="dropdown-item" style="color: white;"  href="index9.html">Transmitere</a>
+            <a class="dropdown-item" style="color: white;"href="index6.html">Testare</a>
+            <a class="dropdown-item" style="color: white;"href="index8.html">Tratament</a>
+            <a class="dropdown-item" style="color: white;"href="index7.html">Complicații</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            PROTECȚIE
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color: rgba(85, 151, 236, 0.836)">
+            <a class="dropdown-item" style="color: white;" href="index11.html">Igienă</a>
+            <a class="dropdown-item" style="color: white;" href="index12.html">Distanțare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: white;" href="index13.html">VACCINARE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: white;" href="index3.html">DESPRE NOI</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
       
-      <br>
+    <br>
         <div class="card text-center" style="max-width: 600px;">
             <div class="card-header">
                 <ul class="nav nav-pills card-header-pills">
                     <li class="nav-item">
-                      <a class="nav-link active" href="index4.html">Simptome si informații relevante</a>
+                      <a class="nav-link active" href="index4.html">Simptome și informații relevante</a>
                     </li>
                       </li>
                       <li class="nav-item">
@@ -264,113 +300,29 @@ img {
                     <li class="nav-item">
                       <a class="nav-link" href="index11.html">Vaccinare</a>
                     </li>
-                    
-                    
                   </ul>
                 </div>
               
          
             <div class="card-body">
              <img class="card-img-top" src="https://sanatatea.tv/wp-content/uploads/2020/05/covid_19_antibody.jpg"  alt="Card image" style="width:50%"><p></p>
-              <h3 class="card-title" align="center">Consultă Simptomele</h3>
+              <h3 class="card-title" align="center">Am adunat toate informațiile de care ai nevoie</h3>
               <p class="card-text">Prezinți unul dintre simptomele specifice COVID19?</p>
               <p class="card-text">Vrei să înțelegi mai bine complicațiile ce pot să apară?</p>
-                <p class="card-text">Am adunat pentru tine toate informațiile de care ai nevoie!</p>
+               
               <a href="index5.html" class="btn btn-primary" >Informează-te</a>
             </div>
           </div>
         
 
-          <div class="ui-card ui-corner-top">
-            <div class="ui-card-body text-center" style="padding: 0.3em">
-              <div class="lg-only">
-                <ul id="layers">
-                  <li *ngFor="let item of maps">
-                    <button pButton
-                            label="{{item.title}}"
-                            [ngClass]="{'ui-button-secondary': item.id !== activeMap.id}"
-                            (click)="setActiveLayer(item)">
-                    </button>
-                  </li>
-                  <!-- <li><button pButton label="Zone carantina" [ngClass]="{'ui-button-secondary': activeMap.id !== 'active'}" (click)="setActiveLayer('active')"></button></li> -->
-                </ul>
-              </div>
-              <div class="xs-only">
-                <h2 style="text-align: center;">Hartă cazuri</h2>
-          
-                <p-dropdown [options]="maps"
-                            [(ngModel)]="activeMap"
-                            optionLabel="title"
-                            [style]="{'width': '100%', 'margin-bottom': '5px', 'margin-top': '5px'}" (onChange)="activeMapChange()">
-                </p-dropdown>
-              </div>
-            </div>
-          </div>
-          <div id="map" class="ui-card ui-corner-bottom">
-            <div class="info-modal" *ngIf="selectedFeature" [ngStyle]="{background: activeMap?.style?.fill.color}">
-              <h3>{{selectedFeature.get('county')}}</h3>
-              <p>
-                Cazuri confirmate: {{selectedFeature.get('total_case')}}
-                <em style="display: block;font-size: 12px;">(după locul confirmării)</em>
-              </p>
-              <p>
-                Total vindecari: {{selectedFeature.get('total_healed')}}
-                <em style="display: block;font-size: 12px;">(după locul externării)</em>
-              </p>
-              <p>Total decese: {{selectedFeature.get('total_dead')}}</p>
-              <!-- <p>Cazuri active: {{selectedFeature.get('total_active')}}</p> -->
-            </div>
-          
-            <div class="map-legend" *ngIf="legendVisible">
-              <p><strong>Legenda</strong></p>
-              <div [innerHtml]="generateLegend()"></div>
-            </div>
-          
-              <div class="info-modal" *ngIf="selectedQuarantineZone">
-                <h3>{{selectedQuarantineZone.get('uat')}}</h3>
-                <p>Populatie: {{selectedQuarantineZone.get('population')}}</p>
-              </div>
-          
-              <div class="info-modal" *ngIf="selectedRoad">
-                <h3>{{selectedRoad.get('ref')}}</h3>
-              </div>
-          
-              <div class="info-modal" *ngIf="selectedCheckpoint">
-                <h3>Punct de control</h3>
-                <p>{{selectedCheckpoint.get('Descriere')}}</p>
-              </div>
-          
-              <div class="info-modal" *ngIf="selectedMetropolitan" style="max-width: 200px;">
-                <h3>{{selectedMetropolitan.get('uat')}}</h3>
-                <p *ngIf="selectedMetropolitan.get('metropolitan_zone')">Zona: {{selectedMetropolitan.get('metropolitan_zone')}}</p>
-                <!-- <p>An infiintare: {{selectedMetropolitan.get('an_infiintare')}}</p> -->
-                <p>Populatie: {{selectedMetropolitan.get('population')}}</p>
-              </div>
-          </div>
-          
-          <p-dialog header="Atenție" styleClass="disclaimer" [(visible)]="displayDisclaimer" [responsive]="true" [modal]="true">
-            <div>
-             <p>
-               Începând cu data de 02.04.2020, autoritățile nu mai comunică 
-              numărul de vindecări la nivel de județ, prezentând doar numărul total 
-              al pacienților declarați vindecați. Din această cauză, etichetăm 
-              vindecările noi cu cu locația "JUDEȚ NECUNOSCUT".
-            </p>
-          
-            <p>
-              Echipa de voluntari 
-              verifică sistematic presa locală și anunțurile autorităților publice 
-              locale (DSP-uri, spitale, etc.) și, acolo unde găsește informații 
-              verificabile, mută cazurile din "JUDEȚ NECUNOSCUT" în județul 
-              corect de vindecare.
-            </p> 
-            </div>
-          
-            <p-footer>
-              <div style="text-align: center;">
-                <button pButton type="button" label="Inchide"  class="ui-button-warning" (click)="showDisclaimer(false)"></button>
-              </div>
-            </p-footer>
-          </p-dialog>
+          <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+          <script src="../app.js"></script>
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>        
 </body>
 </html>

@@ -60,31 +60,29 @@ input {
   border-radius: 50%;
  }
 
-.topnav {
-  overflow: hidden;
-  background-color: rgb(85, 150, 236);
-  height: 5;
-}
+ .navbar {
+     
+     padding-top:1px;
+     padding-bottom: 1px;
+     padding-left: 10px;
+     font-size: 10px;
+   }
 
-.topnav a {
-  float: left;
-  color: rgba(13, 36, 66, 0.815);
-  text-align: center;
-  padding: 5px 20px;
-  text-decoration: none;
-  font-size: 10px;
-}
+  
 
-.topnav a:hover {
-  background-color: rgb(140, 197, 243);
-  color: #8bb9f5;
-}
+ .navbar a:hover {
+     background-color: rgb(140, 197, 243);
+     color: #8bb9f5;
+   }
 
-.topnav a.active {
-  background-color: #8bb9f5;
-  color: rgba(13, 36, 66, 0.815);
+.nav-item{
+  padding-left: 20px;
+  padding-right: 20px;
+  color:white;
 }
-
+.navbar-brand{
+ padding-left: 10px;
+}
 .container {
   position: relative;
   width: 90%;
@@ -143,7 +141,7 @@ button {
     
     color: white;
     
-} 
+}
 .card-text{
     background-color: transparent;
     color: white;
@@ -185,15 +183,52 @@ img {
 
     <body>
         <body style="background-color:#87CEFA;">
-            <div class="topnav">
-                <a href='index.html'>ACASĂ</a>
-              <a  href='index3.html'>STATISTICI</a>
-              <a class="active"   href='index4.html'>SĂNĂTATEA TA</a>
-              <a href='index10.html'>IGIENĂ</a>
-              <a   href='index12.html'>DISTANȚARE SOCIALĂ</a>
-              <a  href='index13.html'>VACCINARE</a>
-              <a  href='index14.html'>DESPRE NOI</a>
-              </div>
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(85, 150, 236); height: 27px;">
+            <a class="navbar-brand" href="index.html" style="font-size: 16px;color:white;">ACASĂ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" style="color: white;" href="index2.html">DATE LA ZI <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="index3.html">STATISTICI</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SĂNĂTATE
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgba(85, 151, 236, 0.836)">
+                    <a class="dropdown-item" style="color: white;" href="index4.html">Informații relevante</a>
+                    <a class="dropdown-item" style="color: white;"  href="index5.html">Simptome</a>
+                    <a class="dropdown-item" style="color: white;"  href="index9.html">Transmitere</a>
+                    <a class="dropdown-item" style="color: white;"href="index6.html">Testare</a>
+                    <a class="dropdown-item" style="color: white;"href="index8.html">Tratament</a>
+                    <a class="dropdown-item" style="color: white;"href="index7.html">Complicații</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PROTECȚIE
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color: rgba(85, 151, 236, 0.836)">
+                    <a class="dropdown-item" style="color: white;" href="index11.html">Igienă</a>
+                    <a class="dropdown-item" style="color: white;" href="index12.html">Distanțare</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="index13.html">VACCINARE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="index3.html">DESPRE NOI</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
       
       <br>
       <div class="card " style="max-width: 600px;">
@@ -346,7 +381,17 @@ img {
     </div>
 
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="../app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 
 </body>
