@@ -63,22 +63,22 @@ function getCases() {
             let vectorCazuri = data.data.data
             let ultimaZi = vectorCazuri.length - 1 // iei automat ultima zi adica dimensiunea vectorului -1
 
-            document.getElementById("demo7").innerHTML = "Data: " + vectorCazuri[ultimaZi].Data;
-            document.getElementById("demo").innerHTML = "Cazuri înregistrate: " + vectorCazuri[ultimaZi].Cazuri;
-            document.getElementById("demo8").innerHTML = "Cazuri active:  " + vectorCazuri[ultimaZi]["Cazuri active"];
+            document.getElementById("demo7").innerHTML = "Data: " + `${vectorCazuri[ultimaZi].Data ?? 'Nu exista date'}`;
+            document.getElementById("demo").innerHTML = "Cazuri înregistrate: " + `${vectorCazuri[ultimaZi].Cazuri ?? 'Nu exista date'}`;
+            document.getElementById("demo8").innerHTML = "Cazuri active:  " + `${vectorCazuri[ultimaZi]['Cazuri active'] ?? 'Nu exista date'}`;
 
-            document.getElementById("demo6").innerHTML = "Număr total cazuri: " + vectorCazuri[ultimaZi].Total;
+            document.getElementById("demo6").innerHTML = "Număr total cazuri: " + `${vectorCazuri[ultimaZi].Total ?? 'Nu exista date'}`;
             
-            document.getElementById("demo9").innerHTML = "Persoane decedate: " + vectorCazuri[ultimaZi].Morti;
-            document.getElementById("demo10").innerHTML = "Teste efectuate: " + vectorCazuri[ultimaZi]["Nr de teste pe zi"];
+            document.getElementById("demo9").innerHTML = "Persoane decedate: " + `${vectorCazuri[ultimaZi].Morti ?? 'Nu exista date'}`;
+            document.getElementById("demo10").innerHTML = "Teste efectuate: " + `${vectorCazuri[ultimaZi]["Nr de teste pe zi"] ?? 'Nu exista date'}`;
             document.getElementById("demo11").innerHTML = "Procent teste pozitive: " + vectorCazuri[ultimaZi]["Procentaj de teste pozitive"] + "%";
             document.getElementById("demo12").innerHTML = "Persoane vindecate: " + vectorCazuri[ultimaZi]["Vindecati pe zi"];
-            document.getElementById("demo13").innerHTML = "Total persoane vindecate: " + vectorCazuri[ultimaZi].Vindecati;
-            document.getElementById("demo14").innerHTML = "Persoane carantinate: " + vectorCazuri[ultimaZi].Carantina;
-            document.getElementById("demo15").innerHTML = "Persoane izolate: " + vectorCazuri[ultimaZi].Izolare;
-            document.getElementById("demo16").innerHTML = "Persoane aflate in stare grava: " + vectorCazuri[ultimaZi]["Stare grava"];
-            document.getElementById("demo17").innerHTML = "Persoane la terapie intensivă: " + vectorCazuri[ultimaZi]["Terapie intensiva"];
-            document.getElementById("demo18").innerHTML = "Total teste efectuate: " + vectorCazuri[ultimaZi]["Nr de teste"];
+            document.getElementById("demo13").innerHTML = "Total persoane vindecate: " + `${vectorCazuri[ultimaZi].Vindecati ?? 'Nu exista date'}`;
+            document.getElementById("demo14").innerHTML = "Persoane carantinate: " + `${vectorCazuri[ultimaZi].Carantina ?? 'Nu exista date'}`;
+            document.getElementById("demo15").innerHTML = "Persoane izolate: " + `${vectorCazuri[ultimaZi].Izolare ?? 'Nu exista date'}`;
+            document.getElementById("demo16").innerHTML = "Persoane aflate in stare grava: " + `${vectorCazuri[ultimaZi]['Stare grava'] ?? 'Nu exista date'}`;
+            document.getElementById("demo17").innerHTML = "Persoane la terapie intensivă: " + `${vectorCazuri[ultimaZi]['Terapie intensiva'] ?? 'Nu exista date'}`;
+            document.getElementById("demo18").innerHTML = "Total teste efectuate: " + `${vectorCazuri[ultimaZi]['Nr de teste'] ?? 'Nu exista date'}`;
             
     
             document.getElementById("demo21").innerHTML = "Rata de crestere a cazurilor: " + vectorCazuri[ultimaZi]["Rata de crestere (caz activ)"] + "%";
