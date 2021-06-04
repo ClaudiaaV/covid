@@ -236,11 +236,41 @@
     <div class="card-columns"></div>
 
     <!-- GRAFICE -->
+    <div class="row mx-0">
+      <div class="col-6">
+        <div id="cazuriPeZi"></div>
+      </div>
+      <div class="col-6">
+        <div id="vindecatiPeZi"></div>
+      </div>
+    </div>
+
+    <div class="row mx-0">
+      <div class="col-6">
+        <div id="mortiPeZi"></div>
+      </div>
+      <div class="col-6">
+        <div id="terapieIntensiva"></div>
+      </div>
+    </div>
+
+    <div class="row mx-0">
+      <div class="col-6">
+        <div id="numarTeste"></div>
+      </div>
+      <div class="col-6">
+        <div id="rataCrestere"></div>
+      </div>
+    </div>
+
+    <!-- DACA VREI SA FIE PE TOATA PAGINA CA INAINTE DECOMENTEAZA ASTA SI STERGE SUS
     <div id="cazuriPeZi"></div>
     <div id="vindecatiPeZi"></div>
     <div id="mortiPeZi"></div>
-    
-
+    <div id="terapieIntensiva"></div>
+    <div id="terapieIntensiva"></div>
+    <div id="numarTeste"></div>
+    <div id="rataCrestere"></div> -->
 
     <div id="pie" class="card text-white bg-primary mb-3" style="max-width: 20rem;">
       <div class="card-header" align="center">Procent cazuri in functie de sex</div>
@@ -310,11 +340,16 @@
           datePeZi = vectorCazuri.map(cazPeZi => cazPeZi.Data);
           totalPeZi = vectorCazuri.map(cazPeZi => cazPeZi.Total);
           mortiPeZi = vectorCazuri.map(cazPeZi => cazPeZi.Morti);
+          numarTeste = vectorCazuri.map(cazPeZi => cazPeZi['Nr de teste']);
+          terapieIntensiva = vectorCazuri.map(cazPeZi => cazPeZi['Terapie intensiva']);
+          rataCrestere = vectorCazuri.map(cazPeZi => cazPeZi['Rata de crestere']);
           vindecatiPeZi = vectorCazuri.map(cazPeZi => cazPeZi['Vindecati pe zi']);
           getChart(cazuriPeZi,datePeZi,'cazuriPeZi', 'Cazuri pe zi', 'Cazuri noi')
           getChart(vindecatiPeZi,datePeZi,'vindecatiPeZi', 'Vindecati pe zi', 'Vindecati')
           getChart(mortiPeZi,datePeZi,'mortiPeZi', 'Decese pe zi', 'Decese')
-          
+          getColumnChart(terapieIntensiva, datePeZi,'terapieIntensiva', 'Terapie Intensiva', 'Terapie Intensiva')
+          getColumnChart(numarTeste, datePeZi,'numarTeste', 'Numar Teste', 'Teste')
+          getColumnChartBetweenValues(rataCrestere, datePeZi,'rataCrestere', 'Rata Crestere', 'Rata Crestere', 1, 2)
         })
     }
 
@@ -322,7 +357,7 @@
       var options = {
         series: [{
           name: numeIntrare,
-          data: verticalData
+          data: verticalData,
         }],
         chart: {
           height: 350,
@@ -330,6 +365,12 @@
           zoom: {
             enabled: true
           },
+        },
+        yaxis: {
+          min: 0,
+          title: {
+              text: numeIntrare,
+          }
         },
         dataLabels: {
           enabled: false
@@ -358,6 +399,102 @@
       var chart = new ApexCharts(document.querySelector('#' + tableId), options);
       chart.render();
     }
+
+    function getColumnChart(verticalData, orizontalData, tableId, numeGrafic = 'Grafic', numeIntrare = 'Y') {
+      var options = {
+        series: [{
+          name: numeIntrare,
+          data: verticalData
+        }],
+        chart: {
+          height: 350,
+          type: 'bar',
+          zoom: {
+            enabled: true
+          },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        yaxis: {
+          min: 0,
+          title: {
+              text: numeIntrare,
+          }
+        },
+        stroke: {
+          curve: 'straight'
+        },
+        title: {
+          text: numeGrafic,
+          align: 'centred'
+        },
+        grid: {
+          row: {
+            colors: ['#ffffff', 'transparent'], // takes an array which will be repeated on columns
+            opacity: 0.5
+          },
+        },
+        xaxis: {
+          categories: orizontalData
+        },
+        legend: {
+          horizontalAlign: 'left'
+        }
+      };
+
+      var chart = new ApexCharts(document.querySelector('#' + tableId), options);
+      chart.render();
+    }
+
+    function getColumnChartBetweenValues(verticalData, orizontalData, tableId, numeGrafic = 'Grafic', numeIntrare = 'Y', minVal, maxVal) {
+      var options = {
+        series: [{
+          name: numeIntrare,
+          data: verticalData
+        }],
+        chart: {
+          height: 350,
+          type: 'bar',
+          zoom: {
+            enabled: true
+          },
+        },
+        yaxis: {
+          min: minVal,
+          max: maxVal,
+          title: {
+              text: numeIntrare,
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'straight'
+        },
+        title: {
+          text: numeGrafic,
+          align: 'centred'
+        },
+        grid: {
+          row: {
+            colors: ['#ffffff', 'transparent'], // takes an array which will be repeated on columns
+            opacity: 0.5
+          },
+        },
+        xaxis: {
+          categories: orizontalData
+        },
+        legend: {
+          horizontalAlign: 'left'
+        }
+      };
+      
+
+      var chart = new ApexCharts(document.querySelector('#' + tableId), options);
+      chart.render();
+  }
 
   </script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>

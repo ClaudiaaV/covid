@@ -12,7 +12,7 @@ function getTable() {
 
     const gridOptions = {
         columnDefs: columnDefs,
-        rowSelection: 'multiple',
+        rowSelection: 'multiple'
     };
 
     // lookup the container we want the Grid to use
