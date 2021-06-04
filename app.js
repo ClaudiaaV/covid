@@ -1,18 +1,18 @@
 function getTable() {
 
     const columnDefs = [
-        { field: "county_code", maxWidth: 110 },
-        { field: "county", maxWidth: 120 },
-        { field: "total_county", maxWidth: 180 },
-        { field: "total_healed", maxWidth: 100 },
-        { field: "total_dead", maxWidth: 100 }
+        { field: "county_code", maxWidth: 110, sortable: true },
+        { field: "county", maxWidth: 120, sortable: true },
+        { field: "total_county", maxWidth: 180, sortable: true },
+        { field: "total_healed", maxWidth: 100, sortable: true },
+        { field: "total_dead", maxWidth: 100, sortable: true }
 
     ];
 
 
     const gridOptions = {
         columnDefs: columnDefs,
-        rowSelection: 'multiple'
+        rowSelection: 'multiple',
     };
 
     // lookup the container we want the Grid to use
