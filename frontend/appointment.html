@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>COVID PLUS</title>   
+    
+<style>
+::placeholder {
+  color: white;
+  opacity: 0;
+   text-align:center;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+  
+}
+.p p { 
+  display: block;
+  height: 20px;
+  width: 50%;
+  text-align:center;
+}
+label {
+    width:300px;
+    clear:left;
+    text-align:right;
+    padding-right:20px;
+    font-size: 21px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0; 
+  text-align:center;
+}
+
+input {
+  height: 30px;
+  flex: 0 20 150px;
+  margin-left: 20px;
+  background-color: #4d004d;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+button{
+  background-color: #ebc6eb;
+  
+}
+button {
+	width: 200px;
+}
+.centered img {
+  width: 200px;
+  border-radius: 50%;
+ }
+
+ .navbar {
+     
+     padding-top:1px;
+     padding-bottom: 1px;
+     padding-left: 10px;
+     font-size: 10px;
+   }
+
+  
+
+ .navbar a:hover {
+     background-color: rgb(140, 197, 243);
+     color: #8bb9f5;
+   }
+
+.nav-item{
+  padding-left: 20px;
+  padding-right: 20px;
+  color:white;
+}
+.navbar-brand{
+ padding-left: 10px;
+}
+.container {
+  position: relative;
+  width: 90%;
+  height: 99%;
+  background-color: rgba(85, 151, 236, 0.836);
+}
+.hyphens {
+   hyphens: auto;
+}
+
+
+.card-header{
+    background-color: transparent;
+}
+
+.centered{
+  position: relative;
+  height: 100px;
+  width: auto;
+  background-color: #B0E0E6;
+}
+
+.flex-container {
+  
+  display: flex;
+  background-color: rgba(85, 151, 236, 0.836);
+  
+}
+.flex-container > div {
+  border: 7px outset rgba(85, 151, 236, 0.836);
+  background-color: lightblue;
+  text-align: center;
+  padding:5px;
+  font-size: 13px;
+  margin: 10px;
+  
+}
+.card{
+    width: 600px;
+    height: 524px;
+    padding-left: 0%;
+ padding-right: 0px;
+ margin-left: 70px;
+ background-color: rgba(85, 150, 236, 0.596)!important;
+}
+.nav-item{
+    
+    color:white;
+}
+.nav-link{
+    
+    color: white;
+    
+}
+.card-text{
+    background-color: transparent;
+    color: white;
+}
+.card-body{
+    background-color: rgba(85, 150, 236, 0.459);
+    color: white;
+   
+    
+}
+.card-header{
+    background-color: rgba(85, 151, 236, 0.836);
+    color: white;
+}
+
+.app {
+    padding: 16px;
+    background-color: #87CEFA;
+    border-radius: 10px;
+    margin:20px 0;
+}
+h1 {
+      letter-spacing: 10px;
+      font-weight: 500;
+      padding-top: 15px;
+      color:whitesmoke;
+     
+    }
+h3{
+  
+  color:whitesmoke;
+  letter-spacing: 7px;
+  font-weight: 300;
+ 
+}
+div {
+    display: block;
+}
+
+col-4{
+    height: 500px;
+    margin-top: 15px;
+   
+    
+}
+details{
+color:whitesmoke;
+font-size: inherit;
+}
+form{
+   color: whitesmoke;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 15px;
+}
+</style>
+
+        <title>COVID PLUS</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>    
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+      
+        <body style="background-color:#87CEFA;">
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(85, 150, 236); height: 27px;">
+            <a class="navbar-brand" href="index.html" style="font-size: 16px;color:white;">ACASĂ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" style="color: white;" href="index2.html">DATE LA ZI <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="index3.html">STATISTICI</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SĂNĂTATE
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgba(85, 151, 236, 0.836)">
+                    <a class="dropdown-item" style="color: white;" href="index4.html">Informații relevante</a>
+                    <a class="dropdown-item" style="color: white;"  href="index5.html">Simptome</a>
+                    <a class="dropdown-item" style="color: white;"  href="index9.html">Transmitere</a>
+                    <a class="dropdown-item" style="color: white;"href="index6.html">Testare</a>
+                    <a class="dropdown-item" style="color: white;"href="index8.html">Tratament</a>
+                    <a class="dropdown-item" style="color: white;"href="index7.html">Complicații</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PROTECȚIE
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color: rgba(85, 151, 236, 0.836)">
+                    <a class="dropdown-item" style="color: white;" href="index11.html">Igienă</a>
+                    <a class="dropdown-item" style="color: white;" href="index12.html">Distanțare</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="index13.html">VACCINARE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="index3.html">DESPRE NOI</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        
+          
+          
+          <div class="section-info">
+              <div class="title">
+                <h3 align="center" style="padding-top:20px;padding-bottom: 10px;">Consultații online oferite de specialiști</h3>
+              </div>
+              <div class="row mx-0" style="padding-top: 20px;">
+              <div class="col-4">
+                
+                    <p style="color: whitesmoke; height: 350px; width: 500px; padding-top: 60px;margin-left: 70px; margin-right: 20px; align-self: center;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 18px;">
+                        Consultatii online, din confortul propriei locuinte, beneficiind de opinia avizata a unui medic specialist. Oferim pacientilor
+                         posibilitatea de a beneficia de consultatii online, din partea echipei noastre de specialisti, desfasurate de la distanta. In cadrul acestei pagini, poti face o cerere 
+                         de programare la unul dintre medicii nostri. <br>
+                         <br>In cazul in care aveti nevoie de ajutor pentru a va face o programare, puteti apela cu incredere
+                         numarul nostru de call center, ce poate fi regasit in cadrul zonei de Contact.
+                         <br>
+                         Impreuna ne facem bine!
+                    </p>
+           
+              </div>
+              <div class="col-4 col-sm-3">
+                <img src="https://binaryfountain.com/wp-content/uploads/2020/01/iStock-1063085984.jpg" style="height: 400px; width: 570px; margin-left:230px;  margin-right:10px ;
+                border-radius: 50%;border: 5px outset rgba(85, 151, 236, 0.836)"></img>
+              </div>
+              </div></div>
+<br><br><br>
+<div class="container" size="95%">
+    <div class="row">
+  <div class="col-4">
+    <br>
+      <p align="center" style="color:whitesmoke; padding-top:20px; padding-left: 20px;color: whitesmoke;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 30px;">Programeaza o consultatie</p><br>
+              <form style=" margin-left: 30px; padding-top: 10px;height: 1000px; margin-right: 2px;">
+                <div class="form-group row">
+                  <label for="inputNume" class="col-2 col-form-label"style="padding-right: 100px;" >Nume*</label>
+                  <div class="col-sm-8">
+                    <input type="text" name="nume" class="form-control" id="inputEmail" placeholder="Nume" required="true">
+                  </div>
+                </div><br>
+                <div class="form-group row" >
+                  <label for="inputPrenume" class="col-sm-2 col-form-label"style="padding-right: 100px;">Prenume*  </label>
+                  <div class="col-sm-8" >
+                    <input type="text" name="prenume" class="form-control"  placeholder="Prenume" required="true">
+                  </div>
+                </div><br>
+                <div class="form-group row">
+                    <label for="inputEmail" class="col-sm-2 col-form-label"style="padding-right: 100px;">Email*</label>
+                    <div class="col-sm-8">
+                      <input type="email" name="email"class="form-control" id="inputTel" placeholder="Email" required="true">
+                    </div></div><br>
+                    <div class="form-group row">
+                        <label for="inputTel" class="col-sm-2 col-form-label"style="padding-right: 100px;">Telefon*</label>
+                        <div class="col-sm-8">
+                          <input type="tel" name="telefon" class="form-control"  placeholder="Telefon" required="true">
+                        </div>
+                      </div><br>
+                      <div class="form-group row">
+                        <label for="inputDatan" class="col-sm-2 col-form-label"style="padding-right: 100px;">Data nașterii*</label>
+                        <div class="col-sm-8">
+                          <input type="date" name="datan" class="form-control"  placeholder="Data nasterii" required="true">
+                        </div>
+                      </div><br>
+                      <div class="form-group row">
+                        <label for="inputData" class="col-sm-2 col-form-label"style="padding-right: 100px;">Selectează data*</label>
+                        <div class="col-sm-8">
+                          <input type="date" name="datac" class="form-control"  placeholder="Data" required="true">
+                        </div>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="exampleFormControlSelect2" style="margin-left:60px;padding-right:100px;" >Specialitatea*</label>
+                            <select class="custom-select" style="margin-left:99px; margin-right:40px;width: 200px;"name="specialitate" id="exampleFormControlSelect2">
+                                <option selected>Alege o specialitate</option>
+                                <option value="1">ALERGOLOGIE SI IMUNOLOGIE</option>
+                                <option value="2">ANESTEZIE SI TERAPIE INTENSIVA</option>
+                                <option value="3">BOLI INFECTIOASE</option>
+                                <option value="4">CARDIOLOGIE</option>
+                                <option value="5">CHIRURGIE GENERALA</option>
+                                <option value="6">CHIRURGIE ONCOLOGICA</option>
+                                <option value="7">CHIRURGIE PEDIATRICA</option>
+                                <option value="8">CHIRURGIE PROCTOLOGIE</option>
+                                <option value="9">CHIRURGIE VASCULARA</option>
+                                <option value="10">CONSILIERE ALAPTARE</option>
+                                <option value="11">DERMATOVENEROLOGIE</option>
+                                <option value="12">DIABET ZAHARAT, NUTRITIE SI BOLI METABOLICE</option>
+                                <option value="13">DIETETICA</option>
+                                <option value="14" >ECOGRAFIE</option>
+                                <option value="15">ENDOCRINOLOGIE</option>
+                                <option value="16">GASTROENTEROLOGIE</option>
+                                <option value="17">GASTROENTEROLOGIE PEDIATRICA</option>
+                                <option value="18">GENETICA MEDICATA</option>
+                                <option value="19">IMUNOLOGIE</option>
+                                <option value="20">HEMATOLOGIE</option>
+                                <option value="21">HOMEOPATIE</option>
+                                <option value="22">KINETOTERAPIE</option>
+                                <option value="23">MEDICINA DE FAMILIE</option>
+                                <option value="24">MEDICINA GENERALA</option>
+                                <option value="25">MEDICINA INTERNA</option>
+                                <option value="25">MEDICINA MUNCII</option>
+                                <option value="27">NEFROLOGIE</option>
+                                <option value="29">NEFROLOGIE PEDIATRICA</option>
+                                <option value="28">NEONATOLOGIE</option>
+                                <option value="30">NEUROCHIRURGIE</option>
+                                <option value="31">NEUROLOGIE</option>
+                                <option value="32">OBSTETRICA - GINECOLOGIE</option>
+                                <option value="33">OFTALMOLOGIE</option>
+                                <option value="34">ORL</option>
+                                <option value="35">ORTOPEDIE SI TRAUMATOLOGIE</option>
+                                <option value="36">PEDIATRIE</option>
+                                <option value="37">PSIHIATRIE</option>
+                                <option value="38">PSIHOLOGIE</option>
+                                <option value="39">PNEUMOLOGIE</option>
+                                <option value="40">RECUPERARE MEDICALA</option>
+                                <option value="41">STERILITATE</option>
+                                <option value="42">UROLOGIE</option>
+                                <option value="43">TEHNICIAN</option>
+                                <option value="44">IMAGISTICA MEDICALA</option>
+                              </select>
+                        </div>
+                      <br>
+                      
+                    
+                <div class="form-group row">
+                    <div class="col-sm-8">
+                    <label for="inputSuplim" class="col-sm-4 col-form-label"style="margin-right: 100px;  margin-left:140px; font-size: 20px;">Detalii suplimentare</label> <br>
+                    <textarea class="form-control" name="mesaj" id="exampleFormControlTextarea1" rows="3" style="margin-right: 250px; margin-left:90px; padding-right: 10px;" placeholder="Crezi ca trebuie sa mai stim ceva?"></textarea>
+                    </div>
+                </div><br>
+                  <p style="padding-left:140px;"><small>*Cămp obligatoriu<br></p></small><p style="margin-left:110px;margin-right: 30px;"><small>Prin completarea formularului de mai sus sunt
+            de acord sa fiu contactat/a  in legatura cu serviciile medicale solicitate</small></p><br>
+                    <button style="margin-left: 30%;" type="submit" class="btn btn-primary">Trimite cerere programare</button>
+                 
+                
+              </form>
+             
+            </div> 
+            <div class="col-4" > 
+                <img src="http://127.0.0.1:8080/timeline.jpg" style="height: 1200px;width: 700px; margin-left: 65px; margin-right:20px;">  
+            </div>
+            </div>
+        </div>
+        
+     
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="../appointment.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
