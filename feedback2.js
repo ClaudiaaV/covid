@@ -1,29 +1,23 @@
 
 
-const container = document.querySelector('.getappoint');
-const form = document.querySelector('form');
+const div = document.querySelector('.pls');
 
-const createAppoint = async (e) => {
+const createFeedback = async (e) => {
     e.preventDefault();
 
     const doc = {
-        nume: form.nume.value,
-        prenume: form.prenume.value,
-        email: form.email.value,
-        telefon:form.telefon.value,
-        specialitate:form.specialitate.value,
-        datan:form.datan.value,
-        datac:form.datac.value,
-        mesaj: form.mesaj.value
+        rating: div.rating.value,
+        mesaj: div.mesaj.value
+        
     }
 
-await fetch('http://localhost:3000/programari',{
+await fetch('http://localhost:8000/feedbacks',{
     method: 'POST',
     body: JSON.stringify(doc),
     headers:{'Content-type': 'application/json'}
 })
 
-let uri = 'http://localhost:3000/programari';
+let uri = 'http://localhost:8000/feedbacks';
 
 
 }
@@ -51,5 +45,5 @@ container.innerHTML = template;
 
 } */
 
-form.addEventListener('submit', createAppoint);
+div.addEventListener('submit', createFeedback);
 //  window.addEventListener( 'DOMContentLoaded', () => renderAppoint());

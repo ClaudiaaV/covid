@@ -26,12 +26,13 @@ body {
   text-align:center;
 }
 label {
+    font-family: Arial, Helvetica, sans-serif;
     width:300px;
     clear:left;
-    text-align:right;
+  size: 20px;
     padding-right:20px;
     font-size: 21px;
-}
+} 
 
 ::placeholder {
   color: white;
@@ -39,7 +40,50 @@ label {
   text-align:center;
 }
 
+
+
+.modal-dialog {
+    height: 30%;
+    width: 10%;
+   
+}
+
+.modal-header {
+   align-content: center;
+   padding-left: 40px;
+    background-color: #007bff
+}
+
+textarea {
+  
+  
+   padding-left: 5px;
+   padding-right: 5px;
+    outline: 20px;
+    outline-color: turquoise;
+}
+
+.openmodal {
+    
+    margin-left: 37%; 
+    margin-right: 9%;
+    height: min-content;
+   margin-top:10px;
+   margin-bottom: 4px;
+}
+
+.icon1 {
+    color: #007bff75
+}
+
+a {
+    margin-left: 30px;
+}
+
 input {
+    color: #182b41
+}
+/* input {
   height: 30px;
   flex: 0 20 150px;
   margin-left: 20px;
@@ -48,14 +92,8 @@ input {
   border: none;
   outline: none;
   padding: 12px;
-}
-button{
-  background-color: #ebc6eb;
-  
-}
-button {
-	width: 200px;
-}
+} */
+
 .centered img {
   width: 200px;
   border-radius: 50%;
@@ -289,7 +327,7 @@ form{
     <br>
       <p align="center" style="color:whitesmoke; padding-top:20px; padding-left: 20px;color: whitesmoke;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 30px;">Programeaza o consultatie</p><br>
+      font-size: 30px;">Programeaza o consultatie</p><br><br>
               <form style=" margin-left: 30px; padding-top: 10px;height: 1000px; margin-right: 2px;">
                 <div class="form-group row">
                   <label for="inputNume" class="col-2 col-form-label"style="padding-right: 100px;" >Nume*</label>
@@ -391,12 +429,13 @@ form{
                  
                 
               </form>
-             
+            
             </div> 
             <div class="col-4" > 
-                <img src="http://127.0.0.1:8080/timeline.jpg" style="height: 1200px;width: 700px; margin-left: 65px; margin-right:20px;">  
+                <img src="http://127.0.0.1:8080/frontend/timeline.jpg" style="height: 1269px;width: 700px; margin-left: 65px; margin-right:20px;">  
             </div>
             </div>
+     
         </div>
         
      
@@ -404,6 +443,7 @@ form{
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="../appointment.js"></script>
+    <script src="../feedback2.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 

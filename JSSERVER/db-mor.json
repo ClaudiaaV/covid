@@ -1,0 +1,35 @@
+
+{
+    "feedbacks": [
+      {
+        "id": 1,
+        "rating": "Satisfacut",
+        "mesaj": "Am apreciat munca echipei"
+      },
+      {
+        "id": 2,
+        "rating": "Foarte satisfacut",
+        "mesaj": "Am apreciat munca echipei"
+      },
+      {
+        "id": 3,
+        "rating": "Satisfacut",
+        "mesaj": "Am apreciat munca echipei"
+      },
+      {
+        "id": 4,
+        "rating": "Satisfacut",
+        "mesaj": "Am apreciat munca echipei"
+      },
+      {
+        "id": 5,
+        "rating": "Foarte satisfacut",
+        "mesaj": "Am apreciat munca echipei"
+      },
+      {
+        "id": 6,
+        "rating": "Mediocru",
+        "mesaj": "Am apreciat munca echipei"
+      }
+    ]
+  }
