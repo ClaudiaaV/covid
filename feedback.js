@@ -12,7 +12,7 @@ function getFeedback() {
             let HTML = `<div>`
             apiLength = feedbacks.length + 1
 
-            for (let feedback of feedbacks) {
+            for (let feedback of feedbacks.reverse()) {
                 HTML += `<br>`
                 HTML += `<h2> <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/feedback-42-496804.png" style="height:60px;width:60px;opacity:79%;"</h2>`
                 HTML += `<br>`

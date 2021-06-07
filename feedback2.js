@@ -1,26 +1,31 @@
 
-
-const div = document.querySelector('.pls');
+const form = document.querySelector('form');
 
 const createFeedback = async (e) => {
+    console.log(e)
     e.preventDefault();
 
     const doc = {
-        rating: div.rating.value,
-        mesaj: div.mesaj.value
-        
+        rating: form.rating.value,
+        mesaj: form.mesaj.value
     }
 
-await fetch('http://localhost:8000/feedbacks',{
-    method: 'POST',
-    body: JSON.stringify(doc),
-    headers:{'Content-type': 'application/json'}
-})
+    console.log(doc)
 
-let uri = 'http://localhost:8000/feedbacks';
-
+    await fetch('http://localhost:8000/feedbacks', {
+        method: 'POST',
+        body: JSON.stringify(doc),
+        headers: { 'Content-type': 'application/json' }
+    })
 
 }
+
+form.addEventListener('submit', createFeedback);
+
+
+
+
+
 
 /* const renderAppoint = async () => {
 let uri = 'http://localhost:3000/programari';
@@ -34,7 +39,7 @@ appoint.forEach(app => {
     template += `
         <div class="app">
             <h2>${app.name}</h2>
-            <p>${app.message}</p> 
+            <p>${app.message}</p>
         </div>
     `
 
@@ -45,5 +50,5 @@ container.innerHTML = template;
 
 } */
 
-div.addEventListener('submit', createFeedback);
+
 //  window.addEventListener( 'DOMContentLoaded', () => renderAppoint());
