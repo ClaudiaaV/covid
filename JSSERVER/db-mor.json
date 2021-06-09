@@ -44,6 +44,26 @@
       "rating": "Mediocru",
       "mesaj": "dadadda",
       "id": 9
+    },
+    {
+      "rating": "Satisfacut",
+      "mesaj": "ok bine",
+      "id": 10
+    },
+    {
+      "rating": "Foarte satisfacut",
+      "mesaj": "imagini",
+      "id": 11
+    },
+    {
+      "rating": "Dezamagit",
+      "mesaj": "culorile!",
+      "id": 12
+    },
+    {
+      "rating": "Foarte satisfacut",
+      "mesaj": "pa",
+      "id": 13
     }
   ]
 }

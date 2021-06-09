@@ -73,9 +73,10 @@ input {
      color: #8bb9f5;
    }
 
-.nav-item{
-  padding-left: 20px;
-  padding-right: 20px;
+
+   .nav-item{
+  padding-left: 10px;
+  padding-right: 0px;
   color:white;
 }
 .navbar-brand{
@@ -125,15 +126,15 @@ button {
     background-color: rgba(85, 151, 236, 0.836);
 }
 .card{
-    width: 600px;
+    width: 720px;
     height: min-content;
     padding-left: 0%;
  padding-right: 0px;
- margin-left: 70px;
+ margin-left: 60px;
  background-color: rgba(85, 150, 236, 0.596)!important;
 }
 .nav-item{
-    
+  padding-left: 40px;
     color:white;
 }
 .nav-link{
@@ -162,8 +163,38 @@ ul.demo {
   margin: 0;
   padding: 0;
 }
+img {
+  border-radius: 50%;
+  opacity: 0.65;
+  margin-left: 125px;
+}
+h2{
+  
+  color:whitesmoke;
+  letter-spacing: 5px;
+  font-weight: 200;
+ margin-left: 220px;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 5px; /* Place the button at the bottom of the page */
+  right: 535px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(85, 151, 236, 0.836); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+  opacity: 0.8;
+}
 
-
+#myBtn:hover {
+  background-color: rgba(85, 150, 236, 0.644); /* Add a dark-grey background on hover */
+}
 </style>
 
         <title>COVID PLUS</title>
@@ -177,7 +208,7 @@ ul.demo {
 
     </head>
 
-    <body>
+
         <body style="background-color:#87CEFA;">
           <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(85, 150, 236); height: 27px;">
             <a class="navbar-brand" href="index.html" style="font-size: 16px;color:white;">ACASĂ</a>
@@ -220,7 +251,16 @@ ul.demo {
                   <a class="nav-link" style="color: white;" href="index13.html">VACCINARE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" style="color: white;" href="index3.html">DESPRE NOI</a>
+                  <a class="nav-link" style="color: white;" href="appointment.html">PROGRAMARE</a>
+                </li>
+                <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="feedback.html">FEEDBACK</a>
+                    <li class="nav-item">
+                      <a class="nav-link" style="color: white;" href="index15.html">SURSE IMPORTANTE</a>
+                    </li>
+                  </li>
+                  <a class="nav-link" style="color: white;" href="about.html">DESPRE NOI</a>
                 </li>
               </ul>
             </div>
@@ -243,7 +283,7 @@ ul.demo {
             <div class="card-body">
                 
               <p class="card-text"><h4 align="center"><b>Protejați-vă, evitați contactul direct!</b></h4></p>
-              <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/6.jpg" style="height: 300px;width: 400px; border-radius: 50%;margin-left: 70px;opacity: 0.7;">  
+              <img src="http://127.0.0.1:5500/utils/6.jpg" style="height: 300px;width: 400px; border-radius: 50%;margin-left: 70px;opacity: 0.7;">  
               <p class="card-text">
                     <br>
                     <p>Pentru a putea preveni raspandirea virusului Covid19, trebuie respectate o serie de reguli de igiena. Acestea au drept scop, in primul rand,
@@ -278,15 +318,15 @@ ul.demo {
                                 doar dacă sunt prescrise de medic
                                 </li>
                             <li>Este foarte recomandat, în cadrul tuturor relaţiilor
-                                sociale, de a se folosi masca</li>
+                                sociale, a se folosi masca</li>
 
                            </ul> 
                            <br><br>
                            <h3 align="center"><b>Spalarea corectă a mainilor</b></h3><br>
-                           <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/9.png" style="height: 400px;width: 500px;margin-left: 30px;border-radius: 14%;">  
+                           <img src="http://127.0.0.1:5500/utils/9.png" style="height: 400px;width: 500px;margin-left: 30px;border-radius: 14%;">  
                            <br><br><br>
                            <h3 align="center"><b>Dezinfectarea corectă a mainilor</b></h3><br>
-                           <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/10.png" style="height: 400px;width: 500px;margin-left: 30px;border-radius: 14%;">
+                           <img src="http://127.0.0.1:5500/utils/10.png" style="height: 400px;width: 500px;margin-left: 30px;border-radius: 14%;">
                            <br><br><br>
                            <h3 align="center"><b>CUM SĂ PUNEM, SĂ PURTĂM,
                             SĂ DĂM JOS ȘI SĂ ARUNCĂM
@@ -314,7 +354,7 @@ ul.demo {
                              </li>
                             </ul> <br>
                             <br>
-                            <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/7.jpg" style="height: 300px;width: 400px;margin-left: 70px;margin-left: 70px;
+                            <img src="http://127.0.0.1:5500/utils/7.jpg" style="height: 300px;width: 400px;margin-left: 70px;margin-left: 70px;
                             border-radius: 50%;opacity: 0.7;"><br><br> 
                            <b><p>Înainte a pune masca,
                                 curățați mâinile cu
@@ -352,9 +392,31 @@ ul.demo {
             </div>
           </div>
         
-
+          
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAQlBMVEX///8AAADq6uodHR3u7u4ZGRns7OydnZ2ampogICAXFxcYGBjo6OiVlZWSkpKenp6kpKQRERGLi4vNzc04ODhHR0eB+CorAAACxElEQVR4nO3a21ajQBBGYZoAOTAaRX3/V50gYUKAKjrQTB/W/m5FFr/VRVXULAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACWFN+F70fYV1WaS+77IfaUn40xh4QjFrVpfSZ7UIuD6ZSJRsxL00uzF6uzeUixF4vSDF2SO6jVwTyrK9+P5FY+Dng7qH98P5RLxTTg7Y2aUBVnA6Y0NKrLbMDb6E/kjZqfhYCpDI1CquBvFRM4qEIPpvO6mRkTzy6RD41K7sE0enHhiN6rGHEvTlY1IWK0VVTGxOigRtqLVkf0XsUo36gvBIxzgcu1QT8V3wJnMSaexTY01FVNqGJUB1XpwR/xKzH1orKqNdm7HDGaoaEM+ub2ZTniIZKhoRzR5vcCOWIdxUGtSjFAc7+kEa+IYYFTVrXm30XKQQ0+YiFX8H1wmRwx9E8aiz3YU96oQUfMa6sKtt7EK0Ne4JRVbRxQixhuL1r2YE+OGGovKj04F1CLGOZv4JRVbT6gGjHABU6p4Jv4TTFV8eUj2lEiBtaLlf2YeBbL0FBWNfmIdk7id4Y0NJRP9EsBtYjhfOpf2YO98Hsxlwf9cgVbchXD+LONsqrZBQy9F5VV7WR9k6NcRe8HVfmdjH1ArYq15yoqY+KVgFoV/f7ZRnmLvhZQi+jzv6ccBtQi+hsa4v/JrAmoRfS1wCljYk3ALLuK9/MzNJRVbV1ALaKPBU75wLs2oNqL//+NKj/MccNd5SpuuetKUsRtjyJFXH8uNpjfQ7b+rOcj2m64js1VcfvPei6ilwq2phGvDu76EU7AaUQXAacRPQYc96KbgOOInnqwN6zih7O7DiN6rWDruEPAYUTvAR8H1WXAR0TPR7Rz2iFgHzGACraOOwTsIgYSsI3oPmAbMZiAWfYV0V0BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGj9BRi7E+kkbkfPAAAAAElFTkSuQmCC" style=" margin-left: 1px;height:20px;width: 20px;"></button>
 
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>

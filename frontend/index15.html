@@ -1,308 +1,482 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>COVID PLUS</title>   
+    
 <style>
-body {margin:0;font-family:Arial}
-
-.topnav {
-  overflow: hidden;
-  background-color: rgba(85, 151, 236, 0.836);
-  height:25px;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 5px 20px;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.active {
-  background-color: rgba(72, 124, 192, 0.836);
+::placeholder {
   color: white;
+  opacity: 0;
+   text-align:center;
 }
-
-.topnav .icon {
-  display: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 15px;    
-  border: none;
-  outline: none;
-  color: white;
-  padding: 5px 5px;
-  background-color: inherit;
-  font-family: inherit;
+body {
   margin: 0;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(85, 151, 236, 0.836);
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://oricum.eu/wp-content/uploads/2016/12/67928641-health-wallpapers.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
   
-  min-width: 100px;
-  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
-
-.dropdown-content a {
-  float: none;
-  color: white;
-  padding: 2px 5px;
-  text-decoration: none;
+.p p { 
   display: block;
-  text-align: left;
+  height: 20px;
+  width: 50%;
+  text-align:center;
 }
-
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: rgba(74, 129, 202, 0.356);
-  color: white;
-}
-
-.dropdown-content a:hover {
-  background-color: rgba(72, 124, 192, 0.384);
-  color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-@media screen and (max-width: 400px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+label {
+    width:300px;
+    clear:left;
+    text-align:right;
+    padding-right:20px;
+    font-size: 21px;
 }
 
 ::placeholder {
-      color: white;
-      opacity: 1;
-      text-align: center;
-    }
+  color: white;
+  opacity: 0; 
+  text-align:center;
+}
+h1 {
+  letter-spacing: 20px;
+    font-weight: 700;
+}
+input {
+  height: 30px;
+  flex: 0 20 150px;
+  margin-left: 20px;
+  background-color: #4d004d;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #B0E0E6;
-    }
 
-    .p p {
-      display: block;
-      height: 20px;
-      width: 50%;
-      text-align: center;
-    }
+.centered img {
+  width: 200px;
+  border-radius: 50%;
+ }
 
-    label {
-      width: 300px;
-      clear: left;
-      text-align: right;
-      padding-right: 20px;
-      font-size: 21px;
-    }
-
-    ::placeholder {
-      color: white;
-      opacity: 1;
-      text-align: center;
-    }
-
-    h1 {
-      letter-spacing: 20px;
-      font-weight: 700;
-    }
-
-    input {
-      height: 30px;
-      flex: 0 20 150px;
-      margin-left: 20px;
-      background-color: #4d004d;
-      color: white;
-      border: none;
-      outline: none;
-      padding: 12px;
-    }
-    .myGrid {
+ .navbar {
      
-     color:#87CEFA;
+     padding-top:1px;
+     padding-bottom: 1px;
      padding-left: 10px;
+     font-size: 10px;
    }
 
-   .container {
-     position: relative;
-     width: 90%;
-     height: 99%;
-     background-color: rgba(85, 151, 236, 0.836);
+  
+
+ .navbar a:hover {
+     background-color: rgb(140, 197, 243);
+     color: #8bb9f5;
    }
 
-   .hyphens {
-     hyphens: auto;
-   }
 
-   #canvas {
-     width: 100%;
-
-   }
-   .myDiv2 {
-
-border: 3px outset rgba(85, 151, 236, 0.836);
-background-color: rgba(173, 216, 230, 0.849);
-text-align: center;
-width: max-content;
-height: min-content;
-padding-left: 7px;
-padding-right: 7px;
-padding-top: 3px;
-padding-bottom: 3px;
-margin-left: 550px;
-border-radius: 50%;
+   .nav-item{
+  padding-left: 10px;
+  padding-right: 0px;
+  color:white;
+}
+.navbar-brand{
+ padding-left: 10px;
+}
+.container {
+  position: relative;
+  width: 90%;
+  height: 99%;
+  background-color: rgba(85, 151, 236, 0.836);
+}
+.hyphens {
+   hyphens: auto;
 }
 
-.centered {
-position: relative;
-height: 100px;
-width: auto;
-background-color: #B0E0E6;
+
+.card-header{
+    background-color: transparent;
 }
 
-.myDiv:hover {
-background-color: #7aa6f7;
+.centered{
+  position: relative;
+  height: 100px;
+  width: auto;
+  background-color: #B0E0E6;
 }
 
 .flex-container {
-
-display: flex;
-background-color: rgba(85, 151, 236, 0.836);
-
+  
+  display: flex;
+  background-color: rgba(85, 151, 236, 0.836);
+  
+}
+.flex-container > div {
+  border: 7px outset rgba(85, 151, 236, 0.836);
+  background-color: lightblue;
+  text-align: center;
+  padding:5px;
+  font-size: 13px;
+  margin: 10px;
+  
+}
+button {
+	width: max-content;
+    height: max-content;
+    background-color: rgba(85, 151, 236, 0.836);
+}
+.card{
+    width: 720px;
+    height: min-content;
+    padding-left: 0%;
+ padding-right: 0px;
+ margin-left: 50px;
+ background-color: rgba(85, 150, 236, 0.596)!important;
+}
+.nav-item{
+    padding-left: 40px;
+    color:white;
+}
+.nav-link{
+    
+    color: white;
+    
+}
+.card-text{
+    background-color: transparent;
+    color: white;
+}
+.card-body{
+    background-color: rgba(85, 150, 236, 0.459);
+    color: white;
+   
+    
+}
+.card-header{
+    background-color: rgba(85, 151, 236, 0.836);
+    color: white;
+   
 }
 
-.flex-container>div {
-border: 7px outset rgba(85, 151, 236, 0.836);
-background-color: lightblue;
-text-align: center;
-padding-top: 12px;
-border-radius: 50%;
-font-size: 15px;
-margin: 6px;
+ul.demo {
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+}
+img {
+  border-radius: 50%;
+  opacity: 0.65;
+  margin-left: 125px;
+}
+h2{
+  
+  color:whitesmoke;
+  letter-spacing: 5px;
+  font-weight: 200;
 
 }
-.ag-theme-alpine{
---ag-foreground-color: white;;
---ag-background-color: #8bb9f5;
-padding-left: 20px;
---ag-header-background-color:rgba(85, 151, 236, 0.836);
---ag-odd-row-background-color: #8bb9f5;
---ag-control-panel-background-color: #8bb9f5;
---ag-borders: true;
+a{
+  color: whitesmoke;
 }
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 5px; /* Place the button at the bottom of the page */
+  right: 430px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(85, 151, 236, 0.836); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+  opacity: 0.8;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
 </style>
-<title>COVID PLUS</title>
-<script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
-  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-</head>
-<body style="background-color:#87CEFA;">
 
-<div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">ACASĂ</a>
-  <a href="index15.html">DATE LA ZI</a>
-  <a href="index3.html">STATISTICI</a>
-  <div class="dropdown">
-    <button class="dropbtn">SĂNĂTATE 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="index4.html">Informații relevante</a>
-      <a href="index5.html">Simptome</a>
-      <a href="index9.html">Transmitere</a>
-      <a href="index6.html">Testare</a>
-      <a href="index8.html">Tratament</a>
-      <a href="index7.html">Complicații</a>
+        <title>COVID PLUS</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>    
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <body style="background-color:#87CEFA;">
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(85, 150, 236); height: 27px;">
+            <a class="navbar-brand" href="index.html" style="font-size: 16px;color:white;">ACASĂ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" style="color: white;" href="index2.html">DATE LA ZI <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="index3.html">STATISTICI</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SĂNĂTATE
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgba(85, 151, 236, 0.836)">
+                    <a class="dropdown-item" style="color: white;" href="index4.html">Informații relevante</a>
+                    <a class="dropdown-item" style="color: white;"  href="index5.html">Simptome</a>
+                    <a class="dropdown-item" style="color: white;"  href="index9.html">Transmitere</a>
+                    <a class="dropdown-item" style="color: white;"href="index6.html">Testare</a>
+                    <a class="dropdown-item" style="color: white;"href="index8.html">Tratament</a>
+                    <a class="dropdown-item" style="color: white;"href="index7.html">Complicații</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PROTECȚIE
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color: rgba(85, 151, 236, 0.836)">
+                    <a class="dropdown-item" style="color: white;" href="index11.html">Igienă</a>
+                    <a class="dropdown-item" style="color: white;" href="index12.html">Distanțare</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="index13.html">VACCINARE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="appointment.html">PROGRAMARE</a>
+                </li>
+                <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="feedback.html">FEEDBACK</a>
+                    <li class="nav-item">
+                      <a class="nav-link" style="color: white;" href="index15.html">SURSE IMPORTANTE</a>
+                    </li>
+                  </li>
+                  <a class="nav-link" style="color: white;" href="about.html">DESPRE NOI</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      
+      <br>
+      <div class="card " style="max-width: 800px;">
+        <div class="card-header">
+          <h2 ALIGN="center">SURSE IMPORTANTE</h2>
+            </div>
+            <div class="card-body">
+                <br>
+              <p class="card-text"><h4 align="center"><b>Toate sursele de care ai nevoie adunate la un loc: </b></h4></p><br>
+              
+
+                    <h3 align="center" ><b>Comunicate oficiale de presă si date actualizate</h3></b><br>
+                
+               
+                   <ul>
+                       <li> Grupului de Comunicare Strategică</li>
+                       <li>Site-urile oficiale sau paginile de social media ale prefecturilor, spitalelor și Direcțiilor Județene de Sănătate Publică (actualizare în timp real)</li>
+                       <li>Presa centrală și locală; (actualizare în timp real)</li>
+                       <li>Declarații publice ale diverșilor reprezentanți ai autorităților naționale, regionale și locale relevante (actualizare în timp real)</li>
+                       <li><a href="https://stirioficiale.ro/informatii" style="color: whitesmoke;"> Știri Oficiale</a></li>
+                       <li><a href="https://datelazi.ro/" style="color: whitesmoke;">Date Oficiale</a></li>
+                   </ul>
+                   <br>
+                   <h3 align="center" ><b>Alte surse importante:</h3></b><br>
+                   <ul>
+                    <li>Comunicate oficiale de presă de către Grupul de Comunicare Strategică</li>
+                    <li><a href="https://www.mai.gov.ro/category/comunicate-de-presa/" style="color: whitesmoke;">Ministerul Afacerilor Interne</a></li>
+                    <li><a href="http://www.ms.ro/comunicate/" style="color: whitesmoke;">Ministerul Sanatatii</a></li>
+                    <li><a href="https://www.cnscbt.ro/" style="color: whitesmoke;"> Institutul Național de Sănătate Publică România</a></li>
+                    <li><a href="https://insse.ro/cms/ro"style="color: whitesmoke;">Institutul Național de Statistică</a></li>
+                    <li><a href="http://www.geo-spatial.org/" style="color: whitesmoke;">Coronavirus COVID-19 România Project</a></li>
+                    <li><a href="https://www.ancpi.ro/" style="color: whitesmoke;">Agenția Națională de Cadastru și Publicitate Imobiliară</a></li>
+                    <li><a href="https://observatoruldesanatate.ro/home/" style="color: whitesmoke;">Observatorul Român de Sănătate</a></li>
+                </ul>
+                <br>
+
+
+
+                <h3 align="center" ><b>Vaccinare</h3></b><br>
+
+                <ul>
+                  
+                  <li><a href="https://vaccinare-covid.gov.ro/" style="color: whitesmoke;">Platforma ROVaccinare</a></li>
+                  <li><a href="https://vaccination-info.eu/ro" style="color: whitesmoke;">Portalul European De Informatii Despre Vaccinare</a></li>
+                  <li><a href="https://www.cnscbt.ro/" style="color: whitesmoke;"> Institutul Național de Sănătate Publică România</a></li>
+                  <li><a href="https://stirioficiale.ro/informatii" style="color: whitesmoke;"> Știri Oficiale</a></li>
+                  <li><a href="https://datelazi.ro/" style="color: whitesmoke;">Date Oficiale</a></li>
+              </ul>
+              <br>
+
+
+
+
+                    <br>
+                     <b>Cum se utilizează</b> <br><br> 
+                    <p>Comirnaty se administrează sub formă de două injecții, de obicei în mușchiul din partea superioară a brațului, la interval de 3 săptămâni.</p>
+                    <br>
+                     <b>Cum acționează</b> <br><br> 
+                    <p>Conține o moleculă numită ARNm care cuprinde instrucțiuni pentru producerea 
+                      proteinei virale de suprafață. Aceasta este o proteină de pe suprafața virusului SARS-CoV-2 de care virusul are nevoie pentru a pătrunde în celulele organismului.
+                      Când se administrează vaccinul unei persoane, anumite celule din organismul său citesc instrucțiunile ARNm și produc temporar proteina virală de suprafață.
+                       Sistemul imunitar al persoanei va recunoaște apoi această proteină ca fiind străină, va produce anticorpi și va activa limfocitele T (globulele albe) pentru a o ataca.<br><br>
+                      Dacă, ulterior, persoana intră în contact cu virusul SARS-CoV-2, sistemul său imunitar va recunoaște virusul și va fi pregătit să apere organismul de acesta.
+                      Molecula ARNm din vaccin nu rămâne în organism, ci se descompune la scurt timp după vaccinare.</p>
+                    <br>
+
+                    <h3 align="center"><b>Moderna</h3></b><br><br>
+                    <h5>Cum funcționează vaccinul COVID-19 Vaccine Moderna?</h5>
+                    <p>Fiind tot un vaccin pe baza de ARN-mesager, ca si in cazul celui de la Pfizer, acesta contine instructiuni genetice necesare sintetizarii proteinei S (Spike)
+                      de pe suprafata virusului SARS-CoV-2. istemul imun al persoanei respective va identifica apoi această proteină ca fiind străină și va declanșa un răspuns imun,
+                       producând anticorpi și celule T specifice.
+                    </p>
+                          <br>
+                          <b>Cum se administrează și ce eficacitate are</b> <br><br> 
+                         <p>Regimul de administrare este de 2 doze la interval de 28 de zile.<br><br>
+                          Vaccinul este in prezent aprobat pentru administrare in cazul persoanelor cu varsta de peste 18 ani, însă atunci cand vor fi disponibile date 
+                          din studiile clinice care includ voluntari cu varsta mai mica, autorizația poate fi extinsă.
+                         </p>
+                            <br>
+
+                        <h3 align="center"><b>AstraZeneca</b></h3><br><br>
+                        <h5>Cum funcționează vaccinul dezvoltat de Oxford?</h5>
+                    <p>Vaccinul AstraZeneca este un vaccin cu vector viral nereplicativ. Există alte vaccinuri aflate în curs de dezvoltare bazate pe această tehnologie  
+                      împotriva unor boli cauzate de virusuri precum HIV și Zika. Un vaccin împotriva Ebola bazat pe un vector viral nereplicativ a fost autorizat deja în Uniunea Europeană.<br><br>
+
+                      Aceste tipuri de vaccinuri utilizează un alt virus, în cazul vaccinului AstraZeneca un adenovirus, pentru a transporta un fragment din informația
+                       genetică a virusului SARS-CoV-2 în celulele de la locul administrării, care ulterior sintetizează proteina Spike a SARS-CoV-2. Această proteină va
+                        fi recunoscută de către sistemul imunitar ca fiind străină organismului și vor fi produși anticorpi și celule care sa o atace. Dacă mai târziu persoanele 
+                        vaccinate se întâlnesc cu virusul SARS-CoV-2 organismul lor îl va recunoaște și va fi pregătit să se apere.<br><br>
+                      
+                      Adenovirusul utilizat pentru dezvoltarea vaccinului Vaxzevria nu infectează în mod normal oamenii, este izolat de la cimpanzei, și este modificat astfel
+                       încât să își piardă capacitatea de a se multiplica.</p>
+                         <br>
+
+                       <h3 align="center"><b>Janssen – Johnson&Johnson</b></h3><br><br>
+                       <h5>Cum funcționează vaccinul COVID-19 Vaccine Janssen?</h5>
+                    <p>Vaccinul Ad26.COV2-S utilizeaza tot un adenovirus, pentru a transporta un fragment din informația genetică a virusului SARS-CoV-2 în celulele
+                       de la locul administrării, care ulterior sintetizează proteina Spike a SARS-CoV-2. Această proteină va fi recunoscută de către sistemul imunitar
+                        ca fiind străină organismului și vor fi produși anticorpi și celule care sa o atace. Dacă mai târziu persoanele vaccinate se întâlnesc cu virusul
+                         SARS-CoV-2 organismul lor îl va recunoaște și va fi pregătit să se apere.<br><br>
+
+                      Adenovirusul utilizat pentru dezvoltarea vaccinului Ad26.COV2-S a fost studiat și în dezvoltarea vaccinului Zabdeno împotriva Ebola autorizat în 
+                      iulie 2020 și este modificat astfel încât să își piardă capacitatea de a se multiplica.</p>
+                         
+                       <br>
+                       <h3 align="center"><b>Cat de sigure sunt vaccinurile anti COVID-19?</b></h3><br><br>
+                    <p>Pentru a fi declarat sigur si eficient, un vaccin impotriva infectiei COVID-19 trebuie sa treaca printr-o serie de teste si trebuie sa indeplineasca 
+                      standarde riguroase, asemenea oricarui alt vaccin sau medicament aprobat pe piata. Ambele vaccinuri Pfizer-BioNTech (Comirnaty) si Moderna au primit unda 
+                      verde in Uniunea Europeana dupa ce reprezentantii Agentiei Europene pentru Medicamente (EMA) au ajuns la concluzia ca in prezent exista disponibile suficiente
+                       date privind calitatea, siguranta si eficacitatea vaccinurilor.</p>
+
+                       <br>
+                       <h3 align="center"><b>Ce reactii adverse pot aparea dupa vaccinare? Pot fi periculoase?</b></h3><br><br>
+                    <p>Efectele secundare care pot aparea in cazul ambelor vaccinuri ARNm sunt cauzate ca parte a raspunsului imun la vaccinuri. 
+                      Conform rezultatelor studiului clinic, cele mai frecvente efecte secundare asociate cu vaccinul Pfizer au fost usoare sau moderate: durere si 
+                      inflamatie la locul injectarii, oboseala, cefalee, dureri musculare si articulare, frisoane si febra. Acestea s-au ameliorat in cateva zile dupa
+                       vaccinare si apar, in general, mai des dupa a doua doza.<br><br>
+
+                      Rareori, ca si in cazul altor vaccinuri, anumite pesoane pot dezvolta reactii alergice. Centrele de vaccinare sunt pregatite pentru a asigura 
+                      asistenta adecvata in aceste cazuri.</p>
+                      <br>
+                      <h3 align="center"><b>Ar fi mai bine sa astept sa vad cum reactioneaza alte persoane si apoi sa ma vaccinez?</b></h3><br><br>
+                   <p>Nu. Vaccinurile aprobate pana la ora actuala au primit avizul de functionare pe piata pe baza unor analize riguroase, care au vizat siguranta si 
+                     eficienta acestora, precum si posibilele reactii adverse raportate. Parerea expertilor din cadrul Agentiei Europene a Medicamentului (EMA) si Autoritatii 
+                     Americane a Medicamentului (FDA) este ca beneficiile oferite de aceste vaccinuri sunt superioare eventualelor riscuri.</p>
+                     <br>
+                      <h3 align="center"><b>Vaccinul este gratuit pentru toti?</b></h3><br><br>
+                   <p>Da. Vaccinurile anti-COVID-19 sunt oferite gratuit populatiei care doreste sa se vaccineze, conform strategiei pentru vaccinarea impotriva COVID-19 din tara noastra.</p>
+
+                   
+                   <br>
+                      <h3 align="center"><b>La ce sa ma astept cand ma prezint pentru vaccinare?</b></h3><br><br>
+                   <p>Fiecare persoana care urmeaza sa fie imunizata impotriva COVID-19 trebuie sa aiba asupra sa cartea de identitate. In prima faza, i se va masura temperatura corporala,
+                      care nu trebuie sa fie mai mare de 37,3 grade Celsius si va fi rugata sa completeze chestionarul de triaj vaccinare adulti si formularul de consimtamant informat.
+                       Daca medicul evaluator nu identifica nicio contraindicatie pentru vaccinare, se administreaza serul.  Ulterior, personalul medical va introduce datele despre vaccin
+                        in registrul electronic national de vaccinare (RENV), care va genera automat o adeverinta ce poate fi transmisa persoanei vaccinate inclusiv electronic</p>
+
+                        <br>
+                      <h3 align="center"><b>Daca am avut deja COVID-19, ma mai pot vaccina?</b></h3><br><br>
+                   <p>Administrarea vaccinului COVID-19 se recomanda inclusiv persoanelor care au avut COVID-19, dupa ce acestea s-au recuperat (au iesit din izolare).
+                      Studiile clinice au inclus si persoane care anterior au fost infectate cu SARS-CoV-2, iar vaccinul s-a dovedit a fi sigur. <br><br>
+                    Intrucat, deocamdata, nu se stie cat dureaza protectia oferita de anticorpii produsi de organism dupa infectarea cu noul coronavirus si un numar 
+                    mic de oameni au avut al doilea episod de boala mai sever, se considera ca vaccinul poate fi benefic in stimularea imunitatii existente a unei persoane
+                     impotriva COVID-19. Totusi, deoarece se considera ca riscul de reinfectie este foarte redus in primele 90 zile de la infectare, vaccinarea poate fi amanata
+                      pentru aceste persoane, daca se doreste.</p>
+                      <br>
+                      <h3 align="center"><b> Cine nu poate face acest vaccin?</b></h3><br><br>
+                   <p>Vaccinurile anti COVID-19 nu sunt recomandate persoanelor alergice la substanta activa sau la una dintre componentele vaccinurilor. De asemenea, deocamdata, 
+                     vaccinurile anti COVID-19 sunt contraindicate copiilor si adolescentilor cu varste mai mici de 16 ani - in cazul vacinului Pfizer, respectiv copiii cu varste 
+                     sub 18 ani, cum este cazul vaccinului Moderna.<br><br>
+                    Vaccinurile impotriva COVID-19 sunt contraindicate personalelor cu boala severa sau o infectie cu febra mare (se poate administra vaccinul in caz de febra scazuta 
+                    sau o infectie usoara). Conform legislatiei, persoanele  cu o temperatura corporala mare mare de 37.3 grade Celsius trebuie sa fie reprogramate.</p>
+
+                    <br><BR>
+                    <h3 align="center"><b> Cum se desfasoara vaccinarea in Romania?</b></h3><br><br>
+                    <img src="http://127.0.0.1:8080/utils/13.PNG" style="height: 270px;width: 500px;margin-left: 90px; border-radius: 20%;opacity: 0.85;"><br><br>
+                 <p>Vaccinurile anti COVID-19 nu sunt recomandate persoanelor alergice la substanta activa sau la una dintre componentele vaccinurilor. De asemenea, deocamdata, 
+                   vaccinurile anti COVID-19 sunt contraindicate copiilor si adolescentilor cu varste mai mici de 16 ani - in cazul vacinului Pfizer, respectiv copiii cu varste 
+                   sub 18 ani, cum este cazul vaccinului Moderna.<br><br>
+                  Vaccinurile impotriva COVID-19 sunt contraindicate personalelor cu boala severa sau o infectie cu febra mare (se poate administra vaccinul in caz de febra scazuta 
+                  sau o infectie usoara). Conform legislatiei, persoanele  cu o temperatura corporala mare mare de 37.3 grade Celsius trebuie sa fie reprogramate.</p>
+               
+                          
+             
+               
+            </div>
+          </div>
+        
+
     </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">PROTECȚIE 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="index11.html">Igienă</a>
-      <a href="index12.html">Distanțare</a>
-    </div>
-  </div>  
-    <a   href='index13.html'>VACCINARE</a>
-    <a  href='index14.html'>DESPRE NOI</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAQlBMVEX///8AAADq6uodHR3u7u4ZGRns7OydnZ2ampogICAXFxcYGBjo6OiVlZWSkpKenp6kpKQRERGLi4vNzc04ODhHR0eB+CorAAACxElEQVR4nO3a21ajQBBGYZoAOTAaRX3/V50gYUKAKjrQTB/W/m5FFr/VRVXULAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACWFN+F70fYV1WaS+77IfaUn40xh4QjFrVpfSZ7UIuD6ZSJRsxL00uzF6uzeUixF4vSDF2SO6jVwTyrK9+P5FY+Dng7qH98P5RLxTTg7Y2aUBVnA6Y0NKrLbMDb6E/kjZqfhYCpDI1CquBvFRM4qEIPpvO6mRkTzy6RD41K7sE0enHhiN6rGHEvTlY1IWK0VVTGxOigRtqLVkf0XsUo36gvBIxzgcu1QT8V3wJnMSaexTY01FVNqGJUB1XpwR/xKzH1orKqNdm7HDGaoaEM+ub2ZTniIZKhoRzR5vcCOWIdxUGtSjFAc7+kEa+IYYFTVrXm30XKQQ0+YiFX8H1wmRwx9E8aiz3YU96oQUfMa6sKtt7EK0Ne4JRVbRxQixhuL1r2YE+OGGovKj04F1CLGOZv4JRVbT6gGjHABU6p4Jv4TTFV8eUj2lEiBtaLlf2YeBbL0FBWNfmIdk7id4Y0NJRP9EsBtYjhfOpf2YO98Hsxlwf9cgVbchXD+LONsqrZBQy9F5VV7WR9k6NcRe8HVfmdjH1ArYq15yoqY+KVgFoV/f7ZRnmLvhZQi+jzv6ccBtQi+hsa4v/JrAmoRfS1wCljYk3ALLuK9/MzNJRVbV1ALaKPBU75wLs2oNqL//+NKj/MccNd5SpuuetKUsRtjyJFXH8uNpjfQ7b+rOcj2m64js1VcfvPei6ilwq2phGvDu76EU7AaUQXAacRPQYc96KbgOOInnqwN6zih7O7DiN6rWDruEPAYUTvAR8H1WXAR0TPR7Rz2iFgHzGACraOOwTsIgYSsI3oPmAbMZiAWfYV0V0BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGj9BRi7E+kkbkfPAAAAAElFTkSuQmCC" style=" margin-left: 1px;height:20px;width: 20px;"></button>
 
-<div class="content>"
-  <h4 align="center">Toate informațiile de care ai nevoie</h4><br>
- </div>
-  <div id="demo7" class="myDiv2"></div><br>
-  <div class="flex-container">
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 
-    <div id="demo" class="myDiv"></div>
-    <div id="demo8" class="myDiv"></div>
-    <div id="demo6" class="myDiv"></div>
-    <div id="demo4" class="myDiv"></div>
-    <div id="demo9" class="myDiv"></div>
-    <div id="demo12" class="myDiv"></div>
-    <div id="demo13" class="myDiv"></div>
-    <div id="demo10" class="myDiv"></div>
-    <div id="demo11" class="myDiv"></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="../app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  </div>
- 
-  <br><br>
-  <div class="p" align="left">
-    <div id="myGrid" class="ag-theme-alpine" style="height: 500px; width:650px;">
-    </div>
-  </div>
 
-<script>
 
-</script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
-
-<script src="../app.js"></script>
 </body>
 </html>

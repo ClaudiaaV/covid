@@ -5,6 +5,25 @@
      <title>COVID PLUS</title>   
     
 <style>
+  #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 5px; /* Place the button at the bottom of the page */
+  right: 535px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(85, 151, 236, 0.836); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+  opacity: 0.8;
+}
+#myBtn:hover {
+  background-color: rgba(85, 150, 236, 0.644); /* Add a dark-grey background on hover */
+}
 ::placeholder {
   color: white;
   opacity: 0;
@@ -75,9 +94,10 @@ input {
      color: #8bb9f5;
    }
 
-.nav-item{
-  padding-left: 20px;
-  padding-right: 20px;
+
+   .nav-item{
+  padding-left: 40px;
+  
   color:white;
 }
 .navbar-brand{
@@ -166,7 +186,7 @@ ul.demo {
 img {
   border-radius: 50%;
   opacity: 0.65;
-  margin-left: 60px;
+  margin-left: 80px;
 }
 </style>
 
@@ -224,29 +244,38 @@ img {
                   <a class="nav-link" style="color: white;" href="index13.html">VACCINARE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" style="color: white;" href="index3.html">DESPRE NOI</a>
+                  <a class="nav-link" style="color: white;" href="appointment.html">PROGRAMARE</a>
+                </li>
+                <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="feedback.html">FEEDBACK</a>
+                    <li class="nav-item">
+                      <a class="nav-link" style="color: white;" href="index15.html">SURSE IMPORTANTE</a>
+                    </li>
+                  </li>
+                  <a class="nav-link" style="color: white;" href="about.html">DESPRE NOI</a>
                 </li>
               </ul>
             </div>
           </nav>
       
       <br>
-      <div class="card " style="max-width: 600px;">
+      <div class="card" style="max-width: 600px;">
         <div class="card-header">
             <ul class="nav nav-pills card-header-pills">
-                <li class="nav-item">
-                  <a class="nav-link" href="index5.html">Simptome</a>
+                <li class="nav-item" style=" padding-left: 10px;">
+                    <a class="nav-link " style=" padding-left: 1px; padding-right: 1px;"href="index5.html">Simptome</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item"style=" padding-left: 10px;">
                     <li class="nav-item">
                         <a class="nav-link " href="index9.html">Transmitere</a>
                       </li>
                   <a class="nav-link active" href="index6.html">Testare</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item"style=" padding-left: 10px;">
                   <a class="nav-link " href="index8.html">Tratament</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item"style=" padding-left: 10px;">
                   <a class="nav-link" href="index7.html">Complicații</a>
                 </li>
               </ul>
@@ -254,7 +283,7 @@ img {
             <div class="card-body">
                 
               <p class="card-text"><h4 align="center"><b>În cazul în care prezentați una sau mai multe dintre simptomele Covid-19, este posibil să vă fi îmbolnăvit de coronavirus!</b></h4></p>
-              <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/3.png" style="height: 300px;width: 400px;">  
+              <img src="http://s3-us-west-2.amazonaws.com/sportshub2-uploads-prod/files/sites/2176/2021/01/08163843/COVID-Test.jpg" style="height: 300px;width: 400px;">  
               <p class="card-text">
                     <br>
                     Exista mai multe categorii de teste, in functie de modul lor de actiune:
@@ -379,7 +408,29 @@ img {
         
 
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAQlBMVEX///8AAADq6uodHR3u7u4ZGRns7OydnZ2ampogICAXFxcYGBjo6OiVlZWSkpKenp6kpKQRERGLi4vNzc04ODhHR0eB+CorAAACxElEQVR4nO3a21ajQBBGYZoAOTAaRX3/V50gYUKAKjrQTB/W/m5FFr/VRVXULAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACWFN+F70fYV1WaS+77IfaUn40xh4QjFrVpfSZ7UIuD6ZSJRsxL00uzF6uzeUixF4vSDF2SO6jVwTyrK9+P5FY+Dng7qH98P5RLxTTg7Y2aUBVnA6Y0NKrLbMDb6E/kjZqfhYCpDI1CquBvFRM4qEIPpvO6mRkTzy6RD41K7sE0enHhiN6rGHEvTlY1IWK0VVTGxOigRtqLVkf0XsUo36gvBIxzgcu1QT8V3wJnMSaexTY01FVNqGJUB1XpwR/xKzH1orKqNdm7HDGaoaEM+ub2ZTniIZKhoRzR5vcCOWIdxUGtSjFAc7+kEa+IYYFTVrXm30XKQQ0+YiFX8H1wmRwx9E8aiz3YU96oQUfMa6sKtt7EK0Ne4JRVbRxQixhuL1r2YE+OGGovKj04F1CLGOZv4JRVbT6gGjHABU6p4Jv4TTFV8eUj2lEiBtaLlf2YeBbL0FBWNfmIdk7id4Y0NJRP9EsBtYjhfOpf2YO98Hsxlwf9cgVbchXD+LONsqrZBQy9F5VV7WR9k6NcRe8HVfmdjH1ArYq15yoqY+KVgFoV/f7ZRnmLvhZQi+jzv6ccBtQi+hsa4v/JrAmoRfS1wCljYk3ALLuK9/MzNJRVbV1ALaKPBU75wLs2oNqL//+NKj/MccNd5SpuuetKUsRtjyJFXH8uNpjfQ7b+rOcj2m64js1VcfvPei6ilwq2phGvDu76EU7AaUQXAacRPQYc96KbgOOInnqwN6zih7O7DiN6rWDruEPAYUTvAR8H1WXAR0TPR7Rz2iFgHzGACraOOwTsIgYSsI3oPmAbMZiAWfYV0V0BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGj9BRi7E+kkbkfPAAAAAElFTkSuQmCC" style=" margin-left: 1px;height:20px;width: 20px;"></button>
 
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"

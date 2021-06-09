@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
      <title>COVID PLUS</title>   
-     <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-heatmap.min.js"></script>
+    
 <style>
 ::placeholder {
   color: white;
@@ -75,13 +75,14 @@ input {
      color: #8bb9f5;
    }
 
-.nav-item{
-  padding-left: 20px;
-  padding-right: 20px;
+
+   .nav-item{
+  padding-left: 40px;
+ 
   color:white;
 }
 .navbar-brand{
- padding-left: 10px;
+ padding-left: 0px;
 }
 .container {
   position: relative;
@@ -126,11 +127,11 @@ button {
     background-color: rgba(85, 151, 236, 0.836);
 }
 .card{
-    width: 600px;
+    width: 720px;
     height: min-content;
     padding-left: 0%;
  padding-right: 0px;
- margin-left: 70px;
+ margin-left: 50px;
  background-color: rgba(85, 150, 236, 0.596)!important;
 }
 .nav-item{
@@ -163,7 +164,39 @@ ul.demo {
   margin: 0;
   padding: 0;
 }
+img {
+  border-radius: 50%;
+  opacity: 0.65;
+  margin-left: 125px;
+}
+h2{
+  
+  color:whitesmoke;
+  letter-spacing: 5px;
+  font-weight: 200;
+ margin-left: 220px;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position:fixed; /* Fixed/sticky position */
+  bottom: 5px; /* Place the button at the bottom of the page */
+ 
+  right: 440px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(85, 151, 236, 0.836); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+  opacity: 0.8;
+}
 
+#myBtn:hover {
+  background-color: rgba(85, 150, 236, 0.644); /* Add a dark-grey background on hover */
+}
 
 </style>
 
@@ -178,7 +211,7 @@ ul.demo {
 
     </head>
 
-    <body>
+    
         <body style="background-color:#87CEFA;">
           <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(85, 150, 236); height: 27px;">
             <a class="navbar-brand" href="index.html" style="font-size: 16px;color:white;">ACASĂ</a>
@@ -221,65 +254,215 @@ ul.demo {
                   <a class="nav-link" style="color: white;" href="index13.html">VACCINARE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" style="color: white;" href="index3.html">DESPRE NOI</a>
+                  <a class="nav-link" style="color: white;" href="appointment.html">PROGRAMARE</a>
+                </li>
+                <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="feedback.html">FEEDBACK</a>
+                    <li class="nav-item">
+                      <a class="nav-link" style="color: white;" href="index15.html">SURSE IMPORTANTE</a>
+                    </li>
+                  </li>
+                  <a class="nav-link" style="color: white;" href="about.html">DESPRE NOI</a>
                 </li>
               </ul>
             </div>
           </nav>
-            <br>
-            <div class="card" style="max-width: 600px;">
-              <div class="card-header">
-                  <ul class="nav nav-pills card-header-pills">
-                      <li class="nav-item">
-                        <a class="nav-link " href="index11.html">Igienă</a>
-                      </li>
-                      <li class="nav-item">
-                          <li class="nav-item">
-                              <a class="nav-link active " href="index12.html">Distanțare</a>
-                            </li>
-                        
-                    </ul>
-                  </div>
-                  <div class="card-body">
-                      
-                    <p class="card-text"><h4 align="center"><b>Protejați-vă, păstrați distanța!</b></h4></p>
-                    <img src="https://thumbs.dreamstime.com/b/cartoon-character-social-distancing-keep-distance-public-society-people-to-protect-covid-coronavirus-outbreak-188649274.jpg" 
-                    style="height: 300px;width: 400px; border-radius: 50%;margin-left: 70px;opacity: 0.7;">  
-                    <p class="card-text">
-                          <br>
+      
+      <br>
+      <div class="card " style="max-width: 800px;">
+        <div class="card-header">
+          <h2>VACCINARE</h2>
+            </div>
+            <div class="card-body">
+                <br>
+              <p class="card-text"><h4 align="center"><b>Tot ce trebuie sa stii despre vaccinarea anti Covid-19</b></h4></p><br>
+              <img src="https://media.istockphoto.com/vectors/science-laboratory-scientific-lab-equipments-professional-scientific-vector-id1164736993" style="height: 300px;width: 400px;">  
+              <p class="card-text">
+                    <br>
+                    <p>
+                      <b> <h4 align="center">Acceseaza
+                        <a href='https://www.reginamaria.ro/sites/default/files/2021-01/Ghid%20vaccinare%20Covid.pdf'><button class="btn btn-primary" style="height: 24px; padding-top: 0px;">
+                          AICI</button></a> pentru a descarca ghidul de vaccinare.</h4>  </b>  
+                        <br>
+                        <h3 align="center">SAU</h3>
+                        <br>
+
+                        <b><h4 align="center">Completeaza formularul de consultatie <a href='appointment.html'><button class="btn btn-primary" style="height: 24px; padding-top: 0px;">
+                          AICI</button></a> si mentioneaza faptul ca ai nevoie de ajutor pentru programarea vaccinarii</h4></b>
+                    </p><br>
                           
-      
-                          <h3 align="center"><b>RECOMANDARI privind conduita sociala responsabila in prevenirea raspandirii Coronavirus - COVID-19</b></h3><br>
-                               <br>
-                               
+                    Vaccinurile pentru prevenirea COVID-19 au devenit disponibile pentru prima dată în UE/SEE la sfârșitul lunii decembrie 2020.<br>
+                    Exista mai multe tipuri de vaccin ce au fost autorizate:
+                    <ul>
+                        <li>Comirnaty – Pfizer</li>
+                        <li>Moderna</li>
+                        <li>Vaxzevria – AstraZeneca</li>
+                        <li>Janssen – Johnson&Johnson</li>
+                    </ul>
+                    <br>
+
+                    <h3 align="center" ><b>Vaccin ARNm COVID-19 (modificat nucleozidic) – Pfizer</h3></b><br><br>
+                    <h5>Ce este vaccinul de la Pfizer și pentru ce se utilizează?</h5>
+                    <p>Pfizer este un vaccin pentru prevenirea bolii coronavirusului 2019 (COVID-19) la persoanele cu vârsta de cel puțin 12 ani.
+                      Pfizer conține o moleculă numită ARN mesager (ARNm) care cuprinde instrucțiuni pentru producerea unei proteine din SARS-CoV-2, 
+                      virusul care cauzează COVID-19. Comirnaty nu conține virusul în sine și nu poate cauza COVID-19.
+
+                    </p>
+                    <br>
+                     <b>Cum se utilizează</b> <br><br> 
+                    <p>Comirnaty se administrează sub formă de două injecții, de obicei în mușchiul din partea superioară a brațului, la interval de 3 săptămâni.</p>
+                    <br>
+                     <b>Cum acționează</b> <br><br> 
+                    <p>Conține o moleculă numită ARNm care cuprinde instrucțiuni pentru producerea 
+                      proteinei virale de suprafață. Aceasta este o proteină de pe suprafața virusului SARS-CoV-2 de care virusul are nevoie pentru a pătrunde în celulele organismului.
+                      Când se administrează vaccinul unei persoane, anumite celule din organismul său citesc instrucțiunile ARNm și produc temporar proteina virală de suprafață.
+                       Sistemul imunitar al persoanei va recunoaște apoi această proteină ca fiind străină, va produce anticorpi și va activa limfocitele T (globulele albe) pentru a o ataca.<br><br>
+                      Dacă, ulterior, persoana intră în contact cu virusul SARS-CoV-2, sistemul său imunitar va recunoaște virusul și va fi pregătit să apere organismul de acesta.
+                      Molecula ARNm din vaccin nu rămâne în organism, ci se descompune la scurt timp după vaccinare.</p>
+                    <br>
+
+                    <h3 align="center"><b>Moderna</h3></b><br><br>
+                    <h5>Cum funcționează vaccinul COVID-19 Vaccine Moderna?</h5>
+                    <p>Fiind tot un vaccin pe baza de ARN-mesager, ca si in cazul celui de la Pfizer, acesta contine instructiuni genetice necesare sintetizarii proteinei S (Spike)
+                      de pe suprafata virusului SARS-CoV-2. istemul imun al persoanei respective va identifica apoi această proteină ca fiind străină și va declanșa un răspuns imun,
+                       producând anticorpi și celule T specifice.
+                    </p>
+                          <br>
+                          <b>Cum se administrează și ce eficacitate are</b> <br><br> 
+                         <p>Regimul de administrare este de 2 doze la interval de 28 de zile.<br><br>
+                          Vaccinul este in prezent aprobat pentru administrare in cazul persoanelor cu varsta de peste 18 ani, însă atunci cand vor fi disponibile date 
+                          din studiile clinice care includ voluntari cu varsta mai mica, autorizația poate fi extinsă.
+                         </p>
+                            <br>
+
+                        <h3 align="center"><b>AstraZeneca</b></h3><br><br>
+                        <h5>Cum funcționează vaccinul dezvoltat de Oxford?</h5>
+                    <p>Vaccinul AstraZeneca este un vaccin cu vector viral nereplicativ. Există alte vaccinuri aflate în curs de dezvoltare bazate pe această tehnologie  
+                      împotriva unor boli cauzate de virusuri precum HIV și Zika. Un vaccin împotriva Ebola bazat pe un vector viral nereplicativ a fost autorizat deja în Uniunea Europeană.<br><br>
+
+                      Aceste tipuri de vaccinuri utilizează un alt virus, în cazul vaccinului AstraZeneca un adenovirus, pentru a transporta un fragment din informația
+                       genetică a virusului SARS-CoV-2 în celulele de la locul administrării, care ulterior sintetizează proteina Spike a SARS-CoV-2. Această proteină va
+                        fi recunoscută de către sistemul imunitar ca fiind străină organismului și vor fi produși anticorpi și celule care sa o atace. Dacă mai târziu persoanele 
+                        vaccinate se întâlnesc cu virusul SARS-CoV-2 organismul lor îl va recunoaște și va fi pregătit să se apere.<br><br>
                       
-                              
-                                   
-                                 <br>
-       
-                      </p>
-                      <a href="index10.html" class="btn btn-primary" >ÎNAPOI</a>
-                  </div>
-                </div>
-              
-      
+                      Adenovirusul utilizat pentru dezvoltarea vaccinului Vaxzevria nu infectează în mod normal oamenii, este izolat de la cimpanzei, și este modificat astfel
+                       încât să își piardă capacitatea de a se multiplica.</p>
+                         <br>
+
+                       <h3 align="center"><b>Janssen – Johnson&Johnson</b></h3><br><br>
+                       <h5>Cum funcționează vaccinul COVID-19 Vaccine Janssen?</h5>
+                    <p>Vaccinul Ad26.COV2-S utilizeaza tot un adenovirus, pentru a transporta un fragment din informația genetică a virusului SARS-CoV-2 în celulele
+                       de la locul administrării, care ulterior sintetizează proteina Spike a SARS-CoV-2. Această proteină va fi recunoscută de către sistemul imunitar
+                        ca fiind străină organismului și vor fi produși anticorpi și celule care sa o atace. Dacă mai târziu persoanele vaccinate se întâlnesc cu virusul
+                         SARS-CoV-2 organismul lor îl va recunoaște și va fi pregătit să se apere.<br><br>
+
+                      Adenovirusul utilizat pentru dezvoltarea vaccinului Ad26.COV2-S a fost studiat și în dezvoltarea vaccinului Zabdeno împotriva Ebola autorizat în 
+                      iulie 2020 și este modificat astfel încât să își piardă capacitatea de a se multiplica.</p>
+                         
+                       <br>
+                       <h3 align="center"><b>Cat de sigure sunt vaccinurile anti COVID-19?</b></h3><br><br>
+                    <p>Pentru a fi declarat sigur si eficient, un vaccin impotriva infectiei COVID-19 trebuie sa treaca printr-o serie de teste si trebuie sa indeplineasca 
+                      standarde riguroase, asemenea oricarui alt vaccin sau medicament aprobat pe piata. Ambele vaccinuri Pfizer-BioNTech (Comirnaty) si Moderna au primit unda 
+                      verde in Uniunea Europeana dupa ce reprezentantii Agentiei Europene pentru Medicamente (EMA) au ajuns la concluzia ca in prezent exista disponibile suficiente
+                       date privind calitatea, siguranta si eficacitatea vaccinurilor.</p>
+
+                       <br>
+                       <h3 align="center"><b>Ce reactii adverse pot aparea dupa vaccinare? Pot fi periculoase?</b></h3><br><br>
+                    <p>Efectele secundare care pot aparea in cazul ambelor vaccinuri ARNm sunt cauzate ca parte a raspunsului imun la vaccinuri. 
+                      Conform rezultatelor studiului clinic, cele mai frecvente efecte secundare asociate cu vaccinul Pfizer au fost usoare sau moderate: durere si 
+                      inflamatie la locul injectarii, oboseala, cefalee, dureri musculare si articulare, frisoane si febra. Acestea s-au ameliorat in cateva zile dupa
+                       vaccinare si apar, in general, mai des dupa a doua doza.<br><br>
+
+                      Rareori, ca si in cazul altor vaccinuri, anumite pesoane pot dezvolta reactii alergice. Centrele de vaccinare sunt pregatite pentru a asigura 
+                      asistenta adecvata in aceste cazuri.</p>
+                      <br>
+                      <h3 align="center"><b>Ar fi mai bine sa astept sa vad cum reactioneaza alte persoane si apoi sa ma vaccinez?</b></h3><br><br>
+                   <p>Nu. Vaccinurile aprobate pana la ora actuala au primit avizul de functionare pe piata pe baza unor analize riguroase, care au vizat siguranta si 
+                     eficienta acestora, precum si posibilele reactii adverse raportate. Parerea expertilor din cadrul Agentiei Europene a Medicamentului (EMA) si Autoritatii 
+                     Americane a Medicamentului (FDA) este ca beneficiile oferite de aceste vaccinuri sunt superioare eventualelor riscuri.</p>
+                     <br>
+                      <h3 align="center"><b>Vaccinul este gratuit pentru toti?</b></h3><br><br>
+                   <p>Da. Vaccinurile anti-COVID-19 sunt oferite gratuit populatiei care doreste sa se vaccineze, conform strategiei pentru vaccinarea impotriva COVID-19 din tara noastra.</p>
+
+                   
+                   <br>
+                      <h3 align="center"><b>La ce sa ma astept cand ma prezint pentru vaccinare?</b></h3><br><br>
+                   <p>Fiecare persoana care urmeaza sa fie imunizata impotriva COVID-19 trebuie sa aiba asupra sa cartea de identitate. In prima faza, i se va masura temperatura corporala,
+                      care nu trebuie sa fie mai mare de 37,3 grade Celsius si va fi rugata sa completeze chestionarul de triaj vaccinare adulti si formularul de consimtamant informat.
+                       Daca medicul evaluator nu identifica nicio contraindicatie pentru vaccinare, se administreaza serul.  Ulterior, personalul medical va introduce datele despre vaccin
+                        in registrul electronic national de vaccinare (RENV), care va genera automat o adeverinta ce poate fi transmisa persoanei vaccinate inclusiv electronic</p>
+
+                        <br>
+                      <h3 align="center"><b>Daca am avut deja COVID-19, ma mai pot vaccina?</b></h3><br><br>
+                   <p>Administrarea vaccinului COVID-19 se recomanda inclusiv persoanelor care au avut COVID-19, dupa ce acestea s-au recuperat (au iesit din izolare).
+                      Studiile clinice au inclus si persoane care anterior au fost infectate cu SARS-CoV-2, iar vaccinul s-a dovedit a fi sigur. <br><br>
+                    Intrucat, deocamdata, nu se stie cat dureaza protectia oferita de anticorpii produsi de organism dupa infectarea cu noul coronavirus si un numar 
+                    mic de oameni au avut al doilea episod de boala mai sever, se considera ca vaccinul poate fi benefic in stimularea imunitatii existente a unei persoane
+                     impotriva COVID-19. Totusi, deoarece se considera ca riscul de reinfectie este foarte redus in primele 90 zile de la infectare, vaccinarea poate fi amanata
+                      pentru aceste persoane, daca se doreste.</p>
+                      <br>
+                      <h3 align="center"><b> Cine nu poate face acest vaccin?</b></h3><br><br>
+                   <p>Vaccinurile anti COVID-19 nu sunt recomandate persoanelor alergice la substanta activa sau la una dintre componentele vaccinurilor. De asemenea, deocamdata, 
+                     vaccinurile anti COVID-19 sunt contraindicate copiilor si adolescentilor cu varste mai mici de 16 ani - in cazul vacinului Pfizer, respectiv copiii cu varste 
+                     sub 18 ani, cum este cazul vaccinului Moderna.<br><br>
+                    Vaccinurile impotriva COVID-19 sunt contraindicate personalelor cu boala severa sau o infectie cu febra mare (se poate administra vaccinul in caz de febra scazuta 
+                    sau o infectie usoara). Conform legislatiei, persoanele  cu o temperatura corporala mare mare de 37.3 grade Celsius trebuie sa fie reprogramate.</p>
+
+                    <br><BR>
+                    <h3 align="center"><b> Cum se desfasoara vaccinarea in Romania?</b></h3><br><br>
+                    <img src="http://127.0.0.1:8080/utils/13.PNG" style="height: 270px;width: 500px;margin-left: 90px; border-radius: 20%;opacity: 0.85;"><br><br>
+                 <p>Vaccinurile anti COVID-19 nu sunt recomandate persoanelor alergice la substanta activa sau la una dintre componentele vaccinurilor. De asemenea, deocamdata, 
+                   vaccinurile anti COVID-19 sunt contraindicate copiilor si adolescentilor cu varste mai mici de 16 ani - in cazul vacinului Pfizer, respectiv copiii cu varste 
+                   sub 18 ani, cum este cazul vaccinului Moderna.<br><br>
+                  Vaccinurile impotriva COVID-19 sunt contraindicate personalelor cu boala severa sau o infectie cu febra mare (se poate administra vaccinul in caz de febra scazuta 
+                  sau o infectie usoara). Conform legislatiei, persoanele  cu o temperatura corporala mare mare de 37.3 grade Celsius trebuie sa fie reprogramate.</p>
+               
+                          
+             
+               
+            </div>
           </div>
+        
 
-            
-      
+    </div>
 
-          
-          <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-          <script src="../app.js"></script>
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
-          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAQlBMVEX///8AAADq6uodHR3u7u4ZGRns7OydnZ2ampogICAXFxcYGBjo6OiVlZWSkpKenp6kpKQRERGLi4vNzc04ODhHR0eB+CorAAACxElEQVR4nO3a21ajQBBGYZoAOTAaRX3/V50gYUKAKjrQTB/W/m5FFr/VRVXULAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACWFN+F70fYV1WaS+77IfaUn40xh4QjFrVpfSZ7UIuD6ZSJRsxL00uzF6uzeUixF4vSDF2SO6jVwTyrK9+P5FY+Dng7qH98P5RLxTTg7Y2aUBVnA6Y0NKrLbMDb6E/kjZqfhYCpDI1CquBvFRM4qEIPpvO6mRkTzy6RD41K7sE0enHhiN6rGHEvTlY1IWK0VVTGxOigRtqLVkf0XsUo36gvBIxzgcu1QT8V3wJnMSaexTY01FVNqGJUB1XpwR/xKzH1orKqNdm7HDGaoaEM+ub2ZTniIZKhoRzR5vcCOWIdxUGtSjFAc7+kEa+IYYFTVrXm30XKQQ0+YiFX8H1wmRwx9E8aiz3YU96oQUfMa6sKtt7EK0Ne4JRVbRxQixhuL1r2YE+OGGovKj04F1CLGOZv4JRVbT6gGjHABU6p4Jv4TTFV8eUj2lEiBtaLlf2YeBbL0FBWNfmIdk7id4Y0NJRP9EsBtYjhfOpf2YO98Hsxlwf9cgVbchXD+LONsqrZBQy9F5VV7WR9k6NcRe8HVfmdjH1ArYq15yoqY+KVgFoV/f7ZRnmLvhZQi+jzv6ccBtQi+hsa4v/JrAmoRfS1wCljYk3ALLuK9/MzNJRVbV1ALaKPBU75wLs2oNqL//+NKj/MccNd5SpuuetKUsRtjyJFXH8uNpjfQ7b+rOcj2m64js1VcfvPei6ilwq2phGvDu76EU7AaUQXAacRPQYc96KbgOOInnqwN6zih7O7DiN6rWDruEPAYUTvAR8H1WXAR0TPR7Rz2iFgHzGACraOOwTsIgYSsI3oPmAbMZiAWfYV0V0BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGj9BRi7E+kkbkfPAAAAAElFTkSuQmCC"
+       style=" margin-left: 2px;height:20px;width: 20px;"></button>
+
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
     
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="../app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 
 </body>

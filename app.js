@@ -102,8 +102,6 @@ function myFunction() {
 
 
 
-
-
 /* var kidsLabel = [], femininLabel = [], menLabel=[], dataLabel =[]
 
 async function  dataChart (){

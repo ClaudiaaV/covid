@@ -76,8 +76,8 @@ input {
    }
 
 .nav-item{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 0px;
   color:white;
 }
 .navbar-brand{
@@ -126,15 +126,15 @@ button {
     background-color: rgba(85, 151, 236, 0.836);
 }
 .card{
-    width: 600px;
+    width: 720px;
     height: min-content;
     padding-left: 0%;
  padding-right: 0px;
- margin-left: 70px;
+ margin-left: 60px;
  background-color: rgba(85, 150, 236, 0.596)!important;
 }
 .nav-item{
-    
+  padding-left: 40px;
     color:white;
 }
 .nav-link{
@@ -164,7 +164,38 @@ ul.demo {
   padding: 0;
 }
 
+img {
+  border-radius: 50%;
+  opacity: 0.65;
+  margin-left: 125px;
+}
+h2{
+  
+  color:whitesmoke;
+  letter-spacing: 5px;
+  font-weight: 200;
+ margin-left: 220px;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 5px; /* Place the button at the bottom of the page */
+  right: 535px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(85, 151, 236, 0.836); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+  opacity: 0.8;
+}
 
+#myBtn:hover {
+  background-color: rgba(85, 150, 236, 0.644); /* Add a dark-grey background on hover */
+}
 </style>
 
         <title>COVID PLUS</title>
@@ -178,55 +209,63 @@ ul.demo {
 
     </head>
 
-    <body>
-        <body style="background-color:#87CEFA;">
-          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(85, 150, 236); height: 27px;">
-            <a class="navbar-brand" href="index.html" style="font-size: 16px;color:white;">ACASĂ</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" style="color: white;" href="index2.html">DATE LA ZI <span class="sr-only">(current)</span></a>
-                </li>
+    
+    <body style="background-color:#87CEFA;">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(85, 150, 236); height: 27px;">
+        <a class="navbar-brand" href="index.html" style="font-size: 16px;color:white;">ACASĂ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" style="color: white;" href="index2.html">DATE LA ZI <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="index3.html">STATISTICI</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SĂNĂTATE
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgba(85, 151, 236, 0.836)">
+                <a class="dropdown-item" style="color: white;" href="index4.html">Informații relevante</a>
+                <a class="dropdown-item" style="color: white;"  href="index5.html">Simptome</a>
+                <a class="dropdown-item" style="color: white;"  href="index9.html">Transmitere</a>
+                <a class="dropdown-item" style="color: white;"href="index6.html">Testare</a>
+                <a class="dropdown-item" style="color: white;"href="index8.html">Tratament</a>
+                <a class="dropdown-item" style="color: white;"href="index7.html">Complicații</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PROTECȚIE
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color: rgba(85, 151, 236, 0.836)">
+                <a class="dropdown-item" style="color: white;" href="index11.html">Igienă</a>
+                <a class="dropdown-item" style="color: white;" href="index12.html">Distanțare</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="index13.html">VACCINARE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="appointment.html">PROGRAMARE</a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="feedback.html">FEEDBACK</a>
                 <li class="nav-item">
-                  <a class="nav-link" style="color: white;" href="index3.html">STATISTICI</a>
+                  <a class="nav-link" style="color: white;" href="index15.html">SURSE IMPORTANTE</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    SĂNĂTATE
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgba(85, 151, 236, 0.836)">
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgba(85, 151, 236, 0.836)">
-                      <a class="dropdown-item" style="color: white;" href="index4.html">Informații relevante</a>
-                      <a class="dropdown-item" style="color: white;"  href="index5.html">Simptome</a>
-                      <a class="dropdown-item" style="color: white;"  href="index9.html">Transmitere</a>
-                      <a class="dropdown-item" style="color: white;"href="index6.html">Testare</a>
-                      <a class="dropdown-item" style="color: white;"href="index8.html">Tratament</a>
-                      <a class="dropdown-item" style="color: white;"href="index7.html">Complicații</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button" 
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    PROTECȚIE
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown"  style="background-color: rgba(85, 151, 236, 0.836)">
-                    <a class="dropdown-item" style="color: white;" href="index11.html">Igienă</a>
-                    <a class="dropdown-item" style="color: white;" href="index12.html">Distanțare</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" style="color: white;" href="index13.html">VACCINARE</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" style="color: white;" href="index3.html">DESPRE NOI</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+              </li>
+              <a class="nav-link" style="color: white;" href="about.html">DESPRE NOI</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       
       <br>
       <div class="card" style="max-width: 600px;">
@@ -237,7 +276,7 @@ ul.demo {
                 </li>
                 <li class="nav-item">
                     <li class="nav-item">
-                        <a class="nav-link active " href="index12.html">Distanțare</a>
+                        <a class="nav-link active" href="index12.html">Distanțare</a>
                       </li>
                   
               </ul>
@@ -274,7 +313,7 @@ ul.demo {
                         servetele de unica folosinta</li>
                       </ul>
                       <br>
-                      <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/11.png" style="height: 170px;width: 560px;margin-left: 0.1px; border-radius: 5%;opacity: 0.8; "><br><br>
+                      <img src="http://127.0.0.1:5500/utils/11.png" style="height: 170px;width: 560px;margin-left: 0.1px; border-radius: 5%;opacity: 0.8; "><br><br>
                       <b>Pastrati o distanta semnificativa, de 1,5 metri, fata de celelalte persoane pe care le
                         intalniti</b> <br><br> 
                <ul>
@@ -308,7 +347,7 @@ ul.demo {
                       <li>Transmiterea virusilor se realizeaza intr-o pondere semnificativa prin intermediul banilor, cu care ia contact, statistic, un numar foarte mare de persoane</li>
                       </ul>
                       <br>
-                      <img src="C:/Users/ClaudiaVasile/Documents/facultate/dizertatia%20vietii/covid/utils/10.jpg" style="height: 400px;width: 500px;margin-left: 30px; border-radius: 20%;opacity: 0.8;"><br><br>
+                      <img src="http://127.0.0.1:5500/utils/10.jpg" style="height: 400px;width: 500px;margin-left: 30px; border-radius: 20%;opacity: 0.8;"><br><br>
                       <b>Pastrati o distanta semnificativa, de 1,5 metri, fata de celelalte persoane pe care le
                       <b> Optati pentru munca de acasa, in masura in care aveti aceasta posibilitate oferita de angajator</b> <br><br> 
                    <ul>
@@ -336,7 +375,7 @@ ul.demo {
                           <li>Masca de protectie trebuie sa acopere complet nasul si gura persoanei care o poarta</li>
                       </ul>
                       <br>
-                      <img src="https://dailydose.ttuhsc.edu/2020/march/images/socialdistancing-01.jpg" style="height: 270px;width: 500px;margin-left: 30px; border-radius: 60%;opacity: 0.85;"><br><br>
+                      <img src="https://ohsonline.com/-/media/OHS/OHS/Images/2020/12/kusti.jpg" style="height: 270px;width: 500px;margin-left: 30px; border-radius: 60%;opacity: 0.85;"><br><br>
                       <b>Evitati, cu prioritate, expunerea persoanelor in varsta (peste 65 de ani) si a celor cu imunitate scazuta/boli asociate catre alte persoane
                            cu simptome de gripa sau raceala, in zone aglomerate sau zone cu trafic intens de persoane</b> <br><br> 
                    <ul>
@@ -345,7 +384,7 @@ ul.demo {
                       </ul>
                       <br>
 
-                      <b>Semnalati autoritatilor orice caz despre care aveti cuno?tinta ca ar fi putut intra in contact cu o persoana confirmata cu noul coronavirus 
+                      <b>Semnalati autoritatilor orice caz despre care aveti cunoștinta ca ar fi putut intra in contact cu o persoana confirmata cu noul coronavirus 
                           sau ar fi venit dintr-o tara afectata (zona rosie sau zona galbena) si care nu se afla in izolare</b> <br><br> 
                 <ul>
                    <li>Manifestati o atitudine preventiva fata de orice caz, intrucat raspandirea virusului este posibila si din partea persoanelor care nu manifesta simptome specifice</li>
@@ -399,7 +438,29 @@ ul.demo {
 
     </div>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAQlBMVEX///8AAADq6uodHR3u7u4ZGRns7OydnZ2ampogICAXFxcYGBjo6OiVlZWSkpKenp6kpKQRERGLi4vNzc04ODhHR0eB+CorAAACxElEQVR4nO3a21ajQBBGYZoAOTAaRX3/V50gYUKAKjrQTB/W/m5FFr/VRVXULAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACWFN+F70fYV1WaS+77IfaUn40xh4QjFrVpfSZ7UIuD6ZSJRsxL00uzF6uzeUixF4vSDF2SO6jVwTyrK9+P5FY+Dng7qH98P5RLxTTg7Y2aUBVnA6Y0NKrLbMDb6E/kjZqfhYCpDI1CquBvFRM4qEIPpvO6mRkTzy6RD41K7sE0enHhiN6rGHEvTlY1IWK0VVTGxOigRtqLVkf0XsUo36gvBIxzgcu1QT8V3wJnMSaexTY01FVNqGJUB1XpwR/xKzH1orKqNdm7HDGaoaEM+ub2ZTniIZKhoRzR5vcCOWIdxUGtSjFAc7+kEa+IYYFTVrXm30XKQQ0+YiFX8H1wmRwx9E8aiz3YU96oQUfMa6sKtt7EK0Ne4JRVbRxQixhuL1r2YE+OGGovKj04F1CLGOZv4JRVbT6gGjHABU6p4Jv4TTFV8eUj2lEiBtaLlf2YeBbL0FBWNfmIdk7id4Y0NJRP9EsBtYjhfOpf2YO98Hsxlwf9cgVbchXD+LONsqrZBQy9F5VV7WR9k6NcRe8HVfmdjH1ArYq15yoqY+KVgFoV/f7ZRnmLvhZQi+jzv6ccBtQi+hsa4v/JrAmoRfS1wCljYk3ALLuK9/MzNJRVbV1ALaKPBU75wLs2oNqL//+NKj/MccNd5SpuuetKUsRtjyJFXH8uNpjfQ7b+rOcj2m64js1VcfvPei6ilwq2phGvDu76EU7AaUQXAacRPQYc96KbgOOInnqwN6zih7O7DiN6rWDruEPAYUTvAR8H1WXAR0TPR7Rz2iFgHzGACraOOwTsIgYSsI3oPmAbMZiAWfYV0V0BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGj9BRi7E+kkbkfPAAAAAElFTkSuQmCC" style=" margin-left: 1px;height:20px;width: 20px;"></button>
 
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"

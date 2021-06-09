@@ -49,13 +49,15 @@
     .modal-dialog {
       height: 30%;
       width: 10%;
+ background-color: rgba(85, 150, 236, 0.459);
 
     }
 
     .modal-header {
       align-content: center;
-      padding-left: 40px;
-      background-color: #007bff
+      padding-left: 30px;
+      background-color: rgba(85, 150, 236, 0.459);
+      padding-bottom: 10px;
     }
 
     textarea {
@@ -63,21 +65,24 @@
 
       padding-left: 5px;
       padding-right: 5px;
-      outline: 20px;
+      outline: 10px;
+      margin-bottom: 20px;
       outline-color: turquoise;
     }
 
     .openmodal {
 
-      margin-left: 37%;
+      margin-left: 41%;
       margin-right: 9%;
-      height: min-content;
-      margin-top: 10px;
-      margin-bottom: 4px;
+      height: 70px;
+      margin-bottom: 1px;
+      margin-top: 1px;
+      padding-top: 4x;
+    
     }
 
     .icon1 {
-      color: #007bff75
+      color: rgba(85, 150, 236, 0.459);
     }
 
     a {
@@ -119,12 +124,12 @@
       color: #8bb9f5;
     }
 
-    .nav-item {
-      padding-left: 20px;
-      padding-right: 20px;
-      color: white;
-    }
 
+    .nav-item{
+  padding-left: 10px;
+  padding-right: 0px;
+  color:white;
+}
     .navbar-brand {
       padding-left: 10px;
     }
@@ -262,6 +267,27 @@
       font-size: 10px;
 
     }
+    #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 5px; /* Place the button at the bottom of the page */
+  right: 250px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(85, 151, 236, 0.836); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+  opacity: 0.8;
+}
+
+#myBtn:hover {
+  background-color: rgba(85, 150, 236, 0.644); /* Add a dark-grey background on hover */
+}
+
   </style>
 
   <title>COVID PLUS</title>
@@ -320,31 +346,41 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" style="color: white;" href="index13.html">VACCINARE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="index3.html">DESPRE NOI</a>
-          </li>
-        </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="appointment.html">PROGRAMARE</a>
+                </li>
+                <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="feedback.html">FEEDBACK</a>
+                    <li class="nav-item">
+                      <a class="nav-link" style="color: white;" href="index15.html">SURSE IMPORTANTE</a>
+                    </li>
+                  </li>
+                  <a class="nav-link" style="color: white;" href="about.html">DESPRE NOI</a>
+                </li>
+              </ul>
       </div>
     </nav>
+    <br>
     <h1 align="center">Parerile utilizatorilor nostri</h1>
-
+    <br><br>
     <div class="row">
       <button type="button" style="width: 280px; color:whitesmoke; padding-top:20px; padding-left: 20px;color: whitesmoke;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 18px;" class="btn btn-primary btn-lg openmodal" data-toggle="modal"
         data-target="#myModal">Acorda-ne feedback</button>
-      <!--Division for Modal-->
+      <!--Division for Modal--><br><br>
       <div id="myModal" class="modal fade" role="dialog">
         <!--Modal-->
         <div class="modal-dialog">
           <!--Modal Content-->
           <div class="modal-content">
             <!-- Modal Header-->
-            <div class="modal-header">
-              <h2 align="center" style="color: whitesmoke; margin-left: 50px;">Acorda-ne un feedback</h2>
+            <div class="modal-header"><br>
+              <h1 align="center" style="color: whitesmoke;;margin-top: 10px; margin-bottom: 20px;">Acorda-ne un feedback</h1>
               <!--Close/Cross Button--> <button type="button" class="close" data-dismiss="modal"
-                style="color: rgba(85, 151, 236, 0.836)">&times;</button>
+                style="color: rgba(85, 150, 236, 0.459); ">&times;</button>
             </div> <!-- Modal Body-->
             <div class="modal-body text-center"> <i class="far fa-file-alt fa-4x mb-3 animated rotateIn icon1"></i>
               <h3 style="color: rgba(85, 151, 236, 0.836);">Opinia ta conteaza</h3>
@@ -383,7 +419,7 @@
                   <!--Text Message-->
                   <div class="text-center">
                     <h4 style="color: rgba(85, 151, 236, 0.836);">Ce crezi ca am putea imbunatati?</h4><br>
-                    <textarea type="textarea" name="mesaj" placeholder="Your Message" rows="4"></textarea>
+                    <textarea type="textarea" name="mesaj" placeholder="Your Message" rows="3"></textarea>
                   </div>
 
                   <div class="modal-footer"><button type="submit" class="btn btn-primary pls-submit">Send </button>
@@ -403,7 +439,31 @@
       style="padding: 10px; border-radius: 20px; border: 9px rgba(85, 150, 236, 0.459); font-size: 10px;"></div>
 
 
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAQlBMVEX///8AAADq6uodHR3u7u4ZGRns7OydnZ2ampogICAXFxcYGBjo6OiVlZWSkpKenp6kpKQRERGLi4vNzc04ODhHR0eB+CorAAACxElEQVR4nO3a21ajQBBGYZoAOTAaRX3/V50gYUKAKjrQTB/W/m5FFr/VRVXULAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACWFN+F70fYV1WaS+77IfaUn40xh4QjFrVpfSZ7UIuD6ZSJRsxL00uzF6uzeUixF4vSDF2SO6jVwTyrK9+P5FY+Dng7qH98P5RLxTTg7Y2aUBVnA6Y0NKrLbMDb6E/kjZqfhYCpDI1CquBvFRM4qEIPpvO6mRkTzy6RD41K7sE0enHhiN6rGHEvTlY1IWK0VVTGxOigRtqLVkf0XsUo36gvBIxzgcu1QT8V3wJnMSaexTY01FVNqGJUB1XpwR/xKzH1orKqNdm7HDGaoaEM+ub2ZTniIZKhoRzR5vcCOWIdxUGtSjFAc7+kEa+IYYFTVrXm30XKQQ0+YiFX8H1wmRwx9E8aiz3YU96oQUfMa6sKtt7EK0Ne4JRVbRxQixhuL1r2YE+OGGovKj04F1CLGOZv4JRVbT6gGjHABU6p4Jv4TTFV8eUj2lEiBtaLlf2YeBbL0FBWNfmIdk7id4Y0NJRP9EsBtYjhfOpf2YO98Hsxlwf9cgVbchXD+LONsqrZBQy9F5VV7WR9k6NcRe8HVfmdjH1ArYq15yoqY+KVgFoV/f7ZRnmLvhZQi+jzv6ccBtQi+hsa4v/JrAmoRfS1wCljYk3ALLuK9/MzNJRVbV1ALaKPBU75wLs2oNqL//+NKj/MccNd5SpuuetKUsRtjyJFXH8uNpjfQ7b+rOcj2m64js1VcfvPei6ilwq2phGvDu76EU7AaUQXAacRPQYc96KbgOOInnqwN6zih7O7DiN6rWDruEPAYUTvAR8H1WXAR0TPR7Rz2iFgHzGACraOOwTsIgYSsI3oPmAbMZiAWfYV0V0BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGj9BRi7E+kkbkfPAAAAAElFTkSuQmCC" 
+        style=" margin-left: 1px;height:20px;width: 20px;border-radius: 10px;"></button>
 
+      <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
