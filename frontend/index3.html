@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+
+  <link rel="stylesheet" href="../global.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>COVID PLUS</title>
 
@@ -268,6 +269,8 @@ h3{
       </div>
     </nav>
 
+    <div id="loader"> </div>
+
     <h1 align="center">MediCov</h1>
     <h3 align="center">Echipa ta de specialiști</h3><br>
     <div class="card-columns"></div>
@@ -312,7 +315,6 @@ h3{
     <div id="pie" class="card text-white bg-primary mb-3" style="max-width: 20rem;">
       <div class="card-header" align="center">Procent cazuri in functie de sex</div>
       <canvas id="myChart" width="200" height="200"></canvas>
-    </div>
     </div>
 
 
@@ -363,6 +365,7 @@ h3{
     getCases()
 
     function getCases() {
+      document.getElementById("pie").style.display = "none";
       const api = `https://covid19.geo-spatial.org/api/dashboard/getDailyCases`;
 
 
@@ -387,6 +390,8 @@ h3{
           getColumnChart(terapieIntensiva, datePeZi,'terapieIntensiva', 'Terapie Intensiva', 'Terapie Intensiva')
           getColumnChart(numarTeste, datePeZi,'numarTeste', 'Numar Teste', 'Teste')
           getColumnChartBetweenValues(rataCrestere, datePeZi,'rataCrestere', 'Rata Crestere', 'Rata Crestere', 1, 2)
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("pie").style.display = "block";
         })
     }
 
