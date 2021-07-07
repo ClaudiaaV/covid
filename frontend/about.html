@@ -54,13 +54,8 @@ input {
   outline: none;
   padding: 12px;
 }
-button{
-  background-color: #ebc6eb;
-  
-}
-button {
-	width: 200px;
-}
+
+
 .centered img {
   width: 200px;
   border-radius: 50%;
@@ -83,8 +78,8 @@ button {
 
 
    .nav-item{
-    padding-left: 40px;
- 
+  padding-left: 10px;
+  padding-right: 0px;
   color:white;
 }
 .navbar-brand{
@@ -127,16 +122,21 @@ button {
   margin: 10px;
   
 }
+button {
+	width: max-content;
+    height: max-content;
+    background-color: rgba(85, 151, 236, 0.836);
+}
 .card{
-    width: 600px;
-    height: 524px;
+    width: 720px;
+    height: min-content;
     padding-left: 0%;
  padding-right: 0px;
- margin-left: 70px;
+ margin-left: 50px;
  background-color: rgba(85, 150, 236, 0.596)!important;
 }
 .nav-item{
-    
+    padding-left: 40px;
     color:white;
 }
 .nav-link{
@@ -157,12 +157,50 @@ button {
 .card-header{
     background-color: rgba(85, 151, 236, 0.836);
     color: white;
+   
+}
+
+ul.demo {
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
 }
 img {
-  border-radius: 20%;
- opacity: 0.8;
-  margin-left: 2px;
+  border-radius: 50%;
+  opacity: 0.65;
+  margin-left: 125px;
 }
+h2{
+  
+  color:whitesmoke;
+  letter-spacing: 5px;
+  font-weight: 200;
+
+}
+a{
+  color: whitesmoke;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 5px; /* Place the button at the bottom of the page */
+  right: 430px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(85, 151, 236, 0.836); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+  opacity: 0.8;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 
 </style>
 
@@ -178,7 +216,6 @@ img {
     </head>
 
     <body>
-      
         <body style="background-color:#87CEFA;">
           <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(85, 150, 236); height: 27px;">
             <a class="navbar-brand" href="index.html" style="font-size: 16px;color:white;">ACASĂ</a>
@@ -237,36 +274,77 @@ img {
           </nav>
       
       <br>
-        <div class="card text-center" style="max-width: 600px;">
-            <div class="card-header">
-                <ul class="nav nav-pills card-header-pills">
-                    <li class="nav-item"style=" padding-left: 10px;">
-                      <a class="nav-link" href="index4.html">Simptome si informații relevante</a>
-                    </li>
-                      </li>
-                      <li class="nav-item"style=" padding-left: 10px;">
-                        <a class="nav-link active" href="index10.html">Igienă și distanțare</a>
-                      </li>
-                    <li class="nav-item"style=" padding-left: 10px;">
-                      <a class="nav-link" href="index14.html">Vaccinare</a>
-                    </li>
-                  </ul>
-                </div>
-              
-         
+      <div class="card text-center" style="max-width: 800px;">
+        <div class="card-header">
+          <h2 ALIGN="center">DESPRE NOI</h2>
+            </div>
             <div class="card-body">
-             <img class="card-img-top" src="https://media.istockphoto.com/photos/gotta-make-sure-germs-have-a-zero-chance-picture-
-             id1182622704?k=6&m=1182622704&s=612x612&w=0&h=fIlhFtSrpJblkUiV89YjzhFvulYbbKjnBtfqHBNuRBc="  alt="Card image" style="width:50%"><p></p>
-              <h3 class="card-title" align="center">Respectă Regulile</h3>
-              <p class="card-text">Siguranța ta nu se termină unde începe siguranța celorlalți!</p>
-              <p class="card-text">Împreună putem reveni mai puternici la normalitate!</p>
-                <p class="card-text">Respectă câteva reguli și vom fi bine.</p>
-              <a href="index11.html" class="btn btn-primary" >Informează-te</a>
+              
+              <p class="card-text"><h3 align="center"><b>Echipa Medicov </b></h3></p><br>
+              <h4 align="center">Cine suntem noi?</h4><br>
+              <p class="card-text">Echipa noastra s-a nascut in urma constientizarii faptului ca individul uman are nevoie de informatie. Si nu doar atat,
+                  are nevoie ca informatia sa fie structurata cat mai simplu, cat mai concentrat si cat mai agregat posibil.
+              </p>
+              <p class="card-text"> Am adunat la un loc, pentru utilizatorii nostrii, toate informatiile pe care noi consideram ca trebuie sa le detina in aceasta perioada grea,
+                  in acest context nou pentru noi toti.
+            </p><br>
+            <p class="card-text"> Asa a luat nastere Medicov, platforma ce inglobeaza toate datele pe care romanii trebuie sa le cunoasca. 
+                
+                De la date actualizate zilnic, statistici privind evolutia pandemiei Covid-19, informatii legate de tot ceea ce inseamna sanatate, protectie sau surse importante, si pana la 
+                posibilitatea de inregistrare a programarilor online sau chiar oferirea de feedback privind serviciile echipei noastre, obiectivul suprem este acela de a raspunde la orice intrebare
+                ar putea sa apara, dar si sa oferim un ajutor atat de vital in aceasta perioada critica.
+            </p><br>
+         
+            <p class="card-text"> Echipa Medicov va multumeste si va doreste sanatate!
+        </p><br>
+           
+
+
+
+
+                          
+             
+               
             </div>
           </div>
         
 
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="data:image/png;base64,iV
+        BORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAQlBMVEX///8AAADq6uodHR3u7u4ZGRns7OydnZ2ampogICAXFxcYGBjo6OiVlZWSkpKenp
+        6kpKQRERGLi4vNzc04ODhHR0eB+CorAAACxElEQVR4nO3a21ajQBBGYZoAOTAaRX3/V50gYUKAKjrQTB/W/m5FFr/VRVXULAMAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACWFN+F70fYV1WaS+77IfaUn40xh4QjFrVpfSZ7UIuD6ZSJRsxL00uzF6uzeUixF4vSDF2SO6jVwTyrK9+P5FY+Dng7qH9
+        8P5RLxTTg7Y2aUBVnA6Y0NKrLbMDb6E/kjZqfhYCpDI1CquBvFRM4qEIPpvO6mRkTzy6RD41K7sE0enHhiN6rGHEvTlY1IWK0VVTGxOigRtqLVkf
+        0XsUo36gvBIxzgcu1QT8V3wJnMSaexTY01FVNqGJUB1XpwR/xKzH1orKqNdm7HDGaoaEM+ub2ZTniIZKhoRzR5vcCOWIdxUGtSjFAc7+kEa+IYYF
+        TVrXm30XKQQ0+YiFX8H1wmRwx9E8aiz3YU96oQUfMa6sKtt7EK0Ne4JRVbRxQixhuL1r2YE+OGGovKj04F1CLGOZv4JRVbT6gGjHABU6p4Jv4TTFV8
+        eUj2lEiBtaLlf2YeBbL0FBWNfmIdk7id4Y0NJRP9EsBtYjhfOpf2YO98Hsxlwf9cgVbchXD+LONsqrZBQy9F5VV7WR9k6NcRe8HVfmdjH1ArYq15yo
+        qY+KVgFoV/f7ZRnmLvhZQi+jzv6ccBtQi+hsa4v/JrAmoRfS1wCljYk3ALLuK9/MzNJRVbV1ALaKPBU75wLs2oNqL//+NKj/MccNd5SpuuetKUsRtj
+        yJFXH8uNpjfQ7b+rOcj2m64js1VcfvPei6ilwq2phGvDu76EU7AaUQXAacRPQYc96KbgOOInnqwN6zih7O7DiN6rWDruEPAYUTvAR8H1WXAR0TPR7R
+        z2iFgHzGACraOOwTsIgYSsI3oPmAbMZiAWfYV0V0BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGj9BRi7E+kkbkfPAAAAAElFTkSuQmCC" style=" 
+        margin-left: 1px;height:20px;width: 20px;"></button>
+
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.0/dist/chart.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -277,6 +355,8 @@ img {
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 
 </body>
 </html>

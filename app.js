@@ -3,9 +3,9 @@ function getTable() {
     const columnDefs = [
         { field: "county_code", maxWidth: 110, sortable: true },
         { field: "county", maxWidth: 120, sortable: true },
-        { field: "total_county", maxWidth: 180, sortable: true },
-        { field: "total_healed", maxWidth: 100, sortable: true },
-        { field: "total_dead", maxWidth: 100, sortable: true }
+        { field: "total_case", maxWidth: 180, sortable: true },
+        { field: "total_dead", maxWidth: 100, sortable: true },
+        { field: "total_healed", maxWidth: 100, sortable: true }
 
     ];
 
@@ -22,7 +22,7 @@ function getTable() {
     new agGrid.Grid(eGridDiv, gridOptions);
 
     // fetch the row data to use and one ready provide it to the Grid via the Grid API
-    agGrid.simpleHttpRequest({ url: 'https://covid19.geo-spatial.org/api/dashboard/getCasesByCounty' })
+    agGrid.simpleHttpRequest({ url: 'https://covid19.geo-spatial.org/api/dashboard/v2/getCasesByCounty' })
         .then(data => {
             console.log(data)
             gridOptions.api.setRowData(data.data.data);
@@ -32,13 +32,13 @@ function getTable() {
     var makeCol = gridOptions.columnApi.getColumn("county")
     makeCol.colDef.headerName = "Judet";
 
-    var makeCol = gridOptions.columnApi.getColumn("total_county")
+    var makeCol = gridOptions.columnApi.getColumn("total_case")
     makeCol.colDef.headerName = "Numar total de cazuri";
 
-    var makeCol = gridOptions.columnApi.getColumn("total_healed")
+    var makeCol = gridOptions.columnApi.getColumn("total_dead")
     makeCol.colDef.headerName = "Vindecati";
 
-    var makeCol = gridOptions.columnApi.getColumn("total_dead")
+    var makeCol = gridOptions.columnApi.getColumn("total_healed")
     makeCol.colDef.headerName = "Decedati";
     gridOptions.api.refreshHeader();
 
@@ -100,6 +100,25 @@ function myFunction() {
     }
   }
 
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 
 /* var kidsLabel = [], femininLabel = [], menLabel=[], dataLabel =[]

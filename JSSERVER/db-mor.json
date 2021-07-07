@@ -1,24 +1,10 @@
 {
   "feedbacks": [
-    {
-      "id": 1,
-      "rating": "Satisfacut",
-      "mesaj": "Am apreciat munca echipei"
-    },
-    {
-      "id": 2,
-      "rating": "Foarte satisfacut",
-      "mesaj": "Am apreciat munca echipei"
-    },
-    {
-      "id": 3,
-      "rating": "Satisfacut",
-      "mesaj": "Am apreciat munca echipei"
-    },
+   
     {
       "id": 4,
       "rating": "Satisfacut",
-      "mesaj": "Am apreciat munca echipei"
+      "mesaj": "Foarte multumit"
     },
     {
       "id": 5,
@@ -28,42 +14,17 @@
     {
       "id": 6,
       "rating": "Mediocru",
-      "mesaj": "Am apreciat munca echipei"
+      "mesaj": "Programarea nu a fost stabilita in timp util"
     },
     {
       "rating": "Foarte satisfacut",
-      "mesaj": "bineanu",
+      "mesaj": "Foarte bine",
       "id": 7
     },
     {
       "rating": "Foarte satisfacut",
-      "mesaj": "HAI CA MERGE DACA E ",
+      "mesaj": "Totul a fost conform asteptarilor mele ",
       "id": 8
-    },
-    {
-      "rating": "Mediocru",
-      "mesaj": "dadadda",
-      "id": 9
-    },
-    {
-      "rating": "Satisfacut",
-      "mesaj": "ok bine",
-      "id": 10
-    },
-    {
-      "rating": "Foarte satisfacut",
-      "mesaj": "imagini",
-      "id": 11
-    },
-    {
-      "rating": "Dezamagit",
-      "mesaj": "culorile!",
-      "id": 12
-    },
-    {
-      "rating": "Foarte satisfacut",
-      "mesaj": "pa",
-      "id": 13
     }
   ]
 }
